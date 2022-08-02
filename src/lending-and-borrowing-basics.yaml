@@ -1,0 +1,35 @@
+uuid: a9473d14-56a9-4874-9117-ace9b024e1f1
+name: Intro to Lending & Borrowing
+content: Explains why and what courses are we working on
+guideType: onboarding
+created: "2022-08-02T04:15:13.911Z"
+categories:
+  - developer
+  - engineering
+thumbnail: ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8
+publishStatus: Live
+socialShareImage:
+showIncorrectOnCompletion: true
+steps:
+  - uuid: 93bc8525-7ec0-4cd5-8888-3624e500a26e
+    name: Whais is Lending and Borrowing
+    content: |
+      Whais is Lending and Borrowing
+    stepItems: []
+  - uuid: 593c2b7a-8346-4519-b59c-65e08540b3b5
+    name: All the Terms
+    content: |
+      All the Terms
+    stepItems: []
+  - uuid: f1631583-2660-4fa0-9d94-449a67b7e515
+    name: All the use cases
+    content: |
+      All the use cases
+    stepItems: []
+  - uuid: 775eb627-5d16-4374-bcfe-e051402e4f1b
+    name: Lending and Borrowing in DeFi
+    content: |
+      Lending and Borrowing in DeFi
+      This video explains the basics of lending and boroow
+      https://www.youtube.com/watch?v=xeST_tbc1O4&list=PLS01nW3RtgopKAIGCW92jePNHwTGk5GmK
+    stepItems: []

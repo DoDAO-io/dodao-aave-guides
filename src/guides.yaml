@@ -1,3 +1,9 @@
 guides:
-  - key: course-contributor
-    path: course-contributor.yaml
+  - key: intro-aave-v3
+    path: intro-aave-v3.yaml
+  - key: lending-and-borrowing-basics
+    path: lending-and-borrowing-basics.yaml
+  - key: a-tokens
+    path: a-tokens.yaml
+  - key: flash-loan
+    path: flash-loan.yaml

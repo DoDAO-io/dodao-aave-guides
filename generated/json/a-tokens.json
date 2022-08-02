@@ -1,0 +1,41 @@
+{
+  "uuid": "e014c77c-cc06-4c72-b285-63ddb4161a9a",
+  "name": "Decentralized Lending",
+  "content": "Explains why and what courses are we working on",
+  "guideType": "onboarding",
+  "created": "2022-08-02T04:15:13.911Z",
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "uuid": "2979f3ec-760b-4a77-b300-dfc36a5e0112",
+      "name": "What is decentralized lending",
+      "content": "What is decentralized lending\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "3aac50b3-ac05-4add-88df-4d94f6fb5ae0",
+      "name": "How to deposit money in AAVE",
+      "content": "How to deposit money in AAVE\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "539388e0-d26c-4259-b40c-213df2d0adb1",
+      "name": "How deposit rate is calculated",
+      "content": "How deposit rate is calculated\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "87c8869d-9900-4a3e-9af9-c047c08893a3",
+      "name": "Risks",
+      "content": "Risks\n",
+      "stepItems": []
+    }
+  ]
+}

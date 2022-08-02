@@ -1,0 +1,202 @@
+{
+  "uuid": "2e514270-2fc4-4789-aa67-613d4f2dfee5",
+  "name": "Intro to AAVE V3",
+  "content": "This guide shares various new features of AAVE V3",
+  "guideType": "onboarding",
+  "created": "2022-08-02T04:15:13.911Z",
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "postSubmissionStepContent": "## Join AAVE V3\n\n[Twitter](https://twitter.com/aaveaave)\n\n[Discord ](https://discord.gg/CvKUrqM)\n\n[Telegram](https://t.me/Aavesome)\n\n[GitHub ](https://github.com/aave)\n\n\n## Links\n\n[https://aave.mirror.xyz/2TnHYHQRnNhSG56Y4CcssulFArSVqrFbmAdYfU7Kxp0](https://aave.mirror.xyz/2TnHYHQRnNhSG56Y4CcssulFArSVqrFbmAdYfU7Kxp0) \n\n[https://aave.mirror.xyz/CZbP_R8x7h2YyJE7R91OdEVaGmwy8xjbUsL0RwuPXyI](https://aave.mirror.xyz/CZbP_R8x7h2YyJE7R91OdEVaGmwy8xjbUsL0RwuPXyI) \n\n[https://aave.mirror.xyz/JcA9DzQHK6o8YYMmxtH43Vqq5HoHvjrTrFnd_UprKWQ](https://aave.mirror.xyz/JcA9DzQHK6o8YYMmxtH43Vqq5HoHvjrTrFnd_UprKWQ) \n",
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "uuid": "3697c94b-0b65-4811-8862-b451470bc6fd",
+      "name": "Overview",
+      "content": "Centralization and illiquidity are two prevalent problems that DeFi, the blockchain, and other crypto-based \nprojects devote to finding solutions to because illiquidity can affect users’ ability to get fair rates for \ntheir digital assets.\n\nThe demand for DeFi is growing, and so is interest from the traditional finance space and its institutions. In \nrecent times, some hedge funds, asset managers, fintech, and family offices have shown interest in leveraging a \nversion of Aave to handle internal requirements.\n\nThis is because the Aave protocol is one of the unique solutions to the drawbacks of centralization and \nilliquidity. The protocol is non-custodial liquidity and decentralized protocol. With Aave, users can \nparticipate as liquidators, suppliers, or borrowers.\n\nSince the protocol’s launch in 2020, it has been at the forefront of championing DeFi innovations. Two factors \nhave placed Aave V3 as one of the biggest DeFi protocols: An IPFS-deployed open-source frontend and AAVE’s \nunique governance controls.\n\nThe Aave protocol has already reached peak liquidity of $30B. On it, borrowers can borrow funds in an \novercollateralized manner and partake in one-block borrow transactions or flash loans. These flash loans do not \nneed over-collateralization.\n\nConversely, suppliers provide much-needed liquidity to markets and earn interest from cryptocurrency assets. \nMeanwhile, Aave V3 is a product of robust community feedback, ecosystem growth, and continuous iteration.\n\nThe Aave V3 of the protocol enhances the protocol’s core concept of stable rate borrowing, aTokens, instant \nliquidity, etc., with some new features and improvements like enhanced decentralization and security.\n\nCapital efficiency is one of the significant utilities of the V3 as it allows users to optimize their digital \nassets supplied to Aave in terms of borrowing power and yield generation. Efficiency mode, portals, decentralization, \nand more, are some of the features we discuss that the Aave protocol uses to achieve capital efficiency.\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "03b66d3b-7f68-4a84-a797-d72a18a151c6",
+      "name": "Evaluation",
+      "content": " ",
+      "stepItems": [
+        {
+          "uuid": "951c2561-47e5-48cd-baec-0a3875b087cb",
+          "content": "What major pair of solutions does Aave bring to the problems of centralization and illiquidity in DeFi?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Inconvenient user interface",
+              "key": "A"
+            },
+            {
+              "content": "Non-custodial liquidity and decentralized protocol services",
+              "key": "B"
+            },
+            {
+              "content": "Lack of crypto pairs",
+              "key": "C"
+            },
+            {
+              "content": "Expensive withdrawal fees",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "9da318be-08c2-47d7-8d4e-7056d6336119",
+      "name": "AAVE V3 - New Features",
+      "content": "## AAVE V3 High-Efficiency Mode\nThe Aave V3’s efficiency mode helps maximize and boost capital efficiency when borrowed and collateral assets are \ncorrelated in price. It is especially helpful when collateral and borrowed assets are the derivatives of one underlying \nasset, like stablecoins pegged to the dollar.\n\nMeanwhile, since stablecoins are typically pegged to a specific asset, the chance of suddenly losing the peg is \nslim and near impossible. Cryptocurrencies like ETH and their derivatives like alETH, stETH, sETH, etc., have \nsimilar characteristics and behavior as their underlying asset.\n\nUnique cases like this have the possibility of permitting high collateralization power. However, in the original \nAave protocol design, borrowed assets and collateral value are normalized to a base currency such as USD or ETH.\n\nThis makes it impossible to know, on-chain, the specific collateral that is backing a corresponding borrowed asset,\nmaking it difficult to enhance collateral efficiency. But all of these difficulties change with the help of Efficiency \nmode or E-Mode.\n\nEfficiency Mode offers an asset classification that categorizes all assets that the Aave protocol lists. In effect, \nall assets in the same category will typically be highly correlative or mutually related in price.\n\nThis system can’t enforce the correct categorization on-chain because it also requires maintenance by whatever \nentity manages the protocol—the Aave governance. However, it is no cause for worry because this Efficiency Mode \nbrings more freedom and choice.\n\nUsers can freely choose to borrow a specific category and employ high collateralization power, even using collaterals \nfrom the same category. In all, Efficiency Mode allows the introduction of a specific price oracle for a particular \ncategory.\n\n## AAVE V3 Decentralization\nAave has introduced Asset Listing Admins with the V3. It is a unique role that the Aave governance grants to allow \ndifferent asset listing strategies in addition to on-chain vote from Aave V2.\n\nAsset Listing Admins will enhance decentralization and allow builders to make custom asset listing strategies. \nThese strategies will surely bring true permissionless asset listing to the protocol.\n\nAs a feature in Aave, decentralization ensures protocol management is fully decentralized, and Aave token holders \ncontrol it via Aave governance. Meanwhile, the Aave governance is the gatekeeper of some aspects of the protocol \nconfiguration, such as in listing new assets.\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "61538419-bc32-4094-a834-934f09e8e86c",
+      "name": "Evaluation",
+      "content": " ",
+      "stepItems": [
+        {
+          "uuid": "a5ec0ad6-1658-42ee-abf0-3d2ccce07f1e",
+          "content": "High Efficiency Model is applicable to what type of assets?",
+          "answerKeys": [
+            "D"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Assets with high volatility",
+              "key": "A"
+            },
+            {
+              "content": "Assets who value remain the same all the time",
+              "key": "B"
+            },
+            {
+              "content": "Only to stable coins",
+              "key": "C"
+            },
+            {
+              "content": "Assets with the same/similar underline asset like alETH, stETH, sETH, etc. or Stable coins",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "fc1c3221-e146-45f7-9acb-e5a17f86db3b",
+          "content": "Which of the followin is true regarding Asset Listing in AAVE v3",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Asset Listing Admins will enhance decentralization and allow builders to make custom asset listing strategies",
+              "key": "A"
+            },
+            {
+              "content": "Asset Listing will only be allowed by core AAVE members",
+              "key": "B"
+            },
+            {
+              "content": "Anyone will be allowed to list an Asset on AAVE.",
+              "key": "C"
+            },
+            {
+              "content": "No new Assets will be listed in AAVE v3",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "eae54957-8c1c-40c2-8513-b4c475131cf6",
+      "name": "AAVE V3 - New Features",
+      "content": "## AAVE V3 Isolation Mode\nIn Aave V2, when a new   asset is listed, the whole liquidity pool is exposed to it, meaning that users using the \nnew collateral asset might be able to borrow the whole liquidity available. This greatly limits the capability \nto add new assets to the Aave Protocol, as every new asset increases the liquidity and solvency risk. Isolation \nmode solves for this\n\nAave V3’s Isolation Mode allows the protocol to list assets as “isolated easily.” Assets listed have a specific \ndebt limit, and borrowers who decide to use an isolated asset as collateral can do so.  \n\nHowever, if they need to, Aave V3 protocol users of isolated assets can supply other assets for yield generation. \nThe flag “Borrowable In Isolation” indicates assets that users can borrow in isolation mode.\n\n## AAVE V3 Portal\nPortal indicates a series of core features that permit the seamless flow of supplied assets between Aave instances \non various networks. Meanwhile, the Aave protocol exploits the rare designs of the aToken in burning aTokens on \nsource networks.\n\nIt also allows instant minting on destination networks. The Aave protocol requires three extra features to support \nPortal in V3, namely:\n* **Mint Unbacked Tokens**: Mint Unbacked Tokens allows addresses with Bridge role permission to mint unbacked \n  aTokens to onBehalfOf address.\n* **Back Unbacked Tokens**: Back Unbacked Tokens permits contracts with Bridge role permission to back the unbacked \n    aTokens with the amount of the underlying asset and pay the necessary fee.\n* **Whitelist Bridges**: Whitelist bridges permit the Bridge Role Admin to either remove or add the address for \n    the Bridge Role.\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "076d1531-4668-4b90-920a-6f1e01974e36",
+      "name": "Evaluation",
+      "content": " ",
+      "stepItems": [
+        {
+          "uuid": "cd67e9ce-ece6-41e6-a21e-c5dcb790bb73",
+          "content": "What are the new features that are added to AAVE protocol to enable Portals",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Additional features that enable portals are \"Web Service calls\" and \"Webhooks\"",
+              "key": "A"
+            },
+            {
+              "content": "Additional features that enable portals are \"Mint Unbacked Tokens\", \"Back Unbacked Tokens\" and \"Whitelist Bridges\"",
+              "key": "B"
+            },
+            {
+              "content": "Additional features that enable portals are \"High Efficiency\" and \"Further Decentralization\"",
+              "key": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "3ea32ea6-bead-45bb-8705-fbd538fd703c",
+      "name": "AAVE V3 - Risk Management",
+      "content": "Aave V3 offers a significantly enhanced set of risk parameters and improved features to help secure the protocol \nfrom potential insolvency. Here are some ways Aave achieves this:\n\n### Supply and Borrow Caps\nThe Aave V3 relies on supply and borrow limits while allowing the protocol’s governance to configure Borrow and \nSupply caps. The Borrow Caps allow the adequate modulation of the amount of an asset borrowed, reducing the risk \nof insolvency.\n\nOn the other hand, Supply Caps limits the number of asset users can supply to the protocol. It helps reduce the \nexposure to a specific asset while reducing attacks such as price oracle manipulation or infinite minting.  \n\n### Granular Borrowing Power Control  \nThe coming of Aave V3 brings granular borrowing power control that will allow the protocol to lower the borrowing \npower of assets to 0%. In addition, such control won’t have an impact on existing borrowers.\n\n### Risk Admins\nAave V3 also introduces to users the ability for the Aave Governance to particular entities the permission to update \nrisk parameters, and they can do this without requiring a governance vote.\n\nThe relevant entities could be automated agents like Gauntlet, RiskDAO, or just DAOs that can improve this feature \nto react mechanically in unforeseen circumstances. Meanwhile, Aave governance is capable of adding new Risk Admins \nor revoking access to existing ones.\n\n### Price Oracle Sentinel\nThis feature carries a grace period for liquidations and disables borrowing in the face of specific scenarios. By \ndesign, it is built for L2s to handle potential downtime that may disrupt activities of the sequencer.\n\n### Variable Liquidation Close Factor\nFinally, in Aave V3, there is an improved liquidation mechanism from allowing liquidation of half of the position \nat a specific time to allowing the position to become fully liquidated when it nears insolvency.\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "b83986b9-e975-4cb0-9158-52deb0e90435",
+      "name": "Evaluation",
+      "content": " ",
+      "stepItems": [
+        {
+          "uuid": "17a28e1c-56ab-4511-a59c-103b1af4b57c",
+          "content": "Aave V3 allows the protocol’s governance to configure what type of cap/s?",
+          "answerKeys": [
+            "D"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Only Borrow",
+              "key": "A"
+            },
+            {
+              "content": "Only Supply",
+              "key": "B"
+            },
+            {
+              "content": "There are no Supply or Borrow Caps",
+              "key": "C"
+            },
+            {
+              "content": "Both Supply and Borrow caps",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "dd9bb433-1f0e-4dec-84e8-4c281a9b53df",
+      "name": "AAVE Vision and Goals",
+      "content": "## AAVE Vision \nAave believes in creating a protocol that can convert centralized financial services over to decentralized \nequivalents. The protocol also has the vision of creating a transparent, permissionless, and open-source financial \nservice environment that encourages everyone to interact. Aave further seeks to remain compatible with other \ndecentralized protocols via aTokens.\n\n## AAVE Goals\nThe aim and goals of Aave are to build an algorithmic loan market that allows the following:\n\n* Create a platform that can offer loans with different collaterals, operating policies, and collateralization \n  options. This is so that the protocol can adjust to the needs of different markets and its many users.\n* Invest funds in pools to generate liquidity. Doing this should allow the users to offer loans to other users \n  who need them while also earning interest as liquidity providers.\n",
+      "stepItems": []
+    }
+  ]
+}

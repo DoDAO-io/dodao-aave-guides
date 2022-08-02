@@ -106,15 +106,18 @@
       "uuid": "64f91c87-47b2-4bf0-a54c-b815a1e8c827"
     },
     {
+      "uuid": "bd8f0b48-4e61-478a-b275-68e3c93db760",
       "content": "Currently contributing to courses involves working on a chapter which\nhas \\\"two\\\" tasks\n1. Readings and Summaries - Create yaml file with details of readings and summaries for that chapter. e.g. [https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml](https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml)\n2. Questions - Create 50 high quality single or multiple choice questions for the  chapter you are working on. e.g. [https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/questions/data_types.yaml](https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/questions/data_types.yaml). Later\n  on we will add another task i.e. creating of the mind maps for each chapter, but\n  for now its not needed. Also make sure that your name is added on a Trello card corresponding to the task you are working on.\n",
       "stepItems": [],
-      "name": "Contributing",
-      "uuid": "bd8f0b48-4e61-478a-b275-68e3c93db760"
+      "name": "Contributing"
     },
     {
       "content": "",
       "stepItems": [
         {
+          "uuid": "f12c2758-858d-4fe4-9560-f4dd9454f89a",
+          "content": "What two tasks are currently part of the work involved for a chapter of a course?",
+          "type": "MultipleChoice",
           "answerKeys": [
             "90420cff",
             "2a0ac8ef"
@@ -136,10 +139,7 @@
               "content": "Create a mind map",
               "key": "2d9e55e8"
             }
-          ],
-          "content": "What two tasks are currently part of the work involved for a chapter of a course?",
-          "type": "MultipleChoice",
-          "uuid": "f12c2758-858d-4fe4-9560-f4dd9454f89a"
+          ]
         },
         {
           "answerKeys": [
