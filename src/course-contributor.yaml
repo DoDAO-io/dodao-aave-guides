@@ -108,7 +108,8 @@ steps:
     stepItems: []
     name: What courses will we write?
     uuid: 64f91c87-47b2-4bf0-a54c-b815a1e8c827
-  - content: | 
+  - uuid: bd8f0b48-4e61-478a-b275-68e3c93db760
+    content: | 
       Currently contributing to courses involves working on a chapter which
       has \"two\" tasks
       1. Readings and Summaries - Create yaml file with details of readings and summaries for that chapter. e.g. [https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml](https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml)
@@ -117,10 +118,13 @@ steps:
         for now its not needed. Also make sure that your name is added on a Trello card corresponding to the task you are working on.
     stepItems: []
     name: Contributing
-    uuid: bd8f0b48-4e61-478a-b275-68e3c93db760
   - content: ''
     stepItems:
-      - answerKeys:
+      - uuid: f12c2758-858d-4fe4-9560-f4dd9454f89a
+        content: What two tasks are currently part of the work involved for a chapter
+          of a course?
+        type: MultipleChoice
+        answerKeys:
           - 90420cff
           - 2a0ac8ef
         choices:
@@ -132,10 +136,7 @@ steps:
             key: 90420cff
           - content: Create a mind map
             key: 2d9e55e8
-        content: What two tasks are currently part of the work involved for a chapter
-          of a course?
-        type: MultipleChoice
-        uuid: f12c2758-858d-4fe4-9560-f4dd9454f89a
+
       - answerKeys:
           - 86cd5c4a
         choices:
