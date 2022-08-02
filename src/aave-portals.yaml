@@ -1,0 +1,28 @@
+uuid: 418a58f3-0786-4491-aa4a-fe4458318154
+name: AAVE Portals
+content: Explains why and what courses are we working on
+guideType: onboarding
+created: "2022-08-02T04:15:13.911Z"
+categories:
+  - developer
+  - engineering
+thumbnail: ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8
+publishStatus: Live
+socialShareImage:
+showIncorrectOnCompletion: true
+steps:
+  - uuid: a0c218b2-e419-48d4-a21e-e2f57451f3ba
+    name: Background
+    content: |
+      What are the problems we face currently without portals
+    stepItems: []
+  - uuid: 47c6e447-29a9-4362-96aa-7b4c3c9dbfc1
+    name: What are protals and its advantages
+    content: |
+      What are protals and its advantages
+    stepItems: []
+  - uuid: 11289c4d-ef20-4f46-9061-40531ff29510
+    name: How portals work
+    content: |
+      How portals work
+    stepItems: []

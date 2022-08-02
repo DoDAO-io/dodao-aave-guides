@@ -1,0 +1,41 @@
+{
+  "uuid": "dd88bfc9-43d2-499e-908e-8b752d62ae7a",
+  "name": "AAVE Risk Management",
+  "content": "AAVE Risk Management",
+  "guideType": "onboarding",
+  "created": "2022-08-02T04:15:13.911Z",
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "uuid": "fac2cc55-453f-4b49-8d5e-fe29d0f70a60",
+      "name": "Risk Overview",
+      "content": "Risk Overview\n* What is Risk in decenralized finance\n* What type of risks are there\nhttps://docs.aave.com/risk/\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "6d902d63-d49f-4a56-b39d-dea20ca21bae",
+      "name": "Asset Risk",
+      "content": "Asset Risk\n* Risks associated with adding an asset\n* Methodology\n* Risk per asset\n* Risk Parameters\nhttps://docs.aave.com/risk/asset-risk/introduction\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "ffd7e0fd-34b0-4988-8db2-4d29d4ffd702",
+      "name": "Liquidity Risk",
+      "content": "Liquidity Risk\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "2c2f0abf-7a6b-4ac6-b0a0-f25a6ce7cb4d",
+      "name": "External Audits & Analysis",
+      "content": "External Audits & Analysis\n",
+      "stepItems": []
+    }
+  ]
+}

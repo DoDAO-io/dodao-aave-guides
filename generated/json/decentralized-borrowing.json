@@ -1,0 +1,41 @@
+{
+  "uuid": "3b2bff62-b11c-4fae-a10a-94c2840470e1",
+  "name": "Decentralized Borrowing",
+  "content": "Decentralized Borrowing",
+  "guideType": "onboarding",
+  "created": "2022-08-02T04:15:13.911Z",
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "uuid": "c82bf74b-d0a0-444c-b09c-35f3017ec6e5",
+      "name": "What is decentralized borrowing",
+      "content": "What is decentralized borrowing\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "cc9e16e3-9d71-46ab-a647-648237c4d4c5",
+      "name": "How to withdraw money in AAVE",
+      "content": "How to withdraw money in AAVE\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "cedcb999-9285-4cb5-962a-4ac417b6eb3e",
+      "name": "How withdraw rate is calculated",
+      "content": "How withdraw rate is calculated\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "b3177ea0-0aa6-46f1-87f7-01600e169764",
+      "name": "Risks",
+      "content": "Risks\n",
+      "stepItems": []
+    }
+  ]
+}

@@ -1,9 +1,15 @@
 guides:
-  - key: intro-aave-v3
-    path: intro-aave-v3.yaml
   - key: lending-and-borrowing-basics
     path: lending-and-borrowing-basics.yaml
-  - key: a-tokens
-    path: a-tokens.yaml
+  - key: decentralized-lending
+    path: decentralized-lending.yaml
+  - key: decentralized-borrowing
+    path: decentralized-borrowing.yaml
   - key: flash-loan
     path: flash-loan.yaml
+  - key: intro-aave-v3
+    path: intro-aave-v3.yaml
+  - key: aave-portals
+    path: aave-portals.yaml
+  - key: aave-risk-management
+    path: aave-risk-management.yaml
