@@ -1,0 +1,24 @@
+{
+  "uuid": "49a5f5b2-ef0c-43cc-93a6-dd7dde8dd0e8",
+  "key": "aave-sandbox",
+  "name": "AAVE Sandbox",
+  "content": "Explains how you can use AAVE Sandbox",
+  "guideType": "onboarding",
+  "created": "2022-08-02T04:15:13.911Z",
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "uuid": "8c914bb2-274a-490b-aa88-c3d6ec5f210f",
+      "name": "Aave Sandbox",
+      "content": "Aave Sandbox\nSee here - https://github.com/aave/aave-sandbox\n",
+      "stepItems": []
+    }
+  ]
+}

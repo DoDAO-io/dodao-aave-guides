@@ -1,0 +1,48 @@
+{
+  "uuid": "0de15878-df46-4b62-a536-d1446d3eef80",
+  "key": "aave-npm-packages",
+  "name": "AAVE NPM Packages",
+  "content": "Explains the important NPM packages",
+  "guideType": "onboarding",
+  "created": "2022-08-02T04:15:13.911Z",
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "uuid": "18f145d1-e807-4da3-98f3-57d010354ce0",
+      "name": "List of packages",
+      "content": "List of packages\nSee here - https://www.npmjs.com/search?q=%40aave\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "9f1c2cb4-156a-43d5-940f-9e0535a8fe8c",
+      "name": "core-v3",
+      "content": "https://www.npmjs.com/package/@aave/core-v3\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "3833603a-548f-4ae7-b782-23872c3847a4",
+      "name": "periphery-v3",
+      "content": "https://www.npmjs.com/package/@aave/periphery-v3\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "ab3a17f8-5eba-472d-9a6b-75165a89ac93",
+      "name": "contract-helpers",
+      "content": "https://www.npmjs.com/package/@aave/contract-helpers\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "f8f744f8-0758-4ce2-8b36-4e5d82eff6d9",
+      "name": "math-utils",
+      "content": "https://www.npmjs.com/package/@aave/math-utils\n",
+      "stepItems": []
+    }
+  ]
+}

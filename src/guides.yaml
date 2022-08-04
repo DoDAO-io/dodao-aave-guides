@@ -6,4 +6,6 @@ guides:
   - intro-aave-v3.yaml
   - aave-portals.yaml
   - aave-risk-management.yaml
+  - aave-npm-packages.yaml
+  - aave-sandbox.yaml
 #  - aave-governance.yaml
