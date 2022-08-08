@@ -1,0 +1,24 @@
+{
+  "uuid": "15bb13b9-c795-445c-b7d8-f6f69430a30f",
+  "key": "aavenomics",
+  "name": "AAVEnomics",
+  "content": "Explains tokenomics of AAVE",
+  "guideType": "onboarding",
+  "created": "2022-08-02T04:15:13.911Z",
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/guides/eth/aave/AAVENomics_Thumbnail.png",
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "uuid": "fab0e9b5-619b-4dac-90a9-56d81bc4288c",
+      "name": "AAVEnomics Intro",
+      "content": "AAVEnomics Intro\n",
+      "stepItems": []
+    }
+  ]
+}
