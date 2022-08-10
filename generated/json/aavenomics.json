@@ -247,6 +247,23 @@
           ]
         }
       ]
+    },
+    {
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "5a0cb998-8266-4161-bc58-1a17f7beedf7",
+          "label": "Nick Name",
+          "required": true,
+          "type": "PublicShortInput"
+        },
+        {
+          "uuid": "ccbd4581-c57b-44ec-b815-2388967de66c",
+          "type": "UserDiscordConnect"
+        }
+      ],
+      "name": "Your Info",
+      "uuid": "e80a4fe9-9f90-4870-89d1-1e94e403430c"
     }
   ]
 }
