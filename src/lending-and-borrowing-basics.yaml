@@ -146,7 +146,7 @@ steps:
       LTV = (Mortgage amount / Appraised property value)
     stepItems: []
 
-  - uuid: e4ab6fd2-bba6-46ae-8a31-c401e0030eeb
+  - uuid: f7ce0f0c-19b2-4ff3-b8ad-62f1020983be
     name: Evaluation
     content: |
     stepItems:
@@ -330,7 +330,6 @@ steps:
       * Same as the traditional lending and borrowing system: the borrower puts up collateral to be able to borrow, and the lender gets compensated for sharing his resources
       * An intermediary is absent.
       * No concept of credit or trust.
-      * It keeps the users anonymous.
       
       **Working:**
       
@@ -342,12 +341,10 @@ steps:
       **Fees:**
       There are no fees clipped onto the borrower. The borrower is simply to pay back the loan with interest.
       
-      
+
       **Advantages:**
       
       * **Speed** - Defi lending platforms run on cloud-based services. Analytics for fraud identification and analytics use of machine learning to facilitate data comprehension are all used for calculating loan terms and risk factors. 
-        
-      * **Flexibility** -  Assets can be moved anywhere anytime without permission from a governing body and without having to pay unforeseen fees on such transfers.
       
       * **Open** - No lengthy processes, assessments, and paperwork go into applying for a loan. All you need is a crypto wallet.
       
@@ -512,4 +509,3 @@ steps:
             key: C
           - content: None of these
             key: D
-
