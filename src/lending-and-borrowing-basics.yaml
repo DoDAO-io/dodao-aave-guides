@@ -12,28 +12,16 @@ publishStatus: Live
 socialShareImage:
 showIncorrectOnCompletion: true
 steps:
-  - uuid: b1413730-ff52-45d7-9d63-cddb990092f0
-    name: What you will learn
-    content: |
-      * Some basic financial terms
-      * What are borrowing and lending?
-      * Traditional finance, Its workings, Pros, and cons.
-      * DeFi, Its workings, Pros, and cons.
-      * Similarities and differences between traditional and Decentralized finance.
-    stepItems: []
-    
   - uuid: 5b219e8e-77f3-4a37-af98-432e428a227a
-    name: What is Lending and Borrowing
+    name: Lending and Borrowing Basics
     content: |
-      ## Lending and Borrowing
-
-      **Lending:**
+      ### Lending
       * The act of allowing someone else or another entity to use the lender's assets.
       * The lender gets compensated for his contribution in the form of interest.
       * Lending helps prevent the value of assets (especially money) from degrading over time.
       * Returns on lending to banks are fixed and stable, But minuscule.
 
-      **Borrowing:**
+      ### Borrowing
       * Borrowing is the act of receiving something from someone under the agreement that the asset or an agreed-upon equivalent of the asset borrowed will be returned after a certain period. 
       * The agreed-upon equivalent against which a loan is taken is called collateral.
       * The purpose of borrowing is to use an asset you do not currently have by producing something you already own as security of repayment of the borrowed asset.
@@ -52,7 +40,7 @@ steps:
     stepItems:
       - uuid: 5d98b5ad-bd00-4119-925a-f8d1dd4e8818
         content: |
-          The act of allowing someone else to use ones assets is called:
+          The act of allowing someone else to use ones assets is called
         answerKeys:
           - A
         type: SingleChoice
@@ -83,7 +71,7 @@ steps:
             
       - uuid: dcc7f1b8-b052-442a-a209-a56fc43bd6c4
         content: |
-          The act of receiving assets against collateral produced as security for repayment is called:
+          The act of receiving assets against collateral produced as security for repayment is called
         answerKeys:
           - C
         type: SingleChoice
@@ -99,14 +87,14 @@ steps:
             
       - uuid: 480032e0-c14d-472a-85d0-2054e37751f7
         content: |
-          Lending and Borrowing can be done via:
+          Lending and Borrowing can be done via
         answerKeys:
           - C
         type: SingleChoice
         choices:
           - content: Banks
             key: A
-          - content: Decentralized finance organizations
+          - content: Decentralized Finance Protocols
             key: B
           - content: Both A and B
             key: C
@@ -117,33 +105,36 @@ steps:
     name: Terms used in finance
     content: |
       ## Some General Terms in finance
-      **Liquidation - ** The act of turning assets into cash is called liquidation. The assets held by an entity in the form of cash are called liquid assets. The ability of an asset to be converted into cash is generally referred to as Liquidability.
+      **Liquidation** - The act of turning assets into cash is called liquidation. The assets held by an entity in the form of cash are called liquid assets. The ability of an asset to be converted into cash is generally referred to as Liquidability.
       
-      **Credit/FICO score - **A credit score from 300 to 850 depicts a consumer’s credibility. It is based on credit history, timely loan repayments, etc. The higher the credit score, The more likely you are to get a better loan offer.
+      **Credit/FICO score** - A credit score from 300 to 850 depicts a consumer’s credibility. It is based on credit history, timely loan repayments, etc. The higher the credit score, The more likely you are to get a better loan offer.
       
-      **Collateral - **Asset against which something is borrowed.
+      **Collateral** - Asset against which something is borrowed.
       
-      **Interest rate - **The part of the loan that is charged as interest to the borrower. The rate of premium paid over the actual amount borrowed.
+      **Interest rate** - The part of the loan that is charged as interest to the borrower. The rate of premium paid over the actual amount borrowed.
       
-      **Return of investment - **The portion of the investment provided as an incentive for providing liquidity or letting your assets be borrowed is called the rate of returns.
+      **Return of investment** - The portion of the investment provided as an incentive for providing liquidity or letting your assets be borrowed is called the rate of returns.
       
-      **Over-collateralization - **When the value of the collateral provided supersedes the value of assets borrowed, It is called over-collateralization.
+      **Over-collateralization** - When the value of the collateral provided supersedes the value of assets borrowed, It is called over-collateralization.
       
-      **Financial solvency - **The Ability of an entity to meet its long-term debts and other financial obligations.
+      **Financial solvency** - The Ability of an entity to meet its long-term debts and other financial obligations.
       
-      **Borrowing capacity - **The maximum amount an entity can borrow without compromising its financial solvency.
+      **Borrowing capacity** - The maximum amount an entity can borrow without compromising its financial solvency.
       
-      **APY - **APY stands for Annual Percentage Yield. It is the total amount of money, i.e., the return of investment earned by a bank account in a year.
+      **APY** - APY stands for Annual Percentage Yield. It is the total amount of money, i.e., the return of investment earned by a bank account in a year.
       
-      **APR - **APR stands for Annual Percentage Rate. It refers to the interest generated by the sum lent or borrowed in a year.
+      **APR** - APR stands for Annual Percentage Rate. It refers to the interest generated by the sum lent or borrowed in a year.
       
-      **Inflation - **It is the rate of rise in prices of goods and services.
+      **Inflation** - It is the rate of rise in prices of goods and services.
       
-      **Mortgage - **It is collateral produced in the loans taken for housing, Where the collateral is the real estate itself. It is basically an agreement between the lender and borrower that allows the lender to take ownership of the property in case of default in repayment by the borrower.
+      **Mortgage** - It is collateral produced in the loans taken for housing, Where the collateral is the real estate 
+      itself. It is basically an agreement between the lender and borrower that allows the lender to take ownership of 
+      the property in case of default in repayment by the borrower.
       
-      **Loan-to-value (LTV) ratio - **Often used in mortgage assessment. It is an assessment of lending risk that lenders examine before approving a mortgage. Often used in mortgage lending in order to determine the amount to be put in a down payment and whether a lender will extend credit to a borrower. It is to be noted that lower LTVs are more favorable to the lenders. 
-      
-      LTV = (Mortgage amount / Appraised property value)
+      **Loan-to-value (LTV) ratio** - Often used in mortgage assessment. It is an assessment of lending risk that lenders 
+      examine before approving a mortgage. Often used in mortgage lending in order to determine the amount to be put in a 
+      down payment and whether a lender will extend credit to a borrower. It is to be noted that lower LTVs are more 
+      favorable to the lenders. LTV = (Mortgage amount / Appraised property value)
     stepItems: []
 
   - uuid: f7ce0f0c-19b2-4ff3-b8ad-62f1020983be
@@ -199,7 +190,7 @@ steps:
         content: |
           APR stands for:
         answerKeys:
-          - D
+          - A
         type: SingleChoice
         choices:
           - content: Annual Percentage Rate
@@ -214,44 +205,42 @@ steps:
   - uuid: 374de180-d5af-42b3-8e34-c267a7cc0de0
     name: Lending and Borrowing in Traditional Finance
     content: |
-      **Traditional financial systems:**
-
-      **Principle:**
+      ### Principle
       Lenders deposit their money in banks. The bank then uses this money and provides loans to borrowers for some rate of interest. The lenders are compensated with interest for their contribution.
       The difference in APR provided to lenders and borrowers is the bank's revenue.
       
-      **Working:**
-      
-      * They run on a trust-based/credibility-based system, Calucated by FICO score.
-      * Involves multiple agreements and paperwork. In these agreements, information regarding the loan repayment period, Legal actions that could be taken on the borrower in case of default, The rate of interest, and Fees (if applicable) are specified. 
+      ### Working      
+      * They run on a trust-based/credibility-based system calcuated by FICO score.
+      * Involves multiple agreements and paperwork. 
       * On getting sanctioned, The loan must be repaid along with interest within the period of the loan.
       * Usually, the repayment period varies from one to seven years.
       
-      **Fees:**
-      * Application fee: For the process of applying for a loan.
-      * Processing fee: For the processing/ sanctioning of a loan.
-      * Origination fee: The cost of securing a loan.The 
-      * Annual fee: A yearly fee that must be paid to the lender.
-      * Late fee: The fee paid on late pay
-      * Prepayment fee: The cost of paying a loan off early.
+      ### Fees
+      * **Application fee** : For the process of applying for a loan.
+      * **Processing fee** : For the processing/sanctioning of a loan.
+      * **Origination fee** : The cost of securing a loan.
+      * **Annual fee** : A yearly fee that must be paid to the lender.
+      * **Late fee** : The fee paid on late pay
+      * **Prepayment fee** : The cost of paying a loan off early.
       
-      **Advantages:**  
+      ### Advantages  
       
-      * **Heavily regulated** - Though there is a possibility of scams, There are regulatory bodies whose job is to protect the consumer and stakeholders.
-      
+      * **Heavily regulated** - Though there is a possibility of scams, there are regulatory bodies whose job is to protect the consumer and stakeholders.      
       * **Accountability** - The possibility of your assets getting locked without return is next to impossible.
-      
       * **Accessibility** - Banks have a well-developed supply chain.
       
       
-      **Disadvantages:**
-        
-      * **Inefficient** - Banks spend large sums of money to setup fancy buildings and offices, And the workforce in banks, Consisting primarily of people, Is prone to inefficiency and burnout.  Not to forget the process of loans is an extensively time-consuming process with a lot of paperwork.
+      ### Disadvantages        
+      * **Inefficient** - Banks spend large sums of money to setup fancy buildings and offices, and the workforce in banks 
+      consisting primarily of people is prone to inefficiency and burnout.  Not to forget the process of loans is an 
+      extensively time-consuming process with a lot of paperwork.
       
-      * **Transparency and Returns** - The banks do not disclose their profits and margins to the general public. Banks often offer paltry returns to the lender in comparison to other investment opportunities. \
-      Note that the lesser the returns offered to the lender, More the profit margin for the banks, One can see how this can be problematic. 
+      * **Transparency and Returns** - The banks do not disclose their profits and margins to the general public. Banks 
+      often offer paltry returns to the lender in comparison to other investment opportunities. Note that the lesser the 
+      returns offered to the lender, more the profit margin for the banks. One can see how this can be problematic. 
             
-      * **Lack of innovation** - The banking sector has been acting on more-or-less the same principles and workings without too many changes in the last 10 or so years.
+      * **Lack of innovation** - The banking sector has been acting on more-or-less the same principles and workings 
+      without too many changes in the last 10 or so years.
     stepItems: []
 
   - uuid: 35a2623f-7dc5-4049-91bc-d0c7f951163d
@@ -322,42 +311,38 @@ steps:
   - uuid: 9adb253f-b98f-4049-b7b9-310aaa453ceb
     name: Lending and Borrowing in DeFi
     content: |
-      **Lending and Borrowing in DeFi**
-
       The financial organizations and protocols in the blockchain that work on a decentralized version of traditional finance are called DeFi organizations. 
       
-      **Principle:**
+      ### Principle
       * Same as the traditional lending and borrowing system: the borrower puts up collateral to be able to borrow, and the lender gets compensated for sharing his resources
       * An intermediary is absent.
       * No concept of credit or trust.
       
-      **Working:**
-      
+      ### Working      
       * The protocol maintains a "liquidity pool" where all lenders' assets (liquidity) get pooled.
       * The borrowers ask for a loan by "over collateralizing" the assets they own in return for the assets they want.
       * The lenders are compensated for their resources by providing them with crypto assets, primarily the DeFi protocol's crypto coins.
       * Since DeFi is decentralized, The changes made in the protocol are often decided by voting.
       
-      **Fees:**
+      ### Fees
       There are no fees clipped onto the borrower. The borrower is simply to pay back the loan with interest.
       
 
-      **Advantages:**
-      
-      * **Speed** - Defi lending platforms run on cloud-based services. Analytics for fraud identification and analytics use of machine learning to facilitate data comprehension are all used for calculating loan terms and risk factors. 
+      ### Advantages      
+      * **Speed** - Defi lending platforms run on cloud-based services. Analytics for fraud identification and analytics 
+      use of machine learning to facilitate data comprehension are all used for calculating loan terms and risk factors.       
       
       * **Open** - No lengthy processes, assessments, and paperwork go into applying for a loan. All you need is a crypto wallet.
       
       * **Immutability** - Blockchain's decentralized architecture ensures that the data it contains cannot be tampered with. 
       
 
-      **Disadvantages:**
-      
-      * **Taxes** -The user has to maintain their record for tax purposes, And it varies from region to region, causing much confusion. 
+      ### Disadvantages      
+      * **Taxes** -The user has to maintain their record for tax purposes, and it varies from region to region, causing much confusion. 
 
       * **Volatility** -The Crypto market is highly volatile.
       
-      * **Tech failures and hacks** -Tech failures have caused a substantial quantity of assets to be locked up in a smart contract.
+      * **Tech failures and hacks** - Tech failures have caused a substantial quantity of assets to be locked up in a smart contract.
       
     
     stepItems: []
@@ -430,14 +415,12 @@ steps:
   - uuid: ca9a9bab-d18f-4ac6-b9a1-ccb96fe49ec1
     name: Differences in Traditional and Decentralized Finance
     content: |
-     
-      **Some Differences in Traditional and Defi finance:**
-      | **Traditional Finance**                                                                                                                                                                                  | **Decentralized Finance**                                                                                  |
+      | Traditional Finance                                                                                                                                                                                      | Decentralized Finance                                                                                      |
       |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-      | Traditional financial institutions are built on hierarchical foundations; They work to satisfy the interests of the apex of the hierarchy.                                                               | DeFi's structure is decentralized, and there is no ultimate governing body. Its users run it.              |
-      | In traditional finance, The bank or some other financial institution acts as an intermediary between the lender and the buyer. It makes profits off of the difference in rates of interest it specifies. | DeFi has no intermediary, and the transaction follows a peer-to-peer structure                             |
-      | Banks have an extensive process of checking the borrower's eligibility. They have lengthy Application and Sanctioning; They also levy fees on these processes.                                           | In DeFi, however, it is seamless, and often the borrower only needs to have a crypto wallet to get a loan. |
-      | In Traditional finance, we do not over-collateralize. We use an asset as collateral to get assets against it.                                                                                            | However, In DeFi, the idea of over-collateralization is adopted.                                           |
+      | Traditional financial institutions are built on hierarchical foundations. They work to satisfy the interests of the apex of the hierarchy.                                                               | DeFi's structure is decentralized, and there is no ultimate governing body.              |
+      | In traditional finance the bank or some other financial institution acts as an intermediary between the lender and the buyer. It makes profits off of the difference in rates of interest it specifies. | DeFi has no intermediary, and the transaction follows a peer-to-peer structure or peer-protocol-peer structure with no central authority                            |
+      | Banks have an extensive process of checking the borrower's eligibility. They have lengthy Application and sanctioning. They also levy fees on these processes.                                           | In DeFi, however, it is seamless, and often the borrower only needs to have a crypto wallet to get a loan. |
+      | In Traditional finance, we do not over-collateralize. We use an asset as collateral to get assets against it.                                                                                            | However, In DeFi, the idea of over-collateralization is adopted to protect againt vollatility of assets                                           |
       | The rate of returns in traditional finance is paltry.                                                                                                                                                    | On average DeFi lending offers much more return on investment than traditional lending.                    |
 
     stepItems: []
@@ -448,7 +431,7 @@ steps:
     stepItems:
       - uuid: a14047c5-1188-441c-a3ad-53ec083197b5
         content: | 
-          The main difference in the structure of Traditional and decentralized finance is:
+          The main difference in the structure of Traditional and decentralized finance is
         answerKeys:
           - B
         type: SingleChoice
@@ -464,15 +447,14 @@ steps:
             
       - uuid: 6acc16ca-5978-4ff2-87d1-c7f780292fd7
         content: |
-          The intermediaries present in Tradtional and Decentralized Finance are:
-        
+          The intermediaries present in Tradtional and Decentralized Finance are
         answerKeys:
           - C
         type: SingleChoice
         choices:
           - content: The Bank
             key: A
-          - content: Liquidity Pools
+          - content: Lending & Borrowing Protocol & Liquidity Pools
             key: B
           - content: Both A and B
             key: C
@@ -503,7 +485,7 @@ steps:
         choices:
           - content: Traditional financial instituitions
             key: A
-          - content: Decentralized financial instituitions
+          - content: DeFi Protocols
             key: B
           - content: Both of these
             key: C
