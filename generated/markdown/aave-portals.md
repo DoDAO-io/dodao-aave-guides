@@ -8,28 +8,25 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
 ## Overview
 
-## Layer 2 Blockhains and its disadvantages 
-In 2020, we have seen gas prices hike, and transactions are expensive. Have you thought about why this has happened this all happened due to the 
-increased users and a lot of transaction requests which the Ethereum main chain cannot handle as Ethereum was able to handle only 30 transactions per second.
-This makes the transactions more difficult and time-consuming also, the proof-of-work model consumes a lot of energy for mining, so we need an upgrade for 
-this issue without compromising decentralization and security.
-So, we need alternate chains or enhanced mainchains so the intensity in the mainnet will decrease and the transactions will be more feasible. 
-So we started to move on to scale the Ethereum network.
-The main reason is to scale up the blockchain technology as the number of users grows exponentially we need to scale up the network 
-without sacrificing decentralization and security. The solution is to create a layer 2 solution or create efficient chains so it can handle the scaling problems.
+### Layer 2 Blockchains 
+In 2020, we have seen gas prices hike, and transactions are expensive. This all happened due to the increased users and a lot of transaction requests which 
+the Ethereum main chain cannot handle as Ethereum was able to handle only 30 transactions per second.
 
-Reasons they exist include 
-1. High fees for the transaction 
-2. Busy network, which makes Ethereum-based transactions expensive. 
-3. low transaction throughput (the Ethereum network can handle 30 transactions per second). 
-4. The transactions are slow compared to centralized ones. 
+This makes the transactions more difficult and time-consuming, and the proof-of-work model consumes a lot of energy for mining. So we need an upgrade for 
+these issue without compromising decentralization and security.
 
-Disadvantages of multiple blockchains
+Layer 2 chains provided this alternative making the transaction cost quite less and making transactions faster. The main reason Layer 2 blockchains exists is to scale up the blockchain 
+technology as the number of users grows exponentially we need to scale up the network without sacrificing decentralization and security. 
+
+### Reasons they exist include 
+1. Busy network, which makes Ethereum-based transactions expensive. 
+2. low transaction throughput (the Ethereum network can handle 30 transactions per second).  
+
+### Disadvantages of multiple blockchains
 * It leads to confusion to choose among them. 
-* The assets will be split into different chains, so it will be difficult to integrate them as we are required to pay a fee for asset transfer from chain to chain.
-* some features in one chain will not be in another chain example, plasma chains do not compute, so they cannot run smart contracts. As we are scaling,
-   we are required to sacrifice some other features in Ethereum to scale up the network, which leads to segregation and security loss.
-* Most Defi protocols and marketplaces are Ethereum based, so we need to move our assets from one chain to another.
+* The assets will be split into different chains, so it will be difficult to integrate them as we are required to 
+  pay a fee for asset transfer from chain to chain.
+* Most Defi protocols and marketplaces are Ethereum based, so we need to move our assets from one chain to another and every time we decide to use our funds in a protocol.
 
 
     
@@ -39,7 +36,7 @@ Disadvantages of multiple blockchains
 ## Tranferring assets using Blockchain bridges
 
 Why do we need to transfer our assets from one chain to another?
-* Transaction fees- The transaction fees are very low in the polygon network compared to Ethereum main network. Hence, we transfer our assets from Ethereum to Polygon to enjoy low transaction fees. This is just one example even other networks have very low fees for transferring assets.
+* Transaction fees - The transaction fees are very low in the polygon network compared to Ethereum main network. Hence, we transfer our assets from Ethereum to Polygon to enjoy low transaction fees. This is just one example even other networks have very low fees for transferring assets.
 * Transaction speed- Transaction speed is very low in the Ethereum network as it can process only 30 transactions per second, which is a very low transaction throughput, so we switch to other networks for fast transactions.
 * Liquidity Pools-  we will transfer assets to blockchains with high-interest rates or liquidity for trading.
 * Capital utility/ efficiency-Able to use all assets from all blockchains in one transaction.
