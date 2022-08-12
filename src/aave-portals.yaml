@@ -1,7 +1,7 @@
 uuid: 418a58f3-0786-4491-aa4a-fe4458318154
 key: aave-portals
 name: AAVE Portals
-content: Explains what are protals in AAVE V3 and its benefits
+content: Explains what are portals in AAVE V3 and its benefits
 guideType: onboarding
 created: "2022-08-02T04:15:13.911Z"
 categories:
@@ -75,7 +75,7 @@ steps:
           - B
         type: MultipleChoice
         choices:
-          - content: More opportunities
+          - content: More Valuable in other chains
             key: A
           - content: Transaction fee may be lower in other chains
             key: B
@@ -92,16 +92,16 @@ steps:
                               can't be used after bridging. This is the method that we saw previously.
         
         2. **Burn and mint**: In this method, assets are burnt (destroyed) in the source blockchain and minted or created in the destination blockchain. 
-                              Example [Hop](https://hop.exchange/), [across](https://across.to/).
-                              In this method, instead of locking the original assets, it is completely destroyed this will happens in the case of token 
-                              transfers as tokens don’t have a native blockchain.
+                              Example [Hop](https://hop.exchange/), [across](https://across.to/).This will happens in the case of token transfers as tokens 
+                              don’t have a native blockchain.
+                              
         
         3. **Atomic swaps** : In this method, assets are swapped from source chain to destination chain using smart contracts, which removes the trust issues and 
                               involvement of third-party. Example [connext](https://www.connext.network/).unlike locking or burning, the assets are swapped 
                               with the help of smart contracts.
 
         Disadvantages of Bridges
-        * **Smart contract risks** - This issues can occur in both trusted and trustless bridges as both depend on smart contracts.
+        * **Smart contract risks** - This issue can occur in both trusted and trustless bridges as both depend on smart contracts.
                                      If there is a bug in a smart contract,there is a possibility of hacking assets, for example, Solana’s warm hole bridge. 
                                      Source: [link](https://rekt.news/wormhole-rekt/).
         * **Systematic Financial risks** - Most of the Bridges use wrapped assets to mint canonical versions of original assets in the new chain. This exposes the 
