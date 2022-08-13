@@ -2,7 +2,7 @@
   "uuid": "418a58f3-0786-4491-aa4a-fe4458318154",
   "key": "aave-portals",
   "name": "AAVE Portals",
-  "content": "Explains what are protals in AAVE V3 and its benefits",
+  "content": "Explains what are portals in AAVE V3 and its benefits",
   "guideType": "onboarding",
   "created": "2022-08-02T04:15:13.911Z",
   "categories": [
@@ -17,13 +17,73 @@
     {
       "uuid": "cf77bb07-3e96-4b2b-bcf7-185a57b3cdc6",
       "name": "Overview",
-      "content": "### Layer 2 Blockchains \nIn 2020, we have seen gas prices hike, and transactions are expensive. This all happened due to the increased users and a lot of transaction requests which \nthe Ethereum main chain cannot handle as Ethereum was able to handle only 30 transactions per second.\n\nThis makes the transactions more difficult and time-consuming, and the proof-of-work model consumes a lot of energy for mining. So we need an upgrade for \nthese issue without compromising decentralization and security.\n\nLayer 2 chains provided this alternative making the transaction cost quite less and making transactions faster. The main reason Layer 2 blockchains exists is to scale up the blockchain \ntechnology as the number of users grows exponentially we need to scale up the network without sacrificing decentralization and security. \n\n### Reasons they exist include \n1. Busy network, which makes Ethereum-based transactions expensive. \n2. low transaction throughput (the Ethereum network can handle 30 transactions per second).  \n\n### Disadvantages of multiple blockchains\n* It leads to confusion to choose among them. \n* The assets will be split into different chains, so it will be difficult to integrate them as we are required to \n  pay a fee for asset transfer from chain to chain.\n* Most Defi protocols and marketplaces are Ethereum based, so we need to move our assets from one chain to another and every time we decide to use our funds in a protocol.\n",
+      "content": "### Layer 2 Blockchains \nIn 2020, we had seen a lot of people using Ethereum, and transaction requests increased. However, Ethereum \ncan only handle 30 transactions per second. This limitation caused gas prices to hike and transactions to become expensive.\n\nOn Ethereum mainnet, transactions can be slow and difficult, and the proof-of-work model can use a lot of energy. So we need an alternative \nthat can improve these issues without compromising decentralization and security.\n\nLayer 2 chains offer an alternative to the high transaction costs and slow speeds of Ethereum blockchain. The main reason Layer 2 blockchains \nexist is to increase the scalability of the blockchain. As the number of users grows exponentially, we need to find a way to scale up the network without \nsacrificing decentralization and security.\n\n### Reasons they exist include \n1. Busy network, which makes Ethereum-based transactions expensive. \n2. Low transaction throughput (the Ethereum network can handle 30 transactions per second).  \n\n### Disadvantages of multiple blockchains\n* It leads to confusion to choose among them. \n* The assets will be split into different chains, so it will be difficult to integrate them as we are required to \n  pay a fee for asset transfer from chain to chain.\n* Most Defi protocols and marketplaces are Ethereum based, so we need to move our assets from one chain to another.\n",
       "stepItems": []
+    },
+    {
+      "uuid": "b6883de5-5786-4fb2-bece-c108b8636f81",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "637e61ed-bdf3-4b03-8285-8b4866ceb133",
+          "content": "What are the reasons for the existence of Layer2?",
+          "answerKeys": [
+            "B",
+            "C"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "To compete with the Ethereum",
+              "key": "A"
+            },
+            {
+              "content": "Low transaction fee",
+              "key": "B"
+            },
+            {
+              "content": "High transaction throughput",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "0f21a6e3-6bb2-438a-820f-99c10cdfcb14",
+          "content": "What are disadvantages with multiple blockchain?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "The assets are segregated",
+              "key": "A"
+            },
+            {
+              "content": "It leads to competetion between the networks",
+              "key": "B"
+            },
+            {
+              "content": "Makes the transfer faster",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
     },
     {
       "uuid": "0213406a-0ff3-4f4f-943b-e0215aac8a17",
       "name": "Tranferring assets using Blockchain bridges",
-      "content": "Why do we need to transfer our assets from one chain to another?\n* Transaction fees - The transaction fees are very low in the polygon network compared to Ethereum main network. Hence, we transfer our assets from Ethereum to Polygon to enjoy low transaction fees. This is just one example even other networks have very low fees for transferring assets.\n* Transaction speed- Transaction speed is very low in the Ethereum network as it can process only 30 transactions per second, which is a very low transaction throughput, so we switch to other networks for fast transactions.\n* Liquidity Pools-  we will transfer assets to blockchains with high-interest rates or liquidity for trading.\n* Capital utility/ efficiency-Able to use all assets from all blockchains in one transaction.\n\nWhat are blockchain bridges?\nbridges in crypto connect two different blockchains. This connection is important because, without a bridge, blockchains are siloed (isolated ) environments \nthat cannot communicate with each other.This is because each network has its own set of rules, governance mechanisms, and different types of protocols \nEthereum is currently based on a Proof-of-work mechanism, while other blockchains have different mechanisms, like Proof-of-stake, Proof-of space, etc.\nHowever with a bridge between two blockchains it becomes possible to transfer crypto-assets and arbitrary data between them. \nThus, bridges are essential for interoperability in the crypto ecosystem and are necessary to make different blockchain networks compatible.\n\nHow do they work?\nFirst, we will choose a bridging protocol to transfer our assets. Then the bridge contract in the source chain will lock our assets so that \nthe supply remains constant.Then issues or mints an equivalent amount of  Wrapped tokens of the assets to the bridge contract in the destination network \nso that the contract in the destination network verifies and sends the wrapped assets to our account.These wrapped assets then can be used for Defi protocols \nwhich have the same value as the original coin in the native network.So we can exchange the wrapped assets for other tokens or coins, or else we can get back our coin,\nfor which we need to reverse the process in which the wrapped assets are pegged for the original coin in the equivalent amount by using the bridge.\n",
+      "content": "## Why do we need to transfer our assets from one chain to another?\n* **Transaction fees** - Layer2 networks boast transaction fees that are significantly lower than those on the Ethereum \n  main network. As a result, we often transfer our assets over to Layer2 in order to take advantage of the low fees.\n* **Transaction speed** - Low transaction speed is a big pain point for Ethereum network as it can process only 30 \n transactions per second. This is a very low transaction throughput and causes a lot of inconvenience for users. \n So, we switch to other networks for fast transactions.\n* **Higher return on investment** -  transferring assets to blockchains with high-interest rates or liquidity for trading.\n* **Capital utility/efficiency** - Able to use all assets from all blockchains in one transaction.\n\nWhat are Blockchain Bridges?\nBridges in crypto act as a connection between two different blockchains. This connection is important because, \nwithout a bridge, blockchains would be isolated from each other. This is because each network has its own set of \nrules, governance mechanisms, and protocols. Ethereum is currently based on a Proof-of-Work mechanism, while \nother blockchains have different mechanisms, like Proof-of-Stake, Proof-of-Space, etc.\n\nHowever, with a bridge between two blockchains it becomes possible to transfer crypto-assets and arbitrary data between them. \nThus, bridges are essential for interoperability in the crypto ecosystem and are necessary to make different blockchain networks compatible.\n\n## How bridges work?\nWe choose a bridging protocol to transfer our assets. Then, the bridge contract in the source chain will lock our \nassets so that the supply remains constant.  \n\nThe bridge contract will then mint an equivalent amount of wrapped tokens of the assets to the bridge contract in \nthe destination network. The contract in the destination network will verify and send the wrapped assets to our account.\n\nThese wrapped assets can then be used for Defi protocols which have the same value as the original coin in the \nnative network. So we can exchange the wrapped assets for other tokens or coins, or else we can get back our coin, \nfor which we need to reverse the process in which the wrapped assets are pegged for the original coin in the \nequivalent amount.\n",
       "stepItems": []
     },
     {
@@ -41,7 +101,7 @@
           "type": "MultipleChoice",
           "choices": [
             {
-              "content": "More oppurtunities",
+              "content": "More Valuable in other chains",
               "key": "A"
             },
             {
@@ -49,11 +109,63 @@
               "key": "B"
             },
             {
-              "content": "Oppurturnities in Liquidity pools in other chains",
+              "content": "Opportunities in Liquidity pools of other chains",
               "key": "C"
             },
             {
               "content": "To secure our assets",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "de2dcaf8-3058-4144-9ee4-03057e09cfd8",
+          "content": "What are Blockchain Bridges?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "It is a crypto bridge which connects bitcoin and Ethereum network only.",
+              "key": "A"
+            },
+            {
+              "content": "It is a network like Ethereum",
+              "key": "B"
+            },
+            {
+              "content": "It is a crypto bridge which connects different networks",
+              "key": "C"
+            },
+            {
+              "content": "It is a token",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "fd742807-5655-4c1c-9ec4-c6f939f28d37",
+          "content": "What are Wrapped tokens?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "It is token like",
+              "key": "A"
+            },
+            {
+              "content": "The wrapped coin is a representation of a cryptocurrency from another blockchain",
+              "key": "B"
+            },
+            {
+              "content": "It is an assets like NFT",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
               "key": "D"
             }
           ]
@@ -62,8 +174,8 @@
     },
     {
       "uuid": "c38825b5-dccc-4666-bede-1a53f6c6faf0",
-      "name": "Types of transfer and disadvantages of bridges",
-      "content": "Bridging protocols transfer assets from one chain to other chains in three methods\n1. **Lock and mint**: In this method, the assets are locked in the source blockchain and minted (creation of tokens) in the destination chain the locked assets \n                      can't be used after bridging. This is the method that we saw above.\n\n2. **Burn and mint**: In this method, assets are burnt (destroyed) in the source blockchain and minted or created in the destination blockchain. \n                      Example [Hop](https://hop.exchange/), [across](https://across.to/).\n                      In this method, instead of locking the original assets, it is completely destroyed this will happens in the case of token transfers as tokens don’t have a native blockchain.\n\n3. **Atomic swaps** : In this method, assets are swapped from source chain to destination chain using smart contracts, which removes the trust issues and \n                     involvement of third-party. Example [connext](https://www.connext.network/).unlike locking or burning, the assets are swapped with the help of smart contracts.\n\nDisadvantages of Bridges\n* **Smart contract risks** - This issues can occur in both trusted and trustless bridges as both depend on smart contracts. If there is a bug in a smart contract,\n                            there is a possibility of hacking assets, for example, Solana’s warm hole bridge. Source: [link](https://rekt.news/wormhole-rekt/).\n* **Systematic Financial risks** - Most of the Bridges use wrapped assets to mint canonical versions of original assets in the new chain. This exposes the \n                                    bridge to systematic risks as there is the possibility of wrapped tokens getting exploited.\n* **Trust issues** - Some bridges use the third party as verifiers for the transfer of the assets, that require users to rely on the assumption that validators \n                    will not collude to steal our funds. This will include being rug pulled, censorship, and other suspicious activities.\n* **Nascent stage** - The bridges are in the nascent stages of development, so there are a lot of unsolved questions, like \n                    how bridges will perform in different market conditions.The transaction might take a lot of time in some cases.\n",
+      "name": "Disadvantages of bridges",
+      "content": "Disadvantages of Bridges\n* **Smart contract risks** - This issue can occur in both trusted and trustless bridges, as both rely on smart \n  contracts. If there is a bug in a smart contract, assets could be hacked - for example, Solana's warmhole bridge \n  was exploited in February 2022. Source: [link](https://rekt.news/wormhole-rekt/).\n\n* **Systematic Financial risks** - The majority of bridges use wrapped assets to mint canonical versions of original \n  assets on the new chain. However, this exposes the bridge to systematic risks, as there is always the potential \n  for wrapped tokens to be exploited\n* **Trust issues** - While other bridges use the third party as verifiers for the transfer of assets, this will \n  require users to put their trust in the assumption that validators will not engage in activities that would be \n  detrimental to users, such as rug pulling, censorship, or other suspicious activities.\n* **Nascent stage** - The bridges are still in its infancy, and a lot of key questions have yet to be \n  answered. For example, it's still unclear how these bridges will perform in a variety of different market \n  conditions. The process of settling transaction on a bridge can also be quite time-consuming in some cases.\n",
       "stepItems": []
     },
     {
@@ -71,32 +183,6 @@
       "name": "Evaluation",
       "content": "",
       "stepItems": [
-        {
-          "uuid": "b345f07d-e072-47e2-88fe-b537ede729e8",
-          "content": "Which of the following bridging protocol using atomic swaps for transferring assets?",
-          "answerKeys": [
-            "B"
-          ],
-          "type": "SingleChoice",
-          "choices": [
-            {
-              "content": "Polygon's Pos bridge",
-              "key": "A"
-            },
-            {
-              "content": "connext",
-              "key": "B"
-            },
-            {
-              "content": "hop protocol",
-              "key": "C"
-            },
-            {
-              "content": "across protocol",
-              "key": "D"
-            }
-          ]
-        },
         {
           "uuid": "a6a56493-939e-49e2-a4ed-11e43b75678e",
           "content": "What are the issues with Bridges?",
@@ -124,13 +210,39 @@
               "key": "D"
             }
           ]
+        },
+        {
+          "uuid": "d21f11ba-6ec5-420e-bb34-1753e920a85a",
+          "content": "Which of the following is correct about bridges?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Bridges have no issues and super efficient for transferring assets",
+              "key": "A"
+            },
+            {
+              "content": "Bridges help move assets from one chain to other",
+              "key": "B"
+            },
+            {
+              "content": "It has smartcontract issues and trust issues",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
         }
       ]
     },
     {
       "uuid": "2456eaac-4d99-4109-9524-bc833f023268",
-      "name": "AAVE Portals",
-      "content": "**AAVE Portals and how it simplifies the things** \nPortal's feature seamlessly allows assets to flow between Aave markets on different networks. Aave allows specific whitelist entities or specific bridges to \nburn atokens (atokens are nothing but AAVE’s token, which refers to a particular token as aDai refers to Dai ) in the source network and instantly minting \nthem on the destination network. The underlying assets are then transferred to the destination network in a deferred manner(postponed manner) by passing it to \nthe pool after it has been moved through the bridge. \n\nFirst of all, the transfers using portals are authorized for only approved bridges by Aave Governance, so the security is very tight. Also, the assets are \nmoved under smart contracts. The transactions are instant, so the user experience will be nice and users time is also saved. By this, many people will be \nattracted and start to use Aave portals, so the capital in Aave markets also increases drastically; this also encourages other alt chains to use them as \nthey have different kinds of features. So in simple words, it reduces all sorts of risks that we have seen in bridges not using Aave portals and the \ntransactions are very fast or instant, which is a great negative for normal bridging protocols.\n\nSo let us see what Aave portals are doing and simplify the issues by bridging protocols so first of all, the transfer is an instant process as the \natokens are minted instantly on the destination network, and the funds are transferred to the user instantly, so the bridging process is very fast. \nAave portals are ready-made fast exit solutions it mitigates the transportation by bridges. Users will experience seamless transfer speed by portal feature.\nThe portal feature make it very secure as only approved bridges can use this feauture and all the transfers are done by smartcontracts so it is very secure.\nAlso no matter what the market conditions the transfer is instant and guaranteed.So there is no trust issues,instant transactions,very secure, \nTransactions doesn't affected by any external condition , also it increases the capital efficiency of Aave protocol.Thus it solves almost  all the \nissues faced with bridges.\n",
+      "name": "AAVE Portals and how it simplifies the things",
+      "content": "Portal's feature seamlessly allows assets to flow between Aave markets on different networks. Aave allows specific \nwhitelist entities or specific bridges to burn atokens (atokens are nothing but AAVE’s token, which refers to a \nparticular token as aDai refers to Dai ) in the source network and instantly minting them on the destination \nnetwork. The underlying assets are then transferred to the destination network in a deferred manner(postponed manner) \nby passing it to the pool after it has been moved through the bridge. \n\nPortals are authorized for only approved bridges by Aave Governance. The assets are moved under smart contracts, \nmaking the transactions highly secure. Transactions with this system are quick and easy, so users will be able to \nsave time. Many people will be attracted to the Aave portal because of its features, which will in turn increase the \namount of capital in Aave markets. This also encourages other alt chains to use them as they have different kinds of \nfeatures. \n\nAave's new portal feature will help users overcome the difficulties of current bridging protocols, like \nliquidity fragmentation and non-optimal bridging experience. By reducing liquidity limitations of l2-l2 bridges, \nthe portal will allow for a seamless experience for users.\n\nAave portals make it easy to transfer funds between different protocols by creating aTokens that are instantly \nminted on the destination network. Aave's unique pooling system is trustless and secure. The assets are transferred \nto the Aave pool on the destination chain after the burning and minting of aTokens.\n\nAave portals can also contribute significant growth to rollups (scaling solution for Ethereum), so the user \nexperience of the network also increases. It acts as a gateway for some alt Evm L1 (alternate chains) which are \nheavily connected to centralized finance. However, Cefi's are slow to support a multiverse of chains. They are not \nsupporting alternative networks, which complicates onboarding new users as it can be costly and difficult to reach \nalternatives. So having portals on these networks reduces the difficulties by providing security and fast transactions, \nmaking alt Evm L1 attractive and easier to access.\n",
       "stepItems": []
     },
     {
@@ -142,7 +254,8 @@
           "uuid": "61af0855-3de6-4e88-91c9-eb1f29f58e07",
           "content": "What are the issues with the bridges does Aave portals solves?",
           "answerKeys": [
-            "A,B"
+            "A",
+            "B"
           ],
           "type": "MultipleChoice",
           "choices": [
@@ -151,15 +264,42 @@
               "key": "A"
             },
             {
-              "content": "It is very secure and it connects variety of networks with Aave markets",
+              "content": "It is very user firendly as user doesn't have to go through the process of transferring the assets to different bridges",
               "key": "B"
             },
             {
-              "content": "It gives interest for transfer",
+              "content": "It gives interest for transfering assets",
               "key": "C"
             },
             {
               "content": "It reduces the transaction fee for bridges",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "5b500249-d63f-4eec-ac5e-2feba209d064",
+          "content": "which of the following are correct about Portals?",
+          "answerKeys": [
+            "A",
+            "B"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Only specific approved bridges are allowed to mint unbacked aTokens and withraw assets from the destination network to the user's account.",
+              "key": "A"
+            },
+            {
+              "content": "Users cannot directly access Aave Portals",
+              "key": "B"
+            },
+            {
+              "content": "It makes bridges difficult to transfer",
+              "key": "C"
+            },
+            {
+              "content": "Users gain interest on transferring assets",
               "key": "D"
             }
           ]
@@ -169,7 +309,7 @@
     {
       "uuid": "3d633071-c2fb-4810-8db6-5e8a1221d6f7",
       "name": "How Portals work",
-      "content": "So first, the user sends Bridge tx to the bridge protocol. The Aave portals leverage the bridge to mint unbacked atokens in the destination network and \nwithdraw assets from the Aave liquidity pool in the destination network and send them to the user’s wallet. immediately from Aave v3. \n\nNow let us see how Portals makes transfers easily first, the approved bridges batch multiple users tx and then move assets from the source network to the \ndestination network this makes them very efficient as the funds are transferred instantly to the users, and then transactions are bulked together and \ntransferred to the destination in a deferred manner so it reduces a lot of time and congestion in the bridge network so people will be attracted to the bridges \nWhich are using Aave portal feature as the whole process is very trustable and an efficient process.\n\nOnce the assets are transferred by the bridging protocol, then the Bridge contract in L2 moves them to Aave v3 in the destination to back the unbacked atokens, \nwhich were minted whenever users transfer funds. As this process is based on the smart contract, in this case the bridge contract supplies the assets to \nAave protocol, so there is no risk involved with this transfer also, only approved bridges are able to use this feature, so security is perfect.There is a fee\ndeduction for bridges for using the Aave's portal feature which will be deducted automatically by the bridge contract.\n\n**Note: Aave portals are the only feature to transfer assets using bridges there is no core protocol for transferring directly from the user end.**\n\nIn simple words, the user's assets are directly provided by Aave in the destination network. Then the bridges withdraw assets using the atokens means it burns \nthem to withdraw from Aave. Then they batch multiple transaction assets and send them to the destination network. Then the bridge contract will exchange the \nassets for atokens with a fee. This is how bridges use Aave’s portal to transfer assets by using them, there is no other third party, no trust issues, \ninstant transactions for users, very good user experience; this also increases the liquidity of the Aave protocol as, by this, a lot of users can seamlessly \ntransfer funds without worrying. The fee which is provided to Aave will be decided by Aave governance.\n",
+      "content": "In order to bridge assets from one chain to another, the user first submits a bridge transaction to a verified \nbridging protocol (such as Connext). As soon as the transaction is mined, the user has access to the funds on the \ndestination chain. \n\nBehind the scenes, the bridging protocol mints unbacked aTokens on the destination chain to the intermediate \ncontract, and in turn withdraws and transfers the underlying asset to the user immediately. The bridge contract on \nL2 then supplies the underlying asset and fee to the Aave pool to back the previously minted unbacked aTokens. \n\nLater, once the funds are available on L2, a bridge contract on L2 (for example, with BRIDGE permissions on Aave V3) \ncan provide the underlying asset and fee to the Aave pool in order to back the previously minted unbacked aTokens.\n\nNote: Only approved bridges use this portal feature, so there is no risk of withdrawing funds from Aave v3. Also, Aave \nportals are just a feature to transfer assets efficiently, but we need bridging protocols to transfer our assets; \nthere are no other core protocols for directly using Aave portals from the user end. \n\nLet's say you want to transfer 50k Dai from Ethereum (L1) to Arbitrum (L2). You'd make a transaction request in Hop, \nand your assets would get deposited in Hop's liquidity pool. Then, Aave V3 would instantly withdraw the assets to \nyour account in Arbitrum. On top of that, it would mint unbacked atokens according to the asset transfer. The \ntransaction fee would depend on the bridging protocol you're using.\n\nThe \"bridge\" is used to store assets supplied by multiple users in a pool, and then to batch them together. The \n\"hop\" will use tokens to withdraw the assets from the pool, and then use its own bridging protocol to transfer the \nassets from Ethereum to Arbitrum. The bridge contract in Arbitrum will back the minted unbacked tokens, and reduce \nthe fee for using Aave v3 portals. \n\nThis is how portals enable seamless transactions between markets in different networks. Also, the bridges are \napproved, and assets are transferred under smart contracts Hence the transactions are secure.\n",
       "stepItems": []
     },
     {
@@ -177,32 +317,6 @@
       "name": "Evaluation",
       "content": "",
       "stepItems": [
-        {
-          "uuid": "bf16e6c6-2a56-4068-9c50-1a9c5329e1f3",
-          "content": "How to use or access Aave portals for a normal user?",
-          "answerKeys": [
-            "A"
-          ],
-          "type": "SingleChoice",
-          "choices": [
-            {
-              "content": "We cannot directly ue it from user end but we can use a bridge which is a approved bridge by Aave governance ans also uses aave portal feauture",
-              "key": "A"
-            },
-            {
-              "content": "We can use it by any bridging protocol",
-              "key": "B"
-            },
-            {
-              "content": "We can use it by directly in Aave's website",
-              "key": "C"
-            },
-            {
-              "content": "We can use them by deploying smartcontracts like in flashloans",
-              "key": "D"
-            }
-          ]
-        },
         {
           "uuid": "8fade1f1-fc0c-447c-8300-cbc1ed7d5b5f",
           "content": "what is the fee for Bridges which are using Aave portals?",
@@ -225,6 +339,33 @@
             },
             {
               "content": "No fees at all",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "b32bd20b-5f9c-4b57-995a-1bf9985d3b39",
+          "content": "Which of the following are not correct about working of portals?",
+          "answerKeys": [
+            "B",
+            "C"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Aave leverage specific bridges to mint unbacked atokens and withraw assets from Aave market in the destination network",
+              "key": "A"
+            },
+            {
+              "content": "The Portals directly transfer user's assets from one chain to another",
+              "key": "B"
+            },
+            {
+              "content": "Portals just verifies the transaction by the bridging protocols.",
+              "key": "C"
+            },
+            {
+              "content": "The assets are transferred in a deferred manner with te help of smart-contracts",
               "key": "D"
             }
           ]
