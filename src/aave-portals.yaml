@@ -17,7 +17,7 @@ steps:
     content: |
       ### Layer 2 Blockchains 
       In 2020, we have seen the cost of gas increase, and transactions have become more expensive. This has been caused by the increasing number of users and 
-      transaction requests which the Ethereum main chain is unable to handle. Ethereum can only handle 30 transactions per second, which is not enough to keep 
+      transaction requests ,which the Ethereum main chain is unable to handle. Ethereum can only handle 30 transactions per second, which is not enough to keep 
       up with demand.
       
       The current system for processing transactions is becoming more difficult and time-consuming, and the proof-of-work model consumes a lot of  energy. 
@@ -59,7 +59,7 @@ steps:
             key: D
             
       - uuid: 0f21a6e3-6bb2-438a-820f-99c10cdfcb14
-        content: What are distadvantages with multiple blockchain?
+        content: What are disadvantages with multiple blockchain?
         answerKeys:
           - A
         type: MultipleChoice
@@ -265,7 +265,7 @@ steps:
             key: A
           - content: It is very secure and it connects variety of networks with Aave markets
             key: B
-          - content: It gives interest for transfer
+          - content: It gives interest for transfering assets
             key: C
           - content: It reduces the transaction fee for bridges
             key: D
@@ -297,7 +297,7 @@ steps:
             key: A
           - content: The transactions are instant and secured by smartcontracts.
             key: B
-          - content: The transactions are not affected by any market conditions so user can transfer their at any marketcondition
+          - content: The transactions are not affected by any market conditions so user can transfer their at any market condition
             key: C
           - content: None of these
             key: D
