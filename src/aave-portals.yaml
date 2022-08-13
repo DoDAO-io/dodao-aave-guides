@@ -16,12 +16,11 @@ steps:
     name: Overview
     content: |
       ### Layer 2 Blockchains 
-      In 2020, we have seen the cost of gas increase, and transactions have become more expensive. This has been caused by the increasing number of users and 
-      transaction requests ,which the Ethereum main chain is unable to handle. Ethereum can only handle 30 transactions per second, which is not enough to keep 
-      up with demand.
+      In 2020, we had seen a lot of people using Ethereum, and transaction requests increased. However, Ethereum 
+      can only handle 30 transactions per second. This limitation caused gas prices to hike and transactions to become expensive.
       
-      The current system for processing transactions is becoming more difficult and time-consuming, and the proof-of-work model consumes a lot of  energy. 
-      So we need an upgrade to address these issues without compromising decentralization and security.
+      On Ethereum mainnet, transactions can be slow and difficult, and the proof-of-work model can use a lot of energy. So we need an alternative 
+      that can improve these issues without compromising decentralization and security.
       
       Layer 2 chains offer an alternative to the high transaction costs and slow speeds of Ethereum blockchain. The main reason Layer 2 blockchains 
       exist is to increase the scalability of the blockchain. As the number of users grows exponentially, we need to find a way to scale up the network without 
@@ -29,19 +28,18 @@ steps:
      
       ### Reasons they exist include 
       1. Busy network, which makes Ethereum-based transactions expensive. 
-      2. low transaction throughput (the Ethereum network can handle 30 transactions per second).  
-      3. To increase the transaction speed as it was slow in the Ethereum mainnet.
+      2. Low transaction throughput (the Ethereum network can handle 30 transactions per second).  
 
       ### Disadvantages of multiple blockchains
       * It leads to confusion to choose among them. 
       * The assets will be split into different chains, so it will be difficult to integrate them as we are required to 
         pay a fee for asset transfer from chain to chain.
-      * Most Defi protocols and marketplaces are Ethereum based, so we need to move our assets from one chain to another. 
+      * Most Defi protocols and marketplaces are Ethereum based, so we need to move our assets from one chain to another.
     stepItems: []
   - uuid: b6883de5-5786-4fb2-bece-c108b8636f81
     name: Evaluation
     content: |
-    stepItems: 
+    stepItems:
       - uuid: 637e61ed-bdf3-4b03-8285-8b4866ceb133
         content: What are the reasons for the existence of layer 2?
         answerKeys:
@@ -49,7 +47,7 @@ steps:
           - B
         type: MultipleChoice
         choices:
-          - content: To compete with the Ethereum 
+          - content: To compete with the Ethereum
             key: A
           - content: Low transaction fee
             key: B
@@ -57,7 +55,7 @@ steps:
             key: C
           - content: None of these
             key: D
-            
+
       - uuid: 0f21a6e3-6bb2-438a-820f-99c10cdfcb14
         content: What are disadvantages with multiple blockchain?
         answerKeys:
@@ -72,28 +70,30 @@ steps:
             key: C
           - content: None of these
             key: D
-    
+
   - uuid: 0213406a-0ff3-4f4f-943b-e0215aac8a17
     name: Tranferring assets using Blockchain bridges
     content: |
       Why do we need to transfer our assets from one chain to another?
-      * Transaction fees - The transaction fees are very low in the Layer2 networks as compared to Ethereum main network. Hence, we transfer our assets from 
-                           Ethereum to layer2 networks to enjoy low transaction fees. 
-      * Transaction speed- Ethereum's transaction speed is very slow in comparison to other networks. It can process only 30 transactions per second. 
-                           This is a very low transaction throughput. So, we switch to other networks for fast transactions.
+      * Transaction fees - Layer2 networks boast transaction fees that are significantly lower than those on the Ethereum 
+        main network. As a result, we often transfer our assets over to Layer2 in order to take advantage of the low fees.
+      * Transaction speed- Low transaction speed is a big pain point for Ethereum network as it can process only 30 
+       transactions per second. This is a very low transaction throughput and causes a lot of inconvenience for users. So, we switch to other networks for fast transactions.
       * Liquidity Pools-  we will transfer assets to blockchains with high-interest rates or liquidity for trading.
-      * Capital utility/ efficiency- Able to use all assets from all blockchains in one transaction.
+      * Capital utility/ efficiency - Able to use all assets from all blockchains in one transaction.
 
-      What are blockchain bridges?
-      bridges in crypto connect two different blockchains. This connection is important because, without a bridge, blockchains are siloed (isolated ) environments 
-      that cannot communicate with each other.This is because each network has its own set of rules, governance mechanisms, and different types of protocols 
-      Ethereum is currently based on a Proof-of-work mechanism, while other blockchains have different mechanisms, like Proof-of-stake, Proof-of space, etc.
+      What are Blockchain Bridges?
+      Bridges in crypto act as a connection between two different blockchains. This connection is important because, 
+      without a bridge, blockchains would be isolated from each other. This is because each network has its own set of 
+      rules, governance mechanisms, and protocols. Ethereum is currently based on a Proof-of-Work mechanism, while 
+      other blockchains have different mechanisms, like Proof-of-Stake, Proof-of-Space, etc.
+      
       However with a bridge between two blockchains it becomes possible to transfer crypto-assets and arbitrary data between them. 
       Thus, bridges are essential for interoperability in the crypto ecosystem and are necessary to make different blockchain networks compatible.
 
       How do they work?
       We will choose a bridging protocol to transfer our assets.Then the bridge contract in the source chain will lock our assets so that 
-      the supply remains constant.Then issues or mints an equivalent amount of  Wrapped tokens of the assets to the bridge contract in the destination network 
+      the supply remains constant.Then issues or mints an equivalent amount of Wrapped tokens of the assets to the bridge contract in the destination network 
       so that the contract in the destination network verifies and sends the wrapped assets to our account. The wrapped coin is a representation of a 
       cryptocurrency from another blockchain. These wrapped assets then can be used for Defi protocol ,which have the same value as the original coin in the 
       native network.So we can exchange the wrapped assets for other tokens or coins, or else we can get back our coin, for which we need to reverse the process 
@@ -118,7 +118,7 @@ steps:
             key: C
           - content: To secure our assets
             key: D
-            
+
       - uuid: de2dcaf8-3058-4144-9ee4-03057e09cfd8
         content: What are Blockchain Bridges?
         answerKeys:
@@ -133,7 +133,7 @@ steps:
             key: C
           - content: It is a token
             key: D
-            
+
       - uuid: fd742807-5655-4c1c-9ec4-c6f939f28d37
         content: What are Wrapped tokens?
         answerKeys:
@@ -142,13 +142,13 @@ steps:
         choices:
           - content: It is token like
             key: A
-          - content: The wrapped coin is a representation of a cryptocurrency from another blockchain         
+          - content: The wrapped coin is a representation of a cryptocurrency from another blockchain
             key: B
           - content: It is an assets like NFT
             key: C
           - content: None of these
             key: D
-    
+
   - uuid: c38825b5-dccc-4666-bede-1a53f6c6faf0
     name: Types of transfer and disadvantages of bridges
     content: |
@@ -213,7 +213,7 @@ steps:
             key: C
           - content: It is in nascent stage and might take a lot of time for the transactions which gives awful user experience.
             key: D
-            
+
       - uuid: d21f11ba-6ec5-420e-bb34-1753e920a85a
         content: Which of the following is correct about bridges?
         answerKeys:
@@ -228,7 +228,7 @@ steps:
             key: C
           - content: None of these
             key: D
-            
+
   - uuid: 2456eaac-4d99-4109-9524-bc833f023268
     name: AAVE Portals
     content: |
@@ -269,7 +269,7 @@ steps:
             key: C
           - content: It reduces the transaction fee for bridges
             key: D
-            
+
       - uuid: 5b500249-d63f-4eec-ac5e-2feba209d064
         content: which of the following are correct about Portals?
         answerKeys:
@@ -285,7 +285,7 @@ steps:
             key: C
           - content: Users gain interest on transferring assets
             key: D
-            
+
       - uuid: c9736ad7-4cba-4031-b417-f12f6b375ffb
         content: What benefits will users get from Aave Portals?
         answerKeys:
@@ -301,8 +301,8 @@ steps:
             key: C
           - content: None of these
             key: D
-  
-    
+
+
   - uuid: 3d633071-c2fb-4810-8db6-5e8a1221d6f7
     name: How Portals work
     content: |
@@ -361,7 +361,7 @@ steps:
             key: C
           - content: No fees at all
             key: D
-            
+
       - uuid: b32bd20b-5f9c-4b57-995a-1bf9985d3b39
         content: Which of the following are not correct about working of portals?
         answerKeys:
@@ -377,7 +377,7 @@ steps:
             key: C
           - content: The assets are transferred in a deferred manner with te help of smart-contracts
             key: D
-            
+
       - uuid: 41de3a10-0b52-4ac8-8b91-6aeb9ae3e3d2
         content: Which of the following are true about Aave portals?
         answerKeys:
@@ -394,7 +394,7 @@ steps:
             key: C
           - content: The bridge batch multiple tx then move the assets in a deferred manner
             key: D
-   
+
   - uuid: 081d73b6-f730-4739-bceb-8a573b5d2f66
     name: Your Info
     content: |
