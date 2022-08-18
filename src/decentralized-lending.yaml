@@ -28,7 +28,7 @@ steps:
       ### Important Terms 
       
       1. **APY**-The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
-      2. **atokens**- atokens are the interest-bearing tokens which is minted and burnt upon deposit and redeem
+      2. **atokens**- atokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
       3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same 
       (in type and value) as another Token.
       4. **Deposit interest**-A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an 
@@ -41,8 +41,57 @@ steps:
       efficiency of several different investments.
       8. **LTV-** loan to value, it represents the borrowing power of the collateral.
       9. **Health Factor -** The health factor determines whether a user is eligible to borrow a loan or not.
-
     stepItems: []
+  - uuid: 6511e9c8-3215-4629-800b-aed2b8b37ef4
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: fe3d165c-c1fb-4ca2-a62d-12ba331a6955
+        content: What are atokens?
+        answerKeys:
+          - B
+        type: SingleChoice
+        choices:
+          - content: atokens are stablecoins like USDT
+            key: A
+          - content: atokens are interest bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
+            key: B
+          - content: atokens are tokens which give governance in Aave
+            key: C
+          - content: None of these
+            key: D
+
+      - uuid: 5d9dfe2a-f030-4f6e-8e9c-895768a7d316
+        content: What are stablecoins?
+        answerKeys:
+          - A
+        type: MultipleChoice
+        choices:
+          - content: A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold.
+            key: A
+          - content: stablecoins are an allternate coin for Bitcoin.
+            key: B
+          - content: stable coins are more volatile coins
+            key: C
+          - content: None of these
+            key: D
+            
+      - uuid: 97bd3ac5-e4f1-45ef-a40f-6e601020b090
+        content: Which of the following are correct about lending in crypto?
+        answerKeys:
+          - A
+          - C
+        type: MultipleChoice
+        choices:
+          - content: lending in crypto doesn't require any personal data
+            key: A
+          - content: lending in crypto is highly stable and guaranteed returns
+            key: B
+          - content: lending in crypto is not taxable and no limits for lending
+            key: C
+          - content: None of these
+            key: D
+            
   - uuid: edbf7f33-0e07-4b73-a27e-e9de48186a60
     name: Lending in Traditional finance vs Aave
     content: |
@@ -66,6 +115,58 @@ steps:
       Aave does have some risks and disadvantages when pitted against traditional financial institutions, so it's important that you as a lender understand all 
       the pros and cons before making a decision.
     stepItems: []
+  - uuid: 243f65b2-b892-46a7-95b7-4cb24c3853af
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: eb71aa60-fd34-4667-8948-912a7172cd9e
+        content: Which is following is correct about lending in traditonal finance?
+        answerKeys:
+          - B
+          - C
+          - D
+        type: MultipleChoice
+        choices:
+          - content: Traditional finance is a uncensored platform
+            key: A
+          - content: There are limits for lending which depends on the account type.
+            key: B
+          - content: The traditional takes most of the interest from borrowers
+            key: C
+          - content: In traditional finance there is a compulsion for maintaining minimum balance
+            key: D
+
+      - uuid: 1ec8c4ff-7092-48e9-8ce5-5a2b85e83620
+        content: Which of the following are correct about lending in Aave?
+        answerKeys:
+          - A
+          - B
+          - C
+        type: MultipleChoice
+        choices:
+          - content: The platform is completely decentralized.Hence no involvement of middlemen.
+            key: A
+          - content: Lending in aave is taxless and no limits for lending
+            key: B
+          - content: Aave gives 10% interest for lenders
+            key: C
+          - content: Aave is an uncensored platform anyone can be a lender in Aave.
+            key: D
+            
+      - uuid: cc107b94-1c6a-493b-971b-fd87a5648df8
+        content: What is total limit for lending in Aave?
+        answerKeys:
+          - B
+        type: SingleChoice
+        choices:
+          - content: maximum limit depends on the account type in Aave
+            key: A
+          - content: There is no such limit for lending.Users can lend as much they can
+            key: B
+          - content: lenders can lend assets upto one million usd.
+            key: C
+          - content: None of these
+            key: D  
   - uuid: f07d23ed-d425-4a92-9920-469bf604049b
     name: Adavantages of Lending in Aave
     content: |
@@ -73,7 +174,7 @@ steps:
       ### Advantages of lending in Aave 
       
       * Unlike other financial platforms, our product doesn't require users to undergo a cumbersome Know-Your-Customer (KYC) process. 
-      You also don't need to share any personal details with us.
+      You also don't need to share any personal details with Aave.
       * There is no limit for lending and borrowing, which is not possible in the case of traditional finance.
       * This lending eliminates the middleman, so the complete interest goes to the lenders.
       * Money gets deposited as atokens which tracks the interest and grows automatically. It has a lot of advantages over exchange rate-based finance.
@@ -87,7 +188,58 @@ steps:
       * The interest provided in Aave is much higher, even for stablecoins.
       * There is no requirement to maintain a minimum balance.
     stepItems: []
-  - uuid: 7a6e419c-e5e2-4216-83b1-b546b5b08127
+  - uuid: 3620b5b0-28f7-4daa-9794-239ef22627c0
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: 6087459b-710b-40c2-9284-2d5783d1f98a
+        content: What is advantage of eliminating the middlemen in Aave?
+        answerKeys:
+          - C
+        type: MultipleChoice
+        choices:
+          - content: The borrowers need to pay high interest on borrowing
+            key: A
+          - content: The interest rate for lenders is fixed
+            key: B
+          - content: The complete interest goes to the lenders
+            key: C
+          - content: None of these
+            key: D
+
+      - uuid: efdcb430-42bd-48a4-88c4-31585ed89586
+        content: What benefits do a liquidity provider gets on a liquidity call?
+        answerKeys:
+          - A
+        type: SingleChoice
+        choices:
+          - content: The liquidity provider gets the collateral at discounted price.
+            key: A
+          - content: Gets extra interest on lent assets
+            key: B
+          - content: no benefits for liquidity provider
+            key: C
+          - content: None of these
+            key: D
+            
+      - uuid: 60627831-e9a7-4178-be94-5588081c875d
+        content: Which of the following are correct about advantages in lending in Aave?
+        answerKeys:
+          - B
+          - C
+          - D
+        type: MultipleChoice
+        choices:
+          - content: Aave provides fixed interest for lenders.
+            key: A
+          - content: There are no censorship issues anyone of any age can be a lender.
+            key: B
+          - content: There is no requirement to maintain a minimum balance.
+            key: C
+          - content: Elimination of middlemen enables lenders to get complete interests from borrowers.
+            key: D
+            
+  - uuid: 46110485-3f1a-43cd-9909-9b47338f3b53
     name: How lending works in Aave
     content: |
       ### How Lending  works in AAVE {#how-lending-works-in-aave}
