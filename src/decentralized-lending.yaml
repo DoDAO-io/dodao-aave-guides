@@ -1,7 +1,7 @@
 uuid: 9fc7065b-d697-43eb-bbf4-a4446f1f4b78
 key: decentralized-lending
-name: Decentralized Lending
-content: How Lending works in Decentralized Finance
+name: Lending in Aave
+content: How Lending works Aave
 guideType: onboarding
 created: "2022-08-02T04:15:13.911Z"
 categories:
@@ -242,7 +242,7 @@ steps:
   - uuid: 46110485-3f1a-43cd-9909-9b47338f3b53
     name: How lending works in Aave
     content: |
-      ### How Lending  works in AAVE {#how-lending-works-in-aave}
+      ### How Lending  works in AAVE
 
       Aave's lending is entirely decentralized, so there's no need to share personal information. Aave uses a tokenization strategy to provide liquidity. 
       Users can work with the platform without worrying about sharing their data. Upon deposit, the depositor receives a corresponding amount of derivative tokens 
@@ -258,7 +258,7 @@ steps:
         
        ScBt(x) = ScBt-1(x) + m/NIt
        Where,
-      *  ScB is the scaled balance 
+      * ScB is the scaled balance 
       * m is the deposited amount
       * NIt is the ongoing interest cumulated by the reserve
      
@@ -309,7 +309,6 @@ steps:
           - A
           - B
           - C
-          - D
         type: MultipleChoice
         choices:
           - content: Utilization ratio
@@ -318,7 +317,7 @@ steps:
             key: B
           - content: variable rate
             key: C
-          - content: average stablerate
+          - content: None of these
             key: D
             
       - uuid: 3595addb-00d9-45c0-a501-aa08a606a23c
@@ -384,11 +383,11 @@ steps:
       aTokens, or the underlying asset directly. When the liquidation is completed successfully, the health factor of the position is increased, bringing the health 
       factor above 1.
     stepItems : []
-  - uuid: 8af0b713-8ba8-4201-9111-deefbf8b3ab2
+  - uuid: cd487556-aad4-48c5-a44c-90f531a782ea
     name: Evaluation
     content: |
     stepItems:
-      - uuid: 0bc23caf-5af0-49c2-a5ca-63e5872153b7
+      - uuid: 52877b56-d8aa-4e90-8b8c-54c3f03591a1
         content: What is the fee for borrowing flashloans?
         answerKeys:
           - B
@@ -396,30 +395,30 @@ steps:
         choices:
           - content: No fee
             key: A
-          - content: 0.9 % of the borrowed value.
+          - content: 0.9 % of the borrowed value
             key: B
-          - content: 10% of the borrowed amount.
+          - content: 10% of the borrowed amount
             key: C
           - content: None of these
             key: D
 
-      - uuid: 435c251e-7d4f-4266-b150-b7c379639f75
+      - uuid: 35d3ce21-6a34-4f34-ad45-a43e2296a3fa
         content: Which of the following are correct about loans in Aave?
         answerKeys:
           - A
           - C
         type: MultipleChoice
         choices:
-          - content: Collateral provided by the borrower is liquidated when health factor is less than 1.
+          - content: Collateral provided by the borrower is liquidated when health factor is less than 1
             key: A
-          - content: no interest for borrowers.
+          - content: no interest for borrowers
             key: B
-          - content: loans are overcollaterized.
+          - content: loans are overcollaterized
             key: C
           - content: Loans are provided at 8% interest rate
             key: D
             
-      - uuid: 8fe84bc6-4dbe-4a23-af84-34bb3688f7a1
+      - uuid: 6ceb7d4b-5f6c-4e5a-ab91-0881e482fb1b
         content: Which of the following are correct about liquidation call?
         answerKeys:
           - B
@@ -428,14 +427,14 @@ steps:
         choices:
           - content: this call occurs every sunday.
             key: A
-          - content: when the health factor of a user is less than 1 liquidation call takes place.
+          - content: when the health factor of a user is less than 1 liquidation call takes place
             key: B
-          - content: liquidity provider can buy the collateral at discounted price during this call.
+          - content: liquidity provider can buy the collateral at discounted price during this call
             key: C
           - content: None of these
             key: D
       
-      - uuid: da6e4aa3-8523-47b8-bdaf-63af9f94de9b
+      - uuid: 7253a1fa-4b5d-44aa-b958-98113c5eaa62
         content: Which of the following are correct about flashloans?
         answerKeys:
           - A
@@ -445,14 +444,14 @@ steps:
         choices:
           - content: these loans are mostly borrowed for arbitrage trading,collateral swaps,margin trading ,etc.
             key: A
-          - content: Flash loans are possible only through smartcontracts.
+          - content: Flash loans are possible only through smartcontracts
             key: B
-          - content: Flashloans can be borrowed without any collateral.
+          - content: Flashloans can be borrowed without any collateral
             key: C
-          - content: Flashloans are also available in traditional banks.
+          - content: Flashloans are also available in traditional banks
             key: D
     
-  - uuid: f96bf8f5-7484-423f-87c5-04f527e798a1
+  - uuid: 0952162e-36c6-4934-9e1f-a89addaaa188
     name: Other features for lenders
     content: |
       ### Other features for lenders in Aave
@@ -463,13 +462,12 @@ steps:
       protocol stability by changing the interest rates according to the liquidity in the protocol. AAVE token holders have the power to vote for changes in the 
       protocol. This capability is not possible with traditional lending, and it gives AAVE holders a significant amount of control over the direction of the 
       protocol. Aave holders can stake their tokens to increase safety in return, they will be rewarded for their efforts in staking.
-
     stepItems : []
-  - uuid: 556a71ac-d583-4048-96d6-99be2f2e2c31
+  - uuid: 135a2bb1-f70b-4565-a7d7-7cc5d50c36e1
     name: Your Info
     content: |
     stepItems:
-       - uuid: 2efe4447-47a5-41e3-a3a5-7ef3a88febaa
+       - uuid: 4b5747b6-c009-452f-b79e-ea7f89addd31
          label: Nick Name
          required: true
          type: PublicShortInput
