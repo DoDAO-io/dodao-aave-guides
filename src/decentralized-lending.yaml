@@ -471,7 +471,7 @@ steps:
          label: Nick Name
          required: true
          type: PublicShortInput
-       - uuid: f8548103-8118-4907-8893-d09c195433ec
+       - uuid: 2ac978cd-f922-4511-abbd-c57067637a42
          type: UserDiscordConnect
 
 
