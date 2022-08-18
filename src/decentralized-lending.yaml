@@ -127,13 +127,13 @@ steps:
           - D
         type: MultipleChoice
         choices:
-          - content: Traditional finance is a uncensored platform
+          - content: Traditional finance is a uncensored platform.
             key: A
           - content: There are limits for lending which depends on the account type.
             key: B
-          - content: The traditional takes most of the interest from borrowers
+          - content: The traditional takes most of the interest from borrowers.
             key: C
-          - content: In traditional finance there is a compulsion for maintaining minimum balance
+          - content: In traditional finance there is a compulsion for maintaining minimum balance.
             key: D
 
       - uuid: 1ec8c4ff-7092-48e9-8ce5-5a2b85e83620
@@ -146,9 +146,9 @@ steps:
         choices:
           - content: The platform is completely decentralized.Hence no involvement of middlemen.
             key: A
-          - content: Lending in aave is taxless and no limits for lending
+          - content: Lending in aave is taxless and no limits for lending.
             key: B
-          - content: Aave gives 10% interest for lenders
+          - content: Aave gives 10% interest for lenders.
             key: C
           - content: Aave is an uncensored platform anyone can be a lender in Aave.
             key: D
@@ -159,9 +159,9 @@ steps:
           - B
         type: SingleChoice
         choices:
-          - content: maximum limit depends on the account type in Aave
+          - content: maximum limit depends on the account type in Aave.
             key: A
-          - content: There is no such limit for lending.Users can lend as much they can
+          - content: There is no such limit for lending.Users can lend as much they can.
             key: B
           - content: lenders can lend assets upto one million usd.
             key: C
@@ -198,11 +198,11 @@ steps:
           - C
         type: MultipleChoice
         choices:
-          - content: The borrowers need to pay high interest on borrowing
+          - content: The borrowers need to pay high interest on borrowing.
             key: A
-          - content: The interest rate for lenders is fixed
+          - content: The interest rate for lenders is fixed.
             key: B
-          - content: The complete interest goes to the lenders
+          - content: The complete interest goes to the lenders.
             key: C
           - content: None of these
             key: D
@@ -215,9 +215,9 @@ steps:
         choices:
           - content: The liquidity provider gets the collateral at discounted price.
             key: A
-          - content: Gets extra interest on lent assets
+          - content: Gets extra interest on lent assets.
             key: B
-          - content: no benefits for liquidity provider
+          - content: no benefits for liquidity provider.
             key: C
           - content: None of these
             key: D
@@ -267,7 +267,7 @@ steps:
       The borrow interest rates paid are distributed as yield for aToken holders supplied to the protocol, excluding a share of yields sent to the ecosystem 
       reserve defined by the reserve factor. This interest rate is generated on the asset that is borrowed out and then shared among all the liquidity providers. 
       The supply APY, S
-       S = Ut​(SBt​St​+VBt​Vt​)(1−Rt​)
+       S = Ut(SBt*St+VBt*Vt)(1−Rt)
        
       * Ut -Utilization ratio It is the ratio of total borrowed assets and total liquidity in the protocol.
       * SBt- share of stable borrows, It is the total assets borrowed at a stable rate in percentage.
@@ -284,10 +284,80 @@ steps:
       In the process of withrawing the atokens are burnt to redeem the underlying assets. Reserve must have enough liquidity and user's health factor must be above 1 
       to withraw assets.
     stepItems: []
+  - uuid: 1f635c52-66c7-4e35-bd20-ad3972bd3396
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: 03c583b8-6536-42cb-8151-f8932958ed42
+        content: How the interest are accumulated for lenders?
+        answerKeys:
+          - B
+        type: SingleChoice
+        choices:
+          - content: The interest is directly sent to the user's wallet periodically.
+            key: A
+          - content: The interest is accumulated as atokens.Which can be pegged in 1:1 ratio for redeeming the assets.
+            key: B
+          - content: there is no interest for lenders.
+            key: C
+          - content: None of these
+            key: D
+
+      - uuid: 9c6db287-efe3-497d-8200-8234904c1eb3
+        content: What are the factors does supply rate depends on?
+        answerKeys:
+          - A
+          - B
+          - C
+          - D
+        type: MultipleChoice
+        choices:
+          - content: Utilization ratio
+            key: A
+          - content: reserve factor
+            key: B
+          - content: variable rate
+            key: C
+          - content: average stablerate
+            key: D
+            
+      - uuid: 3595addb-00d9-45c0-a501-aa08a606a23c
+        content: Which of the following happens in the protocol when user deposits assets?
+        answerKeys:
+          - B
+          - C
+        type: MultipleChoice
+        choices:
+          - content: assets are bridged to other chain
+            key: A
+          - content: atokens are minted 
+            key: B
+          - content: interest rates are updated
+            key: C
+          - content: None of these
+            key: D
+      
+      - uuid: baf558e5-2bd6-4f10-8416-d6b9072feae2
+        content: Which of the following happens in the protocol when user redeems assets?
+        answerKeys:
+          - A
+          - B
+          - C
+        type: MultipleChoice
+        choices:
+          - content: atokens are burnt
+            key: A
+          - content: liquidity is decreased
+            key: B
+          - content: interest rates are updated
+            key: C
+          - content: atokens are minted
+            key: D
+            
   - uuid: bceb9c9a-ec60-4fc6-ae59-2e8aa918c6e9
     name: Utilizing the liquidity
     content: |
-      # How the lent assets are utilized {#how-the-lent-assets-are-utilized}
+      ### How the lent assets are utilized 
 
       The lenders will deposit their assets into the Aave protocol so that they receive a corresponding number of aTokens, representing the asset on a 1:1 basis. 
       The aToken gradually gains value as interest is accrued on the underlying asset. This article will explain how the protocol generates profits for lenders in 
@@ -314,6 +384,74 @@ steps:
       aTokens, or the underlying asset directly. When the liquidation is completed successfully, the health factor of the position is increased, bringing the health 
       factor above 1.
     stepItems : []
+  - uuid: 8af0b713-8ba8-4201-9111-deefbf8b3ab2
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: 0bc23caf-5af0-49c2-a5ca-63e5872153b7
+        content: What is the fee for borrowing flashloans?
+        answerKeys:
+          - B
+        type: SingleChoice
+        choices:
+          - content: No fee
+            key: A
+          - content: 0.9 % of the borrowed value.
+            key: B
+          - content: 10% of the borrowed amount.
+            key: C
+          - content: None of these
+            key: D
+
+      - uuid: 435c251e-7d4f-4266-b150-b7c379639f75
+        content: Which of the following are correct about loans in Aave?
+        answerKeys:
+          - A
+          - C
+        type: MultipleChoice
+        choices:
+          - content: Collateral provided by the borrower is liquidated when health factor is less than 1.
+            key: A
+          - content: no interest for borrowers.
+            key: B
+          - content: loans are overcollaterized.
+            key: C
+          - content: Loans are provided at 8% interest rate
+            key: D
+            
+      - uuid: 8fe84bc6-4dbe-4a23-af84-34bb3688f7a1
+        content: Which of the following are correct about liquidation call?
+        answerKeys:
+          - B
+          - C
+        type: MultipleChoice
+        choices:
+          - content: this call occurs every sunday.
+            key: A
+          - content: when the health factor of a user is less than 1 liquidation call takes place.
+            key: B
+          - content: liquidity provider can buy the collateral at discounted price during this call.
+            key: C
+          - content: None of these
+            key: D
+      
+      - uuid: da6e4aa3-8523-47b8-bdaf-63af9f94de9b
+        content: Which of the following are correct about flashloans?
+        answerKeys:
+          - A
+          - B
+          - C
+        type: MultipleChoice
+        choices:
+          - content: these loans are mostly borrowed for arbitrage trading,collateral swaps,margin trading ,etc.
+            key: A
+          - content: Flash loans are possible only through smartcontracts.
+            key: B
+          - content: Flashloans can be borrowed without any collateral.
+            key: C
+          - content: Flashloans are also available in traditional banks.
+            key: D
+    
   - uuid: f96bf8f5-7484-423f-87c5-04f527e798a1
     name: Other features for lenders
     content: |
@@ -327,6 +465,17 @@ steps:
       protocol. Aave holders can stake their tokens to increase safety in return, they will be rewarded for their efforts in staking.
 
     stepItems : []
+  - uuid: 556a71ac-d583-4048-96d6-99be2f2e2c31
+    name: Your Info
+    content: |
+    stepItems:
+       - uuid: 2efe4447-47a5-41e3-a3a5-7ef3a88febaa
+         label: Nick Name
+         required: true
+         type: PublicShortInput
+       - uuid: f8548103-8118-4907-8893-d09c195433ec
+         type: UserDiscordConnect
+
 
 
 
