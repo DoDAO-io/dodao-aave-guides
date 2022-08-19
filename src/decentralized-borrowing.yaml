@@ -107,7 +107,7 @@ steps:
      | Repayment time for borrowed amount is fixed. | Repayment time is indefinite, no problem as long as loan is not undercollateralized.|
      | Slow and inefficient, no innovations lately.| Quickly developing and highly efficient.|
      | Lengthy paperworks, legal agreements and steep qualifying criteria.| No qualifying criteria, all you need is a crypto wallet and money for gasfees.   |
-
+    stepItems: []
  
   - uuid: 885d2401-813c-4b11-8ef1-af69a167730b
     name: Evaluation
@@ -354,7 +354,8 @@ steps:
 
   - uuid: 3dca0632-f022-49e9-9201-80fb56299341
     name: Interest rates in Aave
-    content: |
+    content: 
+    stepItems: []
 
   - uuid: f0b4c06e-afa6-4f1f-a70b-2228264f88e6
     name: Evaluation
@@ -444,6 +445,7 @@ steps:
       The current system of liquidation is beneficial for those who perform the liquidations. They are given a significant amount of money as a reward, which acts as an incentive.
       This ensures that the lenders are provided with safety against loan defaults and bad loans, though the loan might be overcollateralized, without liquidators to buy the collateral, the excessive collateral just sits there idly.
       Liquidations come very handy in bearish markets from the lender point of view.
+    stepItems: []
   
   - uuid: 763f5361-bdf7-4b06-9324-d7b8c5fc0e14
     name: Evaluation
@@ -510,4 +512,3 @@ steps:
              key: 
 
     
-
