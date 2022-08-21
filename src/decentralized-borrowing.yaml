@@ -15,19 +15,23 @@ steps:
   - uuid: 30274820-c5f6-47ab-a61f-4a74e1047aad
     name: Important terms
     content: |
-      Liquidation:
+
+      Decentralized borrowing refers to the the process of borrowing assets from Decentralized finance. In order to understand 
+      its workings and uses, we need to know a few of these important terms first.
+
+      - **Liquidation:**
       The selling of collateral to cover the debt is called liquidation.
 
-      LTV (Loan to Value):
+      - **LTV (Loan to Value):**
       Loan to value is the ratio used to decide how much loan can be borrowed against the collateral produced. It is expressed in terms of percentages. (e.g., at LTV=75%, for every 1 ETH worth of collateral, borrowers will be able to borrow 0.75 ETH worth of the corresponding currency). 
 
-      Liquidation Threshold:
+      - **Liquidation Threshold:**
       The liquidation threshold is the percentage at which a loan is deemed undercollateralized. For example, a Liquidation threshold of 70% means that if the loan's value rises above 70% of the collateral, the position is undercollateralized and could be liquidated.
 
-      Liquidation Penalty:
+      - **Liquidation Penalty:**
       The liquidation penalty is a fee rendered on the price of assets of the collateral when liquidators purchase it as part of the liquidation of a loan that has passed the liquidation threshold.
   
-      Health Factor:
+      - **Health Factor:**
       It is a risk parameter that decides whether a borrow position is at risk of getting liquidated. It is calculated by,
 
       ( H.F = ΣCollateral in ETH x Liquidation threshold / Total borrows )
@@ -36,13 +40,14 @@ steps:
 
   - uuid: 00836aea-d129-443c-9d57-241b7260dad4
     name: Evaluation
-    content: Which parameter decides the risk of an loan's liquidation?
+    content: 
     stepItems:
       - uuid: 211471f1-e556-46f5-b4b2-97fd1280027c
-        content: 
+        content: Which parameter decides the risk of an loan's liquidation?
         answerKeys:
           - A
-        type: SingleChoice
+          - D
+        type: MultipleChoice
         choices:
           - content: Health Factor
             key: A
@@ -105,8 +110,8 @@ steps:
      | Banks charge fees on top of premiums. | No fees clipped onto the borrower.|
      | Borrowing from banks is very costly, high interest rates decided by central bodies.| The rates of interest are decided by basic supply and demand.  |
      | Repayment time for borrowed amount is fixed. | Repayment time is indefinite, no problem as long as loan is not undercollateralized.|
-     | Slow and inefficient, no innovations lately.| Quickly developing and highly efficient.|
-     | Lengthy paperworks, legal agreements and steep qualifying criteria.| No qualifying criteria, all you need is a crypto wallet and money for gasfees.   |
+     | Slow and inefficient. No innovations lately.| Quickly developing and highly efficient.|
+     | Lengthy paperworks, legal agreements and steep qualifying criteria.| No qualifying criteria, all you need is a crypto wallet and money for gas fees.   |
     stepItems: []
  
   - uuid: 885d2401-813c-4b11-8ef1-af69a167730b
@@ -145,7 +150,7 @@ steps:
              key: 
       - uuid: 3364112a-6a73-4141-820b-8f30d4a8bac2
         content: |
-         The features of DeFi are:
+         The advantages of DeFi are:
         answerKeys:
           - A
           - B
@@ -175,18 +180,23 @@ steps:
   - uuid: 263d46f0-5058-406f-bc4e-0a470b437474
     name: Use cases of overcollateralized loans
     content: |
+      - **Credit enchancement:**
       Traditionally, overcollaterization is used as a credit enhancement technique, That is it is used as a means of risk-reduction to the lender in case of financial stress. By overcollaterization, credit risk is eliminated; The lender could liquidate the collateral to recover any possible loan losses.
       This also works in the borrowers favor. With the increased security provided to the lender, The borrower is put in a position where they can negotiate for a better interest offer on the loan.
 
+      - **Security:**
       Overcollaterization comes to the rescue when dealing with highly volatile assets like cryptocurrencies. In case the value of the collateral dips beyond the actual value of the loan taken, Then the lender’s assets are compromised. To prevent this, DeFi organizations set the percentage of overcollateralization. In case the value of the collateral dips beyond a certain point, It is liquidated and the position of the lender is secured.
 
+      - **Buffer:**
       An overcollateralized stablecoin has a large number of cryptocurrency tokens maintained at a reserve for issuing a lower number of stablecoins. This offers a buffer against price fluctuations.
 
+      - **Leverage:**
       Leveraging interest rates of currency taken loan against and invested in. 
 
+      - **Liquidity Generation:**
       Another simple use case would be liquidity. You just generated liquidity without losing hold of your cryptocurrency by borrowing a loan with it as collateral.
 
-      Overcollateralization is a common practice in securitized financial products like Collateralized loan obligations (CLO) and Mortgage Backed Securities (MBO). 
+      - Overcollateralization is a common practice in securitized financial products like Collateralized loan obligations (CLO) and Mortgage Backed Securities (MBO). 
     stepItems: []
 
  
@@ -210,7 +220,7 @@ steps:
           - content: All of these
             key: D
       - uuid: fc4805a4-291b-40d2-81dc-765cd58e551a
-        content: Why is it beneficical to spend collateral more than the value of loan?
+        content: In what way is overcollateralization beneficial?
         answerKeys:
           - A
           - B
@@ -224,9 +234,9 @@ steps:
            - content: For favourable loan terms
              key: C
            - content: To spend excess assets
-             key: 
+             key: D
       - uuid: 4be60690-e01b-4971-91fa-14770347cdf0
-        content: Traditionally, overcollateralization is used as?
+        content: Traditionally, over-collateralization is used as?
         answerKeys:
           - A
         type: SingleChoice
@@ -240,7 +250,7 @@ steps:
           - content: None of these
             key: D
       - uuid: d9a5aa6e-4d50-420d-afdb-2e9d7a642698
-        content: Overcollaterization is especially useful in risk reduction of lending which of these?
+        content: Over-collaterization is especially needed in risk reduction of lending which of these?
         answerKeys:
           - A
         type: SingleChoice
@@ -252,7 +262,7 @@ steps:
            - content: Semi-stable assets
              key: C
            - content: None of these
-             key: 
+             key: D
     
   
   - uuid: bbab5096-8edb-4960-9d45-5eb399e2389b
@@ -322,7 +332,7 @@ steps:
            - content: To be used in voting for changes in the protocol
              key: C
            - content: None of these
-             key: 
+             key: D
       - uuid: 4dc47ce6-6e4c-4775-8a72-946969055355
         content: What does aave use to keep track of debt?
         answerKeys:
@@ -388,7 +398,7 @@ steps:
            - content: For bearing the risk of the protocol i.e. by staking
              key: C
            - content: None of these
-             key: 
+             key: D
       - uuid: 0f72e59f-e5df-4b0a-8011-4bf79e7121fe
         content: By what percentage can the staked AAVE tokens of the token holders be slashed incase of a liquidity crisis?
         answerKeys:
@@ -416,7 +426,7 @@ steps:
            - content: For bearing the risk of the protocol i.e. by staking
              key: C
            - content: None of these
-             key: 
+             key: D
 
   - uuid: a5b66b01-9ffb-4000-83ba-a41715294d80
     name: Liquidation in Aave
@@ -480,7 +490,7 @@ steps:
            - content: Sometimes
              key: C
            - content: None of these
-             key: 
+             key: D
       - uuid: 67d57f7d-cd19-4c1f-840f-e42cac38e46a
         content: How can you prevent liquidation?
         answerKeys:
@@ -509,6 +519,6 @@ steps:
            - content: Liquidity saviours
              key: C
            - content: None of these
-             key: 
+             key: D
 
     
