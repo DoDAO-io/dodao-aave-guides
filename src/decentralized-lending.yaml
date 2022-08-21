@@ -27,17 +27,17 @@ steps:
       
       ### Important Terms 
       
-      1. **APY**-The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
-      2. **aTokens**- aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
+      1. **APY-** The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
+      2. **aTokens-** aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
       3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same 
       (in type and value) as another Token.
-      4. **Deposit interest**-A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an 
+      4. **Deposit interest-** A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an 
       interest-bearing account.
-      5. **Stablecoins**-A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold. Stablecoins are designed to 
+      5. **Stablecoins-** A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold. Stablecoins are designed to 
       reduce volatility relative to unpegged cryptocurrencies like Bitcoin.
-      6. **Flashloan -**Loans can be borrowed without collateral through smart contracts. This process is instant and can help borrowers get the money 
+      6. **Flashloan -** Loans can be borrowed without collateral through smart contracts. This process is instant and can help borrowers get the money 
       they need quickly.
-      7. **ROI - **Return on investment is a performance measure used to evaluate the efficiency or profitability of an investment or compare the 
+      7. **ROI -** Return on investment is a performance measure used to evaluate the efficiency or profitability of an investment or compare the 
       efficiency of several different investments.
       8. **LTV-** loan to value, it represents the borrowing power of the collateral.
       9. **Health Factor -** The health factor determines whether a user is eligible to borrow a loan or not.
@@ -69,9 +69,9 @@ steps:
         choices:
           - content: A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold.
             key: A
-          - content: stablecoins are an allternate coin for Bitcoin.
+          - content: Stablecoins are an alternate coin for Bitcoin.
             key: B
-          - content: stable coins are more volatile coins
+          - content: Stable coins are more volatile coins
             key: C
           - content: None of these
             key: D
@@ -83,9 +83,9 @@ steps:
           - C
         type: MultipleChoice
         choices:
-          - content: lending in Aave doesn't require any personal data
+          - content: Lending in Aave doesn't require any personal data
             key: A
-          - content: lending in Aave is highly stable and guaranteed returns
+          - content: Lending in Aave is highly stable and guaranteed returns
             key: B
           - content: Aave has no limits for lending
             key: C
@@ -97,12 +97,13 @@ steps:
     content: |
       ### lending in Traditional Finance vs Aave
 
-      In traditional finance, the protocol is governed by the central authority. In Aave, the protocol is governed by the Aave token holders. In traditional finance, 
+      In Traditional Finance, the protocol is governed by the central authority. In Aave, the protocol is governed by the Aave token holders. In traditional finance, 
       the customer needs to do a lot of paperwork for lending and borrowing in the case of Aave, the lending and borrowing are instant. 
       Aave is an open source protocol that anyone can view and analyze. Lending through this protocol is very easy when compared to traditional finance methods. 
       In order to lend money through traditional finance, customers need to open an account with the institution, which can take time. Only after the account is 
       open can they lend their money. There is also a requirement to maintain a minimum balance in traditional finance accounts. Aave is an uncensored platform 
       where anyone can be a lender.
+      
       |          Lending in Traditional Finance                                                      |                    Lending in Aave                                                        |
       |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
       | Requires KYC for account opening and  lending.                                               | There is no requirement for any personal information.                                     |
@@ -124,7 +125,7 @@ steps:
     content: |
     stepItems:
       - uuid: eb71aa60-fd34-4667-8948-912a7172cd9e
-        content: Which is following is correct about lending in traditonal finance?
+        content: Which is following is correct about lending in Traditonal Finance?
         answerKeys:
           - B
           - C
@@ -135,9 +136,9 @@ steps:
             key: A
           - content: There are limits for lending which depends on the account type.
             key: B
-          - content: The traditional takes most of the interest from borrowers.
+          - content: The Traditional Finance takes most of the interest from borrowers.
             key: C
-          - content: In traditional finance, most of the times there is a compulsion for maintaining minimum balance.
+          - content: In Traditional Finance, most of the times there is a compulsion for maintaining minimum balance.
             key: D
 
       - uuid: 1ec8c4ff-7092-48e9-8ce5-5a2b85e83620
@@ -150,7 +151,7 @@ steps:
         choices:
           - content: The platform is completely decentralized.Hence no involvement of middlemen.
             key: A
-          - content: Lending in aave is taxless and no limits for lending.
+          - content: Lending in Aave is taxless and no limits for lending.
             key: B
           - content: Aave gives 10% interest for lenders.
             key: C
@@ -167,7 +168,7 @@ steps:
             key: A
           - content: There is no such limit for lending.Users can lend as much they can.
             key: B
-          - content: lenders can lend assets upto one million usd.
+          - content: Lenders can lend assets upto one million usd.
             key: C
           - content: None of these
             key: D  
@@ -249,7 +250,7 @@ steps:
   - uuid: 46110485-3f1a-43cd-9909-9b47338f3b53
     name: How lending works in Aave
     content: |
-      ### How Lending  works in AAVE
+      ### How Lending  works in Aave
 
       Aave's lending is entirely decentralized, so there's no need to share personal information. Aave uses a tokenization strategy to provide liquidity. 
       Users can work with the platform without worrying about sharing their data. Upon deposit, the depositor receives a corresponding amount of derivative tokens 
@@ -320,9 +321,9 @@ steps:
         choices:
           - content: Utilization ratio
             key: A
-          - content: reserve factor
+          - content: Reserve factor
             key: B
-          - content: variable rate
+          - content: Variable rate
             key: C
           - content: None of these
             key: D
@@ -334,11 +335,11 @@ steps:
           - C
         type: MultipleChoice
         choices:
-          - content: assets are bridged to other chain
+          - content: Assets are bridged to other chain
             key: A
           - content: aTokens are minted 
             key: B
-          - content: interest rates are updated
+          - content: Interest rates are updated
             key: C
           - content: None of these
             key: D
@@ -353,9 +354,9 @@ steps:
         choices:
           - content: aTokens are burnt
             key: A
-          - content: liquidity is decreased
+          - content: Liquidity is decreased
             key: B
-          - content: interest rates are updated
+          - content: Interest rates are updated
             key: C
           - content: aTokens are minted
             key: D
