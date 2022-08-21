@@ -15,20 +15,20 @@ steps:
   - uuid: 3183ab1d-e918-43a2-9a54-d14d19e64ca1
     name: Overview
     content: |
-      ### Lending in Crypto 
+      ### Lending in Web3
 
       Crypto Projects use the money lent in various ways like Staking on different protocols for  Yield Farming, interest, etc. There is no limit for lending assets. 
-      Different cryptocurrencies have different features and use cases. In many of these cases, lending money is even more opaque than traditional finance, and the 
-      user is not informed about how the money is being used. So the user should be aware of how the funds will be used and the risks associated with lending the 
-      money. A handful of protocols like AAVE provide full transparency on how the pool of the funds lent by users is deployed.Lending through cryptocurrency can have 
-      some advantages over traditional lending, such as no taxes and the possibility of higher returns. 
-      However, some risks are also to consider, such as smart contracts, liquidity, and volatility risks. Before lending through cryptocurrency, 
-      weigh all the pros and cons to make the best decision for you.
+      lending money is even more opaque than traditional finance, and the user is not informed about how the money is being used. So the user should be aware of 
+      how the funds will be used and the risks associated with lending the money. AAVE is a lending and borrowing protocol provide full transparency on how the 
+      pool of the funds lent by users is deployed.Lending in Aave doesn't require any personal data.Lending through Aave gives some advantages over traditional lending, 
+      such as no taxes and the possibility of higher returns. The elimination of the middlemen makes the protocol profitable for lenders as the borrowers 
+      interest completely goes to lenders.
+      
       
       ### Important Terms 
       
       1. **APY**-The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
-      2. **atokens**- atokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
+      2. **aTokens**- aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
       3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same 
       (in type and value) as another Token.
       4. **Deposit interest**-A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an 
@@ -47,16 +47,16 @@ steps:
     content: |
     stepItems:
       - uuid: fe3d165c-c1fb-4ca2-a62d-12ba331a6955
-        content: What are atokens?
+        content: What are aTokens?
         answerKeys:
           - B
         type: SingleChoice
         choices:
-          - content: atokens are stablecoins like USDT
+          - content: aTokens are stablecoins like USDT
             key: A
-          - content: atokens are interest bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
+          - content: aTokens are interest bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
             key: B
-          - content: atokens are tokens which give governance in Aave
+          - content: aTokens are tokens which give governance in Aave
             key: C
           - content: None of these
             key: D
@@ -65,7 +65,7 @@ steps:
         content: What are stablecoins?
         answerKeys:
           - A
-        type: MultipleChoice
+        type: SingleChoice
         choices:
           - content: A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold.
             key: A
@@ -77,43 +77,47 @@ steps:
             key: D
             
       - uuid: 97bd3ac5-e4f1-45ef-a40f-6e601020b090
-        content: Which of the following are correct about lending in crypto?
+        content: Which of the following are correct about lending in Aave?
         answerKeys:
           - A
           - C
         type: MultipleChoice
         choices:
-          - content: lending in crypto doesn't require any personal data
+          - content: lending in Aave doesn't require any personal data
             key: A
-          - content: lending in crypto is highly stable and guaranteed returns
+          - content: lending in Aave is highly stable and guaranteed returns
             key: B
-          - content: lending in crypto is not taxable and no limits for lending
+          - content: Aave has no limits for lending
             key: C
           - content: None of these
             key: D
             
   - uuid: edbf7f33-0e07-4b73-a27e-e9de48186a60
-    name: Lending in Traditional finance vs Aave
+    name: Lending in Traditional Finance vs Aave
     content: |
-      ### lending in traditional finance vs. Aave
+      ### lending in Traditional Finance vs Aave
 
       In traditional finance, the protocol is governed by the central authority. In Aave, the protocol is governed by the Aave token holders. In traditional finance, 
-      the customer needs to do a lot of paperwork for lending and borrowing in the case of Aave, the lending and borrowing are instant. The deposit interest rate 
-      in traditional finance is low when compared to the supply APY in Aave.
-
+      the customer needs to do a lot of paperwork for lending and borrowing in the case of Aave, the lending and borrowing are instant. 
       Aave is an open source protocol that anyone can view and analyze. Lending through this protocol is very easy when compared to traditional finance methods. 
       In order to lend money through traditional finance, customers need to open an account with the institution, which can take time. Only after the account is 
-      open can they lend their money. There is also a requirement to maintain a minimum balance in traditional finance accounts. There is no minimum balance 
-      requirement in Aave. Aave is an uncensored platform where anyone can be a lender, significantly increasing the amount of capital available.
-
-      Lenders on Aave can lend and transact without any limit, which is not possible with traditional finance since they have different limits for different 
-      types of accounts. Lending and transactions on Aave are taxless, which saves most of the principal amount compared to traditional finance. The lending in 
-      Aave eliminates the middleman, so the complete interest goes to the lenders. In the case of traditional finances, most of the interest from the borrowers is 
-      acquired by the traditional financial institutions. The complete interest from borrowers is provided to the liquidity providers in Aave. So the potential 
-      returns are high in Aave compared to traditional finances. 
-
-      Aave does have some risks and disadvantages when pitted against traditional financial institutions, so it's important that you as a lender understand all 
-      the pros and cons before making a decision.
+      open can they lend their money. There is also a requirement to maintain a minimum balance in traditional finance accounts. Aave is an uncensored platform 
+      where anyone can be a lender.
+      |          Lending in Traditional Finance                                                      |                    Lending in Aave                                                        |
+      |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+      | Requires KYC for account opening and  lending.                                               | There is no requirement for any personal information.                                     |
+      | The lent assets are taxable.                                                                 | The lending and borrowing are taxless                                                     |
+      | Traditional Finance is Governed by the central authority of finance.                         | Governed by the Aave token holders,                                                       |
+      | There is censorship for users.                                                               | There is no censorship. Anyone can be a lender in Aave.                                   |
+      | There is a requirement for maintaining a minimum balance.                                    | There is no requirement for maintaining minimum balances.                                 |
+      | There are lending limits that vary for different types of accounts.                          | There are no lending limits in the case of Aave                                           |
+      | Traditional finances take most of the interest from the borrowers.                           | Aave is a decentralized protocol hence there is no involvement of middlemen.              |
+      | Fund management and utilization are not transparent.                                         | Aave is an open-source protocol that anyone can view and analyze.                         |
+      | The lenders get less ROI comparatively.                                                      | The lenders get more ROI as the complete interest from the borrowers goes to the lenders. |
+      | Users need to trust the finance.                                                             | There are no trust issues as the protocol runs on smart contracts.                        |
+      | Lending and borrowing are not instant.                                                       | Lending and borrowing are instant.                                                        |
+      | There is very less risk of losing the account as the banks are authorized by the government. | There is a risk of losing the wallet phrase or wallet.                                    |
+            
     stepItems: []
   - uuid: 243f65b2-b892-46a7-95b7-4cb24c3853af
     name: Evaluation
@@ -133,7 +137,7 @@ steps:
             key: B
           - content: The traditional takes most of the interest from borrowers.
             key: C
-          - content: In traditional finance there is a compulsion for maintaining minimum balance.
+          - content: In traditional finance, most of the times there is a compulsion for maintaining minimum balance.
             key: D
 
       - uuid: 1ec8c4ff-7092-48e9-8ce5-5a2b85e83620
@@ -173,20 +177,23 @@ steps:
       
       ### Advantages of lending in Aave 
       
-      * Unlike other financial platforms, our product doesn't require users to undergo a cumbersome Know-Your-Customer (KYC) process. 
-      You also don't need to share any personal details with Aave.
-      * There is no limit for lending and borrowing, which is not possible in the case of traditional finance.
-      * This lending eliminates the middleman, so the complete interest goes to the lenders.
-      * Money gets deposited as atokens which tracks the interest and grows automatically. It has a lot of advantages over exchange rate-based finance.
-      * The lender's money is more secure with this type of finance than the traditional finance.
-      * Users can use the lent money as collateral to borrow loans. This is not possible in the case of traditional finance.
-      * There are no censorship issues anyone of any age can be a lender.
-      * The ROI is very high when compared to lending on traditional finance.
-      * Lending and borrowing can be instant and paperless. This makes it easier and faster for everyone involved. Borrowers can borrow loans with 
-      stable or variable interest rates or combined.
-      * The liquidity provider can get discounts on collateral during a liquidity call, which is not typical in traditional finance.
-      * The interest provided in Aave is much higher, even for stablecoins.
-      * There is no requirement to maintain a minimum balance.
+      * **Transparency -** The platform is completely open-source and transparent.Anyone can view and analyse the smartcontracts of the Aave.
+        Money gets deposited as aTokens which tracks the interest and grows automatically. It has a lot of advantages over exchange rate-based finance.
+
+      * **Efficiency -** There is no limit for lending and borrowing, which is not possible in the case of traditional finance. No requirement to 
+        share any personal details with Aave.Aave eliminates the middleman, so the complete interest goes to the lenders.The ROI is very high when 
+        compared to lending on traditional finance.The liquidity provider can get discounts on collateral during a liquidity call, which is not 
+        typical in traditional finance.The interest provided in Aave is much higher, even for stablecoins.
+      
+      * **User experience -** There is no cumbersome paperworks involved in lending in aave.There is no requirement to maintain a minimum balance.
+        There are no censorship issues anyone of any age can be a lender.Lending and borrowing can be instant and paperless. This makes it easier and 
+        faster for everyone involved. Borrowers can borrow loans with stable or variable interest rates or combined.Users can use the lent money as 
+        collateral to borrow loans which is not possible in the case of traditional finance.
+       
+      * **Anonymity -** The lent assets are untraceable and untaxable.Every lenders are anonymous.The lender's money is more secure with this type of 
+        finance than the traditional finance.The protocol is decentralized and the governance is given to the Aave token holders.Hence there is no 
+        central authority to manipulate the protocol.
+      
     stepItems: []
   - uuid: 3620b5b0-28f7-4daa-9794-239ef22627c0
     name: Evaluation
@@ -246,14 +253,14 @@ steps:
 
       Aave's lending is entirely decentralized, so there's no need to share personal information. Aave uses a tokenization strategy to provide liquidity. 
       Users can work with the platform without worrying about sharing their data. Upon deposit, the depositor receives a corresponding amount of derivative tokens 
-      called atokens .atokens are minted in a 1:1 ratio. The balance of aTokens of every depositor grows over time, driven by the perpetual accrual of interest of 
+      called aTokens .aTokens are minted in a 1:1 ratio. The balance of aTokens of every depositor grows over time, driven by the perpetual accrual of interest of 
       deposits. aTokens are fully ERC20 compliant. The lender's money is stored within each specific aToken.This gives the protocol better segregation between assets,
       which favors the implementation of yield farming aware aTokens.
 
       ** Deposit**
 
       Whenever a user deposits or lends assets, the liquidity of the protocol is increased. The protocol updates the interest rates according to the liquidity. 
-      Mint equivalent amount of atokens in 1:1 ratio. Transferring assets to the reserve is a crucial step in asset management. The reserve is where all assets 
+      Mint equivalent amount of aTokens in 1:1 ratio. Transferring assets to the reserve is a crucial step in asset management. The reserve is where all assets 
       are stored, so this step must be carried out correctly. Whenever user deposits an amount m in the protocol, his scaled balance updates as follows
         
        ScBt(x) = ScBt-1(x) + m/NIt
@@ -276,12 +283,12 @@ steps:
       * Vt, variable rate, 
       * Rt, reserve factor
 
-      The average supply rate in a period includes flash loan fees. The interest generated is represented as atokens.If the user decides to redeem the assets, 
-      they can withdraw them instantly to their wallet. During the process, the atokens will be burnt, and the assets will be supplied to the user’s wallet.
+      The average supply rate in a period includes flash loan fees. The interest generated is represented as aTokens.If the user decides to redeem the assets, 
+      they can withdraw them instantly to their wallet. During the process, the aTokens will be burnt, and the assets will be supplied to the user’s wallet.
       
       **Redeem**
       
-      In the process of withrawing the atokens are burnt to redeem the underlying assets. Reserve must have enough liquidity and user's health factor must be above 1 
+      In the process of withrawing the aTokens are burnt to redeem the underlying assets. Reserve must have enough liquidity and user's health factor must be above 1 
       to withraw assets.
     stepItems: []
   - uuid: 1f635c52-66c7-4e35-bd20-ad3972bd3396
@@ -296,7 +303,7 @@ steps:
         choices:
           - content: The interest is directly sent to the user's wallet periodically.
             key: A
-          - content: The interest is accumulated as atokens.Which can be pegged in 1:1 ratio for redeeming the assets.
+          - content: The interest is accumulated as aTokens.Which can be pegged in 1:1 ratio for redeeming the assets.
             key: B
           - content: there is no interest for lenders.
             key: C
@@ -329,7 +336,7 @@ steps:
         choices:
           - content: assets are bridged to other chain
             key: A
-          - content: atokens are minted 
+          - content: aTokens are minted 
             key: B
           - content: interest rates are updated
             key: C
@@ -344,13 +351,13 @@ steps:
           - C
         type: MultipleChoice
         choices:
-          - content: atokens are burnt
+          - content: aTokens are burnt
             key: A
           - content: liquidity is decreased
             key: B
           - content: interest rates are updated
             key: C
-          - content: atokens are minted
+          - content: aTokens are minted
             key: D
             
   - uuid: bceb9c9a-ec60-4fc6-ae59-2e8aa918c6e9
@@ -450,19 +457,6 @@ steps:
             key: C
           - content: Flashloans are also available in traditional banks
             key: D
-    
-  - uuid: 0952162e-36c6-4934-9e1f-a89addaaa188
-    name: Other features for lenders
-    content: |
-      ### Other features for lenders in Aave
-
-      There are a lot of features for users in Aave. Instant loans are offered in Aave. The lent assets can be used as collateral to buy loans. 
-      Flash loans are an innovative and notable feature in Aave. Credit delegation is a feature in which users can allow other users to borrow assets by using the 
-      collateral of the latter ones. E mode is introduced in Aave v3 for specific tokens with higher LTV. The supply and borrowing caps in V3 enable the 
-      protocol stability by changing the interest rates according to the liquidity in the protocol. AAVE token holders have the power to vote for changes in the 
-      protocol. This capability is not possible with traditional lending, and it gives AAVE holders a significant amount of control over the direction of the 
-      protocol. Aave holders can stake their tokens to increase safety in return, they will be rewarded for their efforts in staking.
-    stepItems : []
   - uuid: 135a2bb1-f70b-4565-a7d7-7cc5d50c36e1
     name: Your Info
     content: |
