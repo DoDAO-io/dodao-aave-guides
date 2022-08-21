@@ -15,28 +15,704 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "uuid": "c82bf74b-d0a0-444c-b09c-35f3017ec6e5",
-      "name": "What is decentralized borrowing",
-      "content": "What is decentralized borrowing\n",
+      "uuid": "30274820-c5f6-47ab-a61f-4a74e1047aad",
+      "name": "Important terms",
+      "content": "\nDecentralized borrowing refers to the the process of borrowing assets from Decentralized finance. In order to understand \nits workings and uses, we need to know a few of these important terms first.\n\n- **Liquidation:**\nThe selling of collateral to cover the debt is called liquidation.\n\n- **LTV (Loan to Value):**\nLoan to value is the ratio used to decide how much loan can be borrowed against the collateral produced. It is expressed in terms of percentages. (e.g., at LTV=75%, for every 1 ETH worth of collateral, borrowers will be able to borrow 0.75 ETH worth of the corresponding currency). \n\n- **Liquidation Threshold:**\nThe liquidation threshold is the percentage at which a loan is deemed undercollateralized. For example, a Liquidation threshold of 70% means that if the loan's value rises above 70% of the collateral, the position is undercollateralized and could be liquidated.\n\n- **Liquidation Penalty:**\nThe liquidation penalty is a fee rendered on the price of assets of the collateral when liquidators purchase it as part of the liquidation of a loan that has passed the liquidation threshold.\n\n- **Health Factor:**\nIt is a risk parameter that decides whether a borrow position is at risk of getting liquidated. It is calculated by,\n\n( H.F = ΣCollateral in ETH x Liquidation threshold / Total borrows )\n",
       "stepItems": []
     },
     {
-      "uuid": "cc9e16e3-9d71-46ab-a647-648237c4d4c5",
-      "name": "How to withdraw money in AAVE",
-      "content": "How to withdraw money in AAVE\n",
+      "uuid": "00836aea-d129-443c-9d57-241b7260dad4",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "211471f1-e556-46f5-b4b2-97fd1280027c",
+          "content": "Which parameter decides the risk of an loan's liquidation?",
+          "answerKeys": [
+            "A",
+            "D"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Health Factor",
+              "key": "A"
+            },
+            {
+              "content": "Liquidation penalty",
+              "key": "B"
+            },
+            {
+              "content": "LTV",
+              "key": "C"
+            },
+            {
+              "content": "Liquidation threshold",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "d40fb4f6-6d73-4a85-80b0-ae561718b398",
+          "content": "The selling of collateral to cover for debt is?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Health Factor",
+              "key": "A"
+            },
+            {
+              "content": "LTV",
+              "key": "B"
+            },
+            {
+              "content": "Liquidation",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "3b102044-5c6f-4e25-9388-c50be5746f01",
+          "content": "LTV stands for",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Loan to Value",
+              "key": "A"
+            },
+            {
+              "content": "Load to vector",
+              "key": "B"
+            },
+            {
+              "content": "Loading the value",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "3b25b800-05d3-49ab-93a3-c161b0b45a8d",
+          "content": "The percentage at which a loan is deemed undercollateralized:\n",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "LTV",
+              "key": "A"
+            },
+            {
+              "content": "Liquidation percentage",
+              "key": "B"
+            },
+            {
+              "content": "Liquidation threshold",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "1a9ac52f-1e5e-4098-8cf4-f471dab865a2",
+      "name": "Borrowing in Traditional finance vs. DeFi",
+      "content": "| ##Traditional Borrowing##  | ##DeFi Borrowing##  |\n|---|---|\n| Banks charge fees on top of premiums. | No fees clipped onto the borrower.|\n| Borrowing from banks is very costly, high interest rates decided by central bodies.| The rates of interest are decided by basic supply and demand.  |\n| Repayment time for borrowed amount is fixed. | Repayment time is indefinite, no problem as long as loan is not undercollateralized.|\n| Slow and inefficient. No innovations lately.| Quickly developing and highly efficient.|\n| Lengthy paperworks, legal agreements and steep qualifying criteria.| No qualifying criteria, all you need is a crypto wallet and money for gas fees.   |\n",
       "stepItems": []
     },
     {
-      "uuid": "cedcb999-9285-4cb5-962a-4ac417b6eb3e",
-      "name": "How withdraw rate is calculated",
-      "content": "How withdraw rate is calculated\n",
+      "uuid": "885d2401-813c-4b11-8ef1-af69a167730b",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "b95feec9-7e8e-43b6-b9af-5e6f952b90db",
+          "content": "Which of these borrowing options is costlier",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Traditional loan",
+              "key": "A"
+            },
+            {
+              "content": "DeFi loan",
+              "key": "B"
+            },
+            {
+              "content": "Both of these",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "8601a74b-612e-4714-ba84-0ba4e565bd20",
+          "content": "The features of Traditional finance are:\n",
+          "answerKeys": [
+            "C",
+            "A"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Repayment time for borrowed amount is fixed",
+              "key": "A"
+            },
+            {
+              "content": "Quickly developing and highly efficient",
+              "key": "B"
+            },
+            {
+              "content": "Lengthy paperworks, legal agreements and steep qualifying criteria",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "3364112a-6a73-4141-820b-8f30d4a8bac2",
+          "content": "The advantages of DeFi are:\n",
+          "answerKeys": [
+            "A",
+            "B"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Repayment time is indefinite, no problem as long as loan is not undercollateralized.",
+              "key": "A"
+            },
+            {
+              "content": "Quickly developing and highly efficient",
+              "key": "B"
+            },
+            {
+              "content": "Lengthy paperworks, legal agreements and steep qualifying criteria",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "6f248a04-55f8-4aa1-bb95-c26c2d027060",
+          "content": "DeFi protocols are slower than traditional banks. (T/F)",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "False\n",
+              "key": "A"
+            },
+            {
+              "content": "True\n",
+              "key": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "263d46f0-5058-406f-bc4e-0a470b437474",
+      "name": "Use cases of overcollateralized loans",
+      "content": "- **Credit enchancement:**\nTraditionally, overcollaterization is used as a credit enhancement technique, That is it is used as a means of risk-reduction to the lender in case of financial stress. By overcollaterization, credit risk is eliminated; The lender could liquidate the collateral to recover any possible loan losses.\nThis also works in the borrowers favor. With the increased security provided to the lender, The borrower is put in a position where they can negotiate for a better interest offer on the loan.\n\n- **Security:**\nOvercollaterization comes to the rescue when dealing with highly volatile assets like cryptocurrencies. In case the value of the collateral dips beyond the actual value of the loan taken, Then the lender’s assets are compromised. To prevent this, DeFi organizations set the percentage of overcollateralization. In case the value of the collateral dips beyond a certain point, It is liquidated and the position of the lender is secured.\n\n- **Buffer:**\nAn overcollateralized stablecoin has a large number of cryptocurrency tokens maintained at a reserve for issuing a lower number of stablecoins. This offers a buffer against price fluctuations.\n\n- **Leverage:**\nLeveraging interest rates of currency taken loan against and invested in. \n\n- **Liquidity Generation:**\nAnother simple use case would be liquidity. You just generated liquidity without losing hold of your cryptocurrency by borrowing a loan with it as collateral.\n\n- Overcollateralization is a common practice in securitized financial products like Collateralized loan obligations (CLO) and Mortgage Backed Securities (MBO). \n",
       "stepItems": []
     },
     {
-      "uuid": "b3177ea0-0aa6-46f1-87f7-01600e169764",
-      "name": "Risks",
-      "content": "Risks\n",
+      "uuid": "6d2fcd97-bc0b-4815-a2c6-a85780e90824",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "e554d23e-808d-4fd6-a913-fd7c9b25a1c8",
+          "content": "Overcollateralization is a common practice in:\n",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "CLO",
+              "key": "A"
+            },
+            {
+              "content": "MBO",
+              "key": "B"
+            },
+            {
+              "content": "Securitized financial products",
+              "key": "C"
+            },
+            {
+              "content": "All of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "fc4805a4-291b-40d2-81dc-765cd58e551a",
+          "content": "In what way is overcollateralization beneficial?",
+          "answerKeys": [
+            "A",
+            "B",
+            "C"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Liquidity",
+              "key": "A"
+            },
+            {
+              "content": "Leveraging",
+              "key": "B"
+            },
+            {
+              "content": "For favourable loan terms",
+              "key": "C"
+            },
+            {
+              "content": "To spend excess assets",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "4be60690-e01b-4971-91fa-14770347cdf0",
+          "content": "Traditionally, over-collateralization is used as?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Credit enhancement technique",
+              "key": "A"
+            },
+            {
+              "content": "Credit producing technique",
+              "key": "B"
+            },
+            {
+              "content": "Credit advancement technique",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "d9a5aa6e-4d50-420d-afdb-2e9d7a642698",
+          "content": "Over-collaterization is especially needed in risk reduction of lending which of these?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Volatile assets",
+              "key": "A"
+            },
+            {
+              "content": "Stable assets",
+              "key": "B"
+            },
+            {
+              "content": "Semi-stable assets",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "bbab5096-8edb-4960-9d45-5eb399e2389b",
+      "name": "Borrowing in Aave and Debt Tokenization",
+      "content": "Aave uses debt tokenization to keep track of debt accumulated by the borrower.\n\n## What _is_ debt tokenization? How exactly does it work?\n\nDebt tokenization is like a representation of the debt held in a borrower's name in the form of tokens. \nWhen the borrower incurs debt, debt tokens are minted. The debt gets accrued to the debt tokens with interest. \nThe debt tokens are burnt as the debt is repaid.\n\n## Process of borrowing in Aave\n\n\n\n*     Before borrowing, the users must put forward collateral. The LTV of each coin is different. For stablecoins, LTV is generally higher, while LTV is a bit lower for more volatile assets. Since the probability of the value of a more volatile coin dipping is higher, this is done to protect the lender's position in case of liquidation.\n\n    **Note:** All assets are borrowed upon over-collateralization.\n\n* You can find the crypto you wish to borrow on the Aave page once you are done paying collateral.\n* Click \"borrow\" on the right of the screen.\n* The user is then prompted to connect their web 3.0 digital wallet. Once connected, choose the amount you would like to borrow.\n* The website has options for stable interest rates and variable interest rates.\n* Choose the preferred interest rate and confirm the transaction through your web 3.0 digital wallet.\n\n## Changes in Aave 2.0\n * Borrowers can swap between variable and stable interest rates, which means the user can get the best possible interest rate offer at any given time.\n\n * Collateral deposited before borrowing funds can now be swapped for another cryptocurrency inside Aave. \n\n * You can now directly repay debt using collateral. In V1, they will first need to withdraw the collateral, use it to buy the asset borrowed, then finally repay the debt and unlock all the deposited collateral. This operation costs time and requires, at best, four separate transactions on several protocols.\n\n * Anyone can trade their debt position from one asset to another natively. You could, for example, borrow DAI and change your debt position to USDC as soon as USDC becomes cheaper to borrow, all of this within a single transaction.\n",
       "stepItems": []
+    },
+    {
+      "uuid": "d7660d1c-a7f4-47ae-b51b-1838d6ccce63",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "4348d9b9-144b-4869-be3a-88d8f559adaa",
+          "content": "Overcollateralization in normal DeFi borrowing is?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Mandatory",
+              "key": "A"
+            },
+            {
+              "content": "Never used",
+              "key": "B"
+            },
+            {
+              "content": "Sometimes used",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "2d7198af-cc91-4f23-b3ac-b3222debc05d",
+          "content": "The function of Debt tokens is?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "To keep count of the interest on debt for a given address/user",
+              "key": "A"
+            },
+            {
+              "content": "To keep count of the interest on deposited money for a given address/user",
+              "key": "B"
+            },
+            {
+              "content": "To be used in voting for changes in the protocol",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "4dc47ce6-6e4c-4775-8a72-946969055355",
+          "content": "What does aave use to keep track of debt?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Atokens",
+              "key": "A"
+            },
+            {
+              "content": "UNI",
+              "key": "B"
+            },
+            {
+              "content": "debtTokens",
+              "key": "C"
+            },
+            {
+              "content": "Both A and B",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "899ca225-49a2-4413-8130-034267921f7d",
+          "content": "You can find the crypto you wish to borrow on the Aave page once you are done doing?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Interest rate decision",
+              "key": "A"
+            },
+            {
+              "content": "Logging on to Aave",
+              "key": "B"
+            },
+            {
+              "content": "Paying collateral",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "3dca0632-f022-49e9-9201-80fb56299341",
+      "name": "Interest rates in Aave",
+      "content": "",
+      "stepItems": []
+    },
+    {
+      "uuid": "f0b4c06e-afa6-4f1f-a70b-2228264f88e6",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "46f042d1-ca88-4702-9828-15bc773b0214",
+          "content": "By what percentage can the staked AAVE tokens of the token holders be slashed incase of a liquidity crisis?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "30%",
+              "key": "A"
+            },
+            {
+              "content": "50%",
+              "key": "B"
+            },
+            {
+              "content": "80%",
+              "key": "C"
+            },
+            {
+              "content": "10%",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "26821fd5-a565-4aa2-a6e6-0b4e5479859a",
+          "content": "The Aave token holders are incentivized in return for which of the following?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "For approving the governance proposals",
+              "key": "A"
+            },
+            {
+              "content": "For proposing AIPs and voting",
+              "key": "B"
+            },
+            {
+              "content": "For bearing the risk of the protocol i.e. by staking",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "0f72e59f-e5df-4b0a-8011-4bf79e7121fe",
+          "content": "By what percentage can the staked AAVE tokens of the token holders be slashed incase of a liquidity crisis?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "30%",
+              "key": "A"
+            },
+            {
+              "content": "50%",
+              "key": "B"
+            },
+            {
+              "content": "80%",
+              "key": "C"
+            },
+            {
+              "content": "10%",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "a5b8e729-5554-40aa-a29d-909bb62e3d9d",
+          "content": "The Aave token holders are incentivized in return for which of the following?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "For approving the governance proposals",
+              "key": "A"
+            },
+            {
+              "content": "For proposing AIPs and voting",
+              "key": "B"
+            },
+            {
+              "content": "For bearing the risk of the protocol i.e. by staking",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "a5b66b01-9ffb-4000-83ba-a41715294d80",
+      "name": "Liquidation in Aave",
+      "content": "## Liquidation\nThe act of selling off collateral in order to cover for debt. \nLiquidation is a process that occurs when a borrower's health factor goes below 1 due to their collateral value not properly covering their loan/debt value. \nThis might happen when the collateral decreases in value or the borrowed debt increases in value against each other. \nThis collateral vs loan value ratio is shown in the health factor (H.F.).\n\nThe Health factor of a loan ( i.e., H.F. = ΣCollateral in ETH x Liquidation threshold / Total borrows ) should be maintained above one by the borrower at all costs.\nThis is because if the H.F. drops below 1, The collateral is bound to be liquidated because H.F. less than one indicates that the loan is undercollateralized. \nSo the collateral is liquidated, and a part of the loan is paid off to bring the H.F. back to more than 1. \nThe collateral is sold off to a liquidity provider with an incentive bonus. T\nThe users who pay off the loans and buy collateral are called **liquidators**.\n\n## Preventation of liquidation\nLiquidation is an event triggered by the H.F. value of loan dipping below 1. \nThis can be prevented by two ways.\n1. Deposit more collateral into the loan\n2. Repay part of the loan such that the H.F. goes comfortably above 1. \n\nOne should be mindful of the stablecoin price fluctuations due to market conditions and how it might affect one’s H.F.\n\n## Significance of Liquidation\nThe current system of liquidation is beneficial for those who perform the liquidations. They are given a significant amount of money as a reward, which acts as an incentive.\nThis ensures that the lenders are provided with safety against loan defaults and bad loans, though the loan might be overcollateralized, without liquidators to buy the collateral, the excessive collateral just sits there idly.\nLiquidations come very handy in bearish markets from the lender point of view.\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "763f5361-bdf7-4b06-9324-d7b8c5fc0e14",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "e94a787c-7601-4968-9274-0d8623c35298",
+          "content": "Collateral is under risk of liquidation when",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "H.F. < 1",
+              "key": "A"
+            },
+            {
+              "content": "H.F. = 1",
+              "key": "B"
+            },
+            {
+              "content": "H.F. > 1",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "03b42395-a459-4c85-8b50-b0c4ac3c4247",
+          "content": "Can liquidation be prevented?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "No\n",
+              "key": "A"
+            },
+            {
+              "content": "Yes\n",
+              "key": "B"
+            },
+            {
+              "content": "Sometimes",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "67d57f7d-cd19-4c1f-840f-e42cac38e46a",
+          "content": "How can you prevent liquidation?",
+          "answerKeys": [
+            "A",
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "By repaying part of debt",
+              "key": "A"
+            },
+            {
+              "content": "By adding collateral to debt",
+              "key": "B"
+            },
+            {
+              "content": "By borrowing more money",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "ad24dc55-48e9-4946-9aa4-410722bb3f8d",
+          "content": "Those who buy collateral with bonuses are called?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Liquidators",
+              "key": "A"
+            },
+            {
+              "content": "Liquidity providers",
+              "key": "B"
+            },
+            {
+              "content": "Liquidity saviours",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

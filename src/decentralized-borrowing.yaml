@@ -40,7 +40,7 @@ steps:
 
   - uuid: 00836aea-d129-443c-9d57-241b7260dad4
     name: Evaluation
-    content: 
+    content: |
     stepItems:
       - uuid: 211471f1-e556-46f5-b4b2-97fd1280027c
         content: Which parameter decides the risk of an loan's liquidation?
@@ -70,7 +70,7 @@ steps:
            - content: Liquidation
              key: C
            - content: None of these
-             key: 
+             key: D
       - uuid: 3b102044-5c6f-4e25-9388-c50be5746f01
         content: LTV stands for
         answerKeys:
@@ -99,7 +99,7 @@ steps:
            - content: Liquidation threshold
              key: C
            - content: None of these
-             key: 
+             key: D
         
 
   - uuid: 1a9ac52f-1e5e-4098-8cf4-f471dab865a2
@@ -116,7 +116,7 @@ steps:
  
   - uuid: 885d2401-813c-4b11-8ef1-af69a167730b
     name: Evaluation
-    content: 
+    content: |
     stepItems:
       - uuid: b95feec9-7e8e-43b6-b9af-5e6f952b90db
         content: Which of these borrowing options is costlier
@@ -147,7 +147,7 @@ steps:
            - content: Lengthy paperworks, legal agreements and steep qualifying criteria
              key: C
            - content: None of these
-             key: 
+             key: D
       - uuid: 3364112a-6a73-4141-820b-8f30d4a8bac2
         content: |
          The advantages of DeFi are:
@@ -202,7 +202,7 @@ steps:
  
   - uuid: 6d2fcd97-bc0b-4815-a2c6-a85780e90824
     name: Evaluation
-    content: 
+    content: |
     stepItems:
       - uuid: e554d23e-808d-4fd6-a913-fd7c9b25a1c8
         content: |
@@ -303,7 +303,7 @@ steps:
 
   - uuid: d7660d1c-a7f4-47ae-b51b-1838d6ccce63
     name: Evaluation
-    content: 
+    content: |
     stepItems:
       - uuid: 4348d9b9-144b-4869-be3a-88d8f559adaa
         content: Overcollateralization in normal DeFi borrowing is?
@@ -364,12 +364,12 @@ steps:
 
   - uuid: 3dca0632-f022-49e9-9201-80fb56299341
     name: Interest rates in Aave
-    content: 
+    content: |
     stepItems: []
 
   - uuid: f0b4c06e-afa6-4f1f-a70b-2228264f88e6
     name: Evaluation
-    content: 
+    content: |
     stepItems:
       - uuid: 46f042d1-ca88-4702-9828-15bc773b0214
         content: By what percentage can the staked AAVE tokens of the token holders be slashed incase of a liquidity crisis?
@@ -459,7 +459,7 @@ steps:
   
   - uuid: 763f5361-bdf7-4b06-9324-d7b8c5fc0e14
     name: Evaluation
-    content: 
+    content: |
     stepItems:
       - uuid: e94a787c-7601-4968-9274-0d8623c35298
         content: Collateral is under risk of liquidation when
