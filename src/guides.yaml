@@ -1,7 +1,7 @@
 guides:
   - aavenomics.yaml
   - lending-and-borrowing-basics.yaml
-  - decentralized-lending.yaml
+  - lending-in-aave.yaml
   - decentralized-borrowing.yaml
   - flash-loans.yaml
   - intro-aave-v3.yaml

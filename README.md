@@ -9,7 +9,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 | ----------- | ----------- |----------- | ----------- |
 | 1      | AAVEnomics | Explains tokenomics of AAVE |  [Link](generated/markdown/aavenomics.md) |
  | 2      | Intro to Lending & Borrowing | Explains background and terminologies of Lending and Borrowing |  [Link](generated/markdown/lending-and-borrowing-basics.md) |
- | 3      | Lending in Aave | How Lending works Aave |  [Link](generated/markdown/decentralized-lending.md) |
+ | 3      | Lending in Aave | How Lending works Aave |  [Link](generated/markdown/lending-in-aave.md) |
  | 4      | Decentralized Borrowing | How Borrowing works in Decentralized Finance |  [Link](generated/markdown/decentralized-borrowing.md) |
  | 5      | Flash Loans | Explains what are flash loans and how to use them in AAVE |  [Link](generated/markdown/flash-loans.md) |
  | 6      | Intro to AAVE V3 | This guide shares various new features of AAVE V3 |  [Link](generated/markdown/intro-aave-v3.md) |
