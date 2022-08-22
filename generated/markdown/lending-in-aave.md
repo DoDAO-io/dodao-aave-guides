@@ -15,7 +15,7 @@ lending money is even more opaque than traditional finance, and the user is not 
 how the funds will be used and the risks associated with lending the money. AAVE is a lending and borrowing protocol provide full transparency on how the 
 pool of the funds lent by users is deployed.Lending in Aave doesn't require any personal data.Lending through Aave gives some advantages over traditional lending, 
 such as no taxes and the possibility of higher returns. The elimination of the middlemen makes the protocol profitable for lenders as the borrowers 
-interest completely goes to lenders.
+interest mostly goes to lenders.
 
 
 ### Important Terms 
@@ -88,23 +88,17 @@ the customer needs to do a lot of paperwork for lending and borrowing in the cas
 Aave is an open source protocol that anyone can view and analyze. Lending through this protocol is very easy when compared to traditional finance methods. 
 In order to lend money through traditional finance, customers need to open an account with the institution, which can take time. Only after the account is 
 open can they lend their money. There is also a requirement to maintain a minimum balance in traditional finance accounts. Aave is an uncensored platform 
-where anyone can be a lender.
-
+where anyone can be a lender.      
 |          Lending in Traditional Finance                                                      |                    Lending in Aave                                                        |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | Requires KYC for account opening and  lending.                                               | There is no requirement for any personal information.                                     |
-| The lent assets are taxable.                                                                 | The lending and borrowing are taxless                                                     |
-| Traditional Finance is Governed by the central authority of finance.                         | Governed by the Aave token holders,                                                       |
+| Traditional Finance is governed by the central authority of finance.                         | Governed by the Aave token holders,                                                       |
 | There is censorship for users.                                                               | There is no censorship. Anyone can be a lender in Aave.                                   |
-| There is a requirement for maintaining a minimum balance.                                    | There is no requirement for maintaining minimum balances.                                 |
+| There is mostly a requirement for maintaining a minimum balance.                             | There is no requirement for maintaining minimum balances.                                 |
 | There are lending limits that vary for different types of accounts.                          | There are no lending limits in the case of Aave                                           |
-| Traditional finances take most of the interest from the borrowers.                           | Aave is a decentralized protocol hence there is no involvement of middlemen.              |
 | Fund management and utilization are not transparent.                                         | Aave is an open-source protocol that anyone can view and analyze.                         |
-| The lenders get less ROI comparatively.                                                      | The lenders get more ROI as the complete interest from the borrowers goes to the lenders. |
-| Users need to trust the finance.                                                             | There are no trust issues as the protocol runs on smart contracts.                        |
+| The lenders get less ROI comparatively.                                                      | The lenders get more ROI as there are no middlemans and more interest from the borrowers goes to the lenders. |
 | Lending and borrowing are not instant.                                                       | Lending and borrowing are instant.                                                        |
-| There is very less risk of losing the account as the banks are authorized by the government. | There is a risk of losing the wallet phrase or wallet.                                    |
-      
 
 
     
@@ -123,17 +117,6 @@ where anyone can be a lender.
 - [x]  There are limits for lending which depends on the account type.
 - [x]  The Traditional Finance takes most of the interest from borrowers.
 - [x]  In Traditional Finance, most of the times there is a compulsion for maintaining minimum balance.
-
-
-
-
-
-##### Which of the following are correct about lending in Aave?  
-
-- [x]  The platform is completely decentralized.Hence no involvement of middlemen.
-- [x]  Lending in Aave is taxless and no limits for lending.
-- [x]  Aave gives 10% interest for lenders.
-- [ ]  Aave is an uncensored platform anyone can be a lender in Aave.
 
 
 
@@ -159,7 +142,7 @@ where anyone can be a lender.
   Money gets deposited as aTokens which tracks the interest and grows automatically. It has a lot of advantages over exchange rate-based finance.
 
 * **Efficiency -** There is no limit for lending and borrowing, which is not possible in the case of traditional finance. No requirement to 
-  share any personal details with Aave.Aave eliminates the middleman, so the complete interest goes to the lenders.The ROI is very high when 
+  share any personal details with Aave.Aave eliminates the middleman, so most of the interest goes to the lenders.The ROI is very high when 
   compared to lending on traditional finance.The liquidity provider can get discounts on collateral during a liquidity call, which is not 
   typical in traditional finance.The interest provided in Aave is much higher, even for stablecoins.
 
@@ -168,9 +151,7 @@ where anyone can be a lender.
   faster for everyone involved. Borrowers can borrow loans with stable or variable interest rates or combined.Users can use the lent money as 
   collateral to borrow loans which is not possible in the case of traditional finance.
  
-* **Anonymity -** The lent assets are untraceable and untaxable.Every lenders are anonymous.The lender's money is more secure with this type of 
-  finance than the traditional finance.The protocol is decentralized and the governance is given to the Aave token holders.Hence there is no 
-  central authority to manipulate the protocol.
+* **Anonymity -** Allows the user to remain anonymous and not share their identity.
 
 
     
@@ -187,14 +168,14 @@ where anyone can be a lender.
 
 - [ ]  The borrowers need to pay high interest on borrowing.
 - [ ]  The interest rate for lenders is fixed.
-- [x]  The complete interest goes to the lenders.
+- [x]  Most of the interest goes to the lenders.
 - [ ]  None of these
 
 
 
 
 
-##### What benefits do a liquidity provider gets on a liquidity call?  
+##### What benefits do a liquidity provider gets on a liquidation call?  
 
 - [x]  The liquidity provider gets the collateral at discounted price.
 - [ ]  Gets extra interest on lent assets.
@@ -210,7 +191,7 @@ where anyone can be a lender.
 - [ ]  Aave provides fixed interest for lenders.
 - [x]  There are no censorship issues anyone of any age can be a lender.
 - [x]  There is no requirement to maintain a minimum balance.
-- [x]  Elimination of middlemen enables lenders to get complete interests from borrowers.
+- [x]  Elimination of middlemen enables lenders to get more interests from borrowers.
 
     
 
