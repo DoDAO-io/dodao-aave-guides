@@ -20,17 +20,17 @@ interest completely goes to lenders.
 
 ### Important Terms 
 
-1. **APY**-The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
-2. **aTokens**- aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
+1. **APY-** The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
+2. **aTokens-** aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
 3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same 
 (in type and value) as another Token.
-4. **Deposit interest**-A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an 
+4. **Deposit interest-** A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an 
 interest-bearing account.
-5. **Stablecoins**-A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold. Stablecoins are designed to 
+5. **Stablecoins-** A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold. Stablecoins are designed to 
 reduce volatility relative to unpegged cryptocurrencies like Bitcoin.
-6. **Flashloan -**Loans can be borrowed without collateral through smart contracts. This process is instant and can help borrowers get the money 
+6. **Flashloan -** Loans can be borrowed without collateral through smart contracts. This process is instant and can help borrowers get the money 
 they need quickly.
-7. **ROI - **Return on investment is a performance measure used to evaluate the efficiency or profitability of an investment or compare the 
+7. **ROI -** Return on investment is a performance measure used to evaluate the efficiency or profitability of an investment or compare the 
 efficiency of several different investments.
 8. **LTV-** loan to value, it represents the borrowing power of the collateral.
 9. **Health Factor -** The health factor determines whether a user is eligible to borrow a loan or not.
@@ -60,8 +60,8 @@ efficiency of several different investments.
 ##### What are stablecoins?  
 
 - [x]  A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold.
-- [ ]  stablecoins are an allternate coin for Bitcoin.
-- [ ]  stable coins are more volatile coins
+- [ ]  Stablecoins are an alternate coin for Bitcoin.
+- [ ]  Stable coins are more volatile coins
 - [ ]  None of these
 
 
@@ -70,8 +70,8 @@ efficiency of several different investments.
 
 ##### Which of the following are correct about lending in Aave?  
 
-- [x]  lending in Aave doesn't require any personal data
-- [ ]  lending in Aave is highly stable and guaranteed returns
+- [x]  Lending in Aave doesn't require any personal data
+- [ ]  Lending in Aave is highly stable and guaranteed returns
 - [x]  Aave has no limits for lending
 - [ ]  None of these
 
@@ -83,7 +83,7 @@ efficiency of several different investments.
 
 ### lending in Traditional Finance vs Aave
 
-In traditional finance, the protocol is governed by the central authority. In Aave, the protocol is governed by the Aave token holders. In traditional finance, 
+In Traditional Finance, the protocol is governed by the central authority. In Aave, the protocol is governed by the Aave token holders. In traditional finance, 
 the customer needs to do a lot of paperwork for lending and borrowing in the case of Aave, the lending and borrowing are instant. 
 Aave is an open source protocol that anyone can view and analyze. Lending through this protocol is very easy when compared to traditional finance methods. 
 In order to lend money through traditional finance, customers need to open an account with the institution, which can take time. Only after the account is 
@@ -104,6 +104,7 @@ where anyone can be a lender.
 | Users need to trust the finance.                                                             | There are no trust issues as the protocol runs on smart contracts.                        |
 | Lending and borrowing are not instant.                                                       | Lending and borrowing are instant.                                                        |
 | There is very less risk of losing the account as the banks are authorized by the government. | There is a risk of losing the wallet phrase or wallet.                                    |
+      
 
 
     
@@ -116,12 +117,12 @@ where anyone can be a lender.
 
 
 
-##### Which is following is correct about lending in traditonal finance?  
+##### Which is following is correct about lending in Traditonal Finance?  
 
 - [ ]  Traditional finance is a uncensored platform.
 - [x]  There are limits for lending which depends on the account type.
-- [x]  The traditional takes most of the interest from borrowers.
-- [x]  In traditional finance, most of the times there is a compulsion for maintaining minimum balance.
+- [x]  The Traditional Finance takes most of the interest from borrowers.
+- [x]  In Traditional Finance, most of the times there is a compulsion for maintaining minimum balance.
 
 
 
@@ -130,7 +131,7 @@ where anyone can be a lender.
 ##### Which of the following are correct about lending in Aave?  
 
 - [x]  The platform is completely decentralized.Hence no involvement of middlemen.
-- [x]  Lending in aave is taxless and no limits for lending.
+- [x]  Lending in Aave is taxless and no limits for lending.
 - [x]  Aave gives 10% interest for lenders.
 - [ ]  Aave is an uncensored platform anyone can be a lender in Aave.
 
@@ -142,7 +143,7 @@ where anyone can be a lender.
 
 - [ ]  maximum limit depends on the account type in Aave.
 - [x]  There is no such limit for lending.Users can lend as much they can.
-- [ ]  lenders can lend assets upto one million usd.
+- [ ]  Lenders can lend assets upto one million usd.
 - [ ]  None of these
 
     
@@ -165,9 +166,9 @@ where anyone can be a lender.
 * **User experience -** There is no cumbersome paperworks involved in lending in aave.There is no requirement to maintain a minimum balance.
   There are no censorship issues anyone of any age can be a lender.Lending and borrowing can be instant and paperless. This makes it easier and 
   faster for everyone involved. Borrowers can borrow loans with stable or variable interest rates or combined.Users can use the lent money as 
-  collateral to borrow loans. This is not possible in the case of traditional finance.
+  collateral to borrow loans which is not possible in the case of traditional finance.
  
-* **Anonymity -** The lent assets are untracable and untaxable.Every lenders are anonymous.The lender's money is more secure with this type of 
+* **Anonymity -** The lent assets are untraceable and untaxable.Every lenders are anonymous.The lender's money is more secure with this type of 
   finance than the traditional finance.The protocol is decentralized and the governance is given to the Aave token holders.Hence there is no 
   central authority to manipulate the protocol.
 
@@ -217,7 +218,7 @@ where anyone can be a lender.
 ---
 ## How lending works in Aave
 
-### How Lending  works in AAVE
+### How Lending  works in Aave
 
 Aave's lending is entirely decentralized, so there's no need to share personal information. Aave uses a tokenization strategy to provide liquidity. 
 Users can work with the platform without worrying about sharing their data. Upon deposit, the depositor receives a corresponding amount of derivative tokens 
@@ -284,8 +285,8 @@ to withraw assets.
 ##### What are the factors does supply rate depends on?  
 
 - [x]  Utilization ratio
-- [x]  reserve factor
-- [x]  variable rate
+- [x]  Reserve factor
+- [x]  Variable rate
 - [ ]  None of these
 
 
@@ -294,9 +295,9 @@ to withraw assets.
 
 ##### Which of the following happens in the protocol when user deposits assets?  
 
-- [ ]  assets are bridged to other chain
+- [ ]  Assets are bridged to other chain
 - [x]  aTokens are minted
-- [x]  interest rates are updated
+- [x]  Interest rates are updated
 - [ ]  None of these
 
 
@@ -306,8 +307,8 @@ to withraw assets.
 ##### Which of the following happens in the protocol when user redeems assets?  
 
 - [x]  aTokens are burnt
-- [x]  liquidity is decreased
-- [x]  interest rates are updated
+- [x]  Liquidity is decreased
+- [x]  Interest rates are updated
 - [ ]  aTokens are minted
 
     

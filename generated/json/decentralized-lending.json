@@ -17,7 +17,7 @@
     {
       "uuid": "3183ab1d-e918-43a2-9a54-d14d19e64ca1",
       "name": "Overview",
-      "content": "### Lending in Web3\n\nCrypto Projects use the money lent in various ways like Staking on different protocols for  Yield Farming, interest, etc. There is no limit for lending assets. \nlending money is even more opaque than traditional finance, and the user is not informed about how the money is being used. So the user should be aware of \nhow the funds will be used and the risks associated with lending the money. AAVE is a lending and borrowing protocol provide full transparency on how the \npool of the funds lent by users is deployed.Lending in Aave doesn't require any personal data.Lending through Aave gives some advantages over traditional lending, \nsuch as no taxes and the possibility of higher returns. The elimination of the middlemen makes the protocol profitable for lenders as the borrowers \ninterest completely goes to lenders.\n\n\n### Important Terms \n\n1. **APY**-The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. \n2. **aTokens**- aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.\n3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same \n(in type and value) as another Token.\n4. **Deposit interest**-A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an \ninterest-bearing account.\n5. **Stablecoins**-A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold. Stablecoins are designed to \nreduce volatility relative to unpegged cryptocurrencies like Bitcoin.\n6. **Flashloan -**Loans can be borrowed without collateral through smart contracts. This process is instant and can help borrowers get the money \nthey need quickly.\n7. **ROI - **Return on investment is a performance measure used to evaluate the efficiency or profitability of an investment or compare the \nefficiency of several different investments.\n8. **LTV-** loan to value, it represents the borrowing power of the collateral.\n9. **Health Factor -** The health factor determines whether a user is eligible to borrow a loan or not.\n",
+      "content": "### Lending in Web3\n\nCrypto Projects use the money lent in various ways like Staking on different protocols for  Yield Farming, interest, etc. There is no limit for lending assets. \nlending money is even more opaque than traditional finance, and the user is not informed about how the money is being used. So the user should be aware of \nhow the funds will be used and the risks associated with lending the money. AAVE is a lending and borrowing protocol provide full transparency on how the \npool of the funds lent by users is deployed.Lending in Aave doesn't require any personal data.Lending through Aave gives some advantages over traditional lending, \nsuch as no taxes and the possibility of higher returns. The elimination of the middlemen makes the protocol profitable for lenders as the borrowers \ninterest completely goes to lenders.\n\n\n### Important Terms \n\n1. **APY-** The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. \n2. **aTokens-** aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.\n3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same \n(in type and value) as another Token.\n4. **Deposit interest-** A deposit interest rate is the rate at which you earn money from a bank or financial institution on your deposits in an \ninterest-bearing account.\n5. **Stablecoins-** A stablecoin is a digital currency pegged to a stable reserve asset like the U.S. dollar or gold. Stablecoins are designed to \nreduce volatility relative to unpegged cryptocurrencies like Bitcoin.\n6. **Flashloan -** Loans can be borrowed without collateral through smart contracts. This process is instant and can help borrowers get the money \nthey need quickly.\n7. **ROI -** Return on investment is a performance measure used to evaluate the efficiency or profitability of an investment or compare the \nefficiency of several different investments.\n8. **LTV-** loan to value, it represents the borrowing power of the collateral.\n9. **Health Factor -** The health factor determines whether a user is eligible to borrow a loan or not.\n",
       "stepItems": []
     },
     {
@@ -64,11 +64,11 @@
               "key": "A"
             },
             {
-              "content": "stablecoins are an allternate coin for Bitcoin.",
+              "content": "Stablecoins are an alternate coin for Bitcoin.",
               "key": "B"
             },
             {
-              "content": "stable coins are more volatile coins",
+              "content": "Stable coins are more volatile coins",
               "key": "C"
             },
             {
@@ -87,11 +87,11 @@
           "type": "MultipleChoice",
           "choices": [
             {
-              "content": "lending in Aave doesn't require any personal data",
+              "content": "Lending in Aave doesn't require any personal data",
               "key": "A"
             },
             {
-              "content": "lending in Aave is highly stable and guaranteed returns",
+              "content": "Lending in Aave is highly stable and guaranteed returns",
               "key": "B"
             },
             {
@@ -109,7 +109,7 @@
     {
       "uuid": "edbf7f33-0e07-4b73-a27e-e9de48186a60",
       "name": "Lending in Traditional Finance vs Aave",
-      "content": "### lending in Traditional Finance vs Aave\n\nIn traditional finance, the protocol is governed by the central authority. In Aave, the protocol is governed by the Aave token holders. In traditional finance, \nthe customer needs to do a lot of paperwork for lending and borrowing in the case of Aave, the lending and borrowing are instant. \nAave is an open source protocol that anyone can view and analyze. Lending through this protocol is very easy when compared to traditional finance methods. \nIn order to lend money through traditional finance, customers need to open an account with the institution, which can take time. Only after the account is \nopen can they lend their money. There is also a requirement to maintain a minimum balance in traditional finance accounts. Aave is an uncensored platform \nwhere anyone can be a lender.\n\n|          Lending in Traditional Finance                                                      |                    Lending in Aave                                                        |\n|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|\n| Requires KYC for account opening and  lending.                                               | There is no requirement for any personal information.                                     |\n| The lent assets are taxable.                                                                 | The lending and borrowing are taxless                                                     |\n| Traditional Finance is Governed by the central authority of finance.                         | Governed by the Aave token holders,                                                       |\n| There is censorship for users.                                                               | There is no censorship. Anyone can be a lender in Aave.                                   |\n| There is a requirement for maintaining a minimum balance.                                    | There is no requirement for maintaining minimum balances.                                 |\n| There are lending limits that vary for different types of accounts.                          | There are no lending limits in the case of Aave                                           |\n| Traditional finances take most of the interest from the borrowers.                           | Aave is a decentralized protocol hence there is no involvement of middlemen.              |\n| Fund management and utilization are not transparent.                                         | Aave is an open-source protocol that anyone can view and analyze.                         |\n| The lenders get less ROI comparatively.                                                      | The lenders get more ROI as the complete interest from the borrowers goes to the lenders. |\n| Users need to trust the finance.                                                             | There are no trust issues as the protocol runs on smart contracts.                        |\n| Lending and borrowing are not instant.                                                       | Lending and borrowing are instant.                                                        |\n| There is very less risk of losing the account as the banks are authorized by the government. | There is a risk of losing the wallet phrase or wallet.                                    |\n",
+      "content": "### lending in Traditional Finance vs Aave\n\nIn Traditional Finance, the protocol is governed by the central authority. In Aave, the protocol is governed by the Aave token holders. In traditional finance, \nthe customer needs to do a lot of paperwork for lending and borrowing in the case of Aave, the lending and borrowing are instant. \nAave is an open source protocol that anyone can view and analyze. Lending through this protocol is very easy when compared to traditional finance methods. \nIn order to lend money through traditional finance, customers need to open an account with the institution, which can take time. Only after the account is \nopen can they lend their money. There is also a requirement to maintain a minimum balance in traditional finance accounts. Aave is an uncensored platform \nwhere anyone can be a lender.\n\n|          Lending in Traditional Finance                                                      |                    Lending in Aave                                                        |\n|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|\n| Requires KYC for account opening and  lending.                                               | There is no requirement for any personal information.                                     |\n| The lent assets are taxable.                                                                 | The lending and borrowing are taxless                                                     |\n| Traditional Finance is Governed by the central authority of finance.                         | Governed by the Aave token holders,                                                       |\n| There is censorship for users.                                                               | There is no censorship. Anyone can be a lender in Aave.                                   |\n| There is a requirement for maintaining a minimum balance.                                    | There is no requirement for maintaining minimum balances.                                 |\n| There are lending limits that vary for different types of accounts.                          | There are no lending limits in the case of Aave                                           |\n| Traditional finances take most of the interest from the borrowers.                           | Aave is a decentralized protocol hence there is no involvement of middlemen.              |\n| Fund management and utilization are not transparent.                                         | Aave is an open-source protocol that anyone can view and analyze.                         |\n| The lenders get less ROI comparatively.                                                      | The lenders get more ROI as the complete interest from the borrowers goes to the lenders. |\n| Users need to trust the finance.                                                             | There are no trust issues as the protocol runs on smart contracts.                        |\n| Lending and borrowing are not instant.                                                       | Lending and borrowing are instant.                                                        |\n| There is very less risk of losing the account as the banks are authorized by the government. | There is a risk of losing the wallet phrase or wallet.                                    |\n      \n",
       "stepItems": []
     },
     {
@@ -119,7 +119,7 @@
       "stepItems": [
         {
           "uuid": "eb71aa60-fd34-4667-8948-912a7172cd9e",
-          "content": "Which is following is correct about lending in traditonal finance?",
+          "content": "Which is following is correct about lending in Traditonal Finance?",
           "answerKeys": [
             "B",
             "C",
@@ -136,11 +136,11 @@
               "key": "B"
             },
             {
-              "content": "The traditional takes most of the interest from borrowers.",
+              "content": "The Traditional Finance takes most of the interest from borrowers.",
               "key": "C"
             },
             {
-              "content": "In traditional finance, most of the times there is a compulsion for maintaining minimum balance.",
+              "content": "In Traditional Finance, most of the times there is a compulsion for maintaining minimum balance.",
               "key": "D"
             }
           ]
@@ -160,7 +160,7 @@
               "key": "A"
             },
             {
-              "content": "Lending in aave is taxless and no limits for lending.",
+              "content": "Lending in Aave is taxless and no limits for lending.",
               "key": "B"
             },
             {
@@ -190,7 +190,7 @@
               "key": "B"
             },
             {
-              "content": "lenders can lend assets upto one million usd.",
+              "content": "Lenders can lend assets upto one million usd.",
               "key": "C"
             },
             {
@@ -204,7 +204,7 @@
     {
       "uuid": "f07d23ed-d425-4a92-9920-469bf604049b",
       "name": "Adavantages of Lending in Aave",
-      "content": "\n### Advantages of lending in Aave \n\n* **Transparency -** The platform is completely open-source and transparent.Anyone can view and analyse the smartcontracts of the Aave.\n  Money gets deposited as aTokens which tracks the interest and grows automatically. It has a lot of advantages over exchange rate-based finance.\n\n* **Efficiency -** There is no limit for lending and borrowing, which is not possible in the case of traditional finance. No requirement to \n  share any personal details with Aave.Aave eliminates the middleman, so the complete interest goes to the lenders.The ROI is very high when \n  compared to lending on traditional finance.The liquidity provider can get discounts on collateral during a liquidity call, which is not \n  typical in traditional finance.The interest provided in Aave is much higher, even for stablecoins.\n\n* **User experience -** There is no cumbersome paperworks involved in lending in aave.There is no requirement to maintain a minimum balance.\n  There are no censorship issues anyone of any age can be a lender.Lending and borrowing can be instant and paperless. This makes it easier and \n  faster for everyone involved. Borrowers can borrow loans with stable or variable interest rates or combined.Users can use the lent money as \n  collateral to borrow loans. This is not possible in the case of traditional finance.\n \n* **Anonymity -** The lent assets are untracable and untaxable.Every lenders are anonymous.The lender's money is more secure with this type of \n  finance than the traditional finance.The protocol is decentralized and the governance is given to the Aave token holders.Hence there is no \n  central authority to manipulate the protocol.\n",
+      "content": "\n### Advantages of lending in Aave \n\n* **Transparency -** The platform is completely open-source and transparent.Anyone can view and analyse the smartcontracts of the Aave.\n  Money gets deposited as aTokens which tracks the interest and grows automatically. It has a lot of advantages over exchange rate-based finance.\n\n* **Efficiency -** There is no limit for lending and borrowing, which is not possible in the case of traditional finance. No requirement to \n  share any personal details with Aave.Aave eliminates the middleman, so the complete interest goes to the lenders.The ROI is very high when \n  compared to lending on traditional finance.The liquidity provider can get discounts on collateral during a liquidity call, which is not \n  typical in traditional finance.The interest provided in Aave is much higher, even for stablecoins.\n\n* **User experience -** There is no cumbersome paperworks involved in lending in aave.There is no requirement to maintain a minimum balance.\n  There are no censorship issues anyone of any age can be a lender.Lending and borrowing can be instant and paperless. This makes it easier and \n  faster for everyone involved. Borrowers can borrow loans with stable or variable interest rates or combined.Users can use the lent money as \n  collateral to borrow loans which is not possible in the case of traditional finance.\n \n* **Anonymity -** The lent assets are untraceable and untaxable.Every lenders are anonymous.The lender's money is more secure with this type of \n  finance than the traditional finance.The protocol is decentralized and the governance is given to the Aave token holders.Hence there is no \n  central authority to manipulate the protocol.\n",
       "stepItems": []
     },
     {
@@ -297,7 +297,7 @@
     {
       "uuid": "46110485-3f1a-43cd-9909-9b47338f3b53",
       "name": "How lending works in Aave",
-      "content": "### How Lending  works in AAVE\n\nAave's lending is entirely decentralized, so there's no need to share personal information. Aave uses a tokenization strategy to provide liquidity. \nUsers can work with the platform without worrying about sharing their data. Upon deposit, the depositor receives a corresponding amount of derivative tokens \ncalled aTokens .aTokens are minted in a 1:1 ratio. The balance of aTokens of every depositor grows over time, driven by the perpetual accrual of interest of \ndeposits. aTokens are fully ERC20 compliant. The lender's money is stored within each specific aToken.This gives the protocol better segregation between assets,\nwhich favors the implementation of yield farming aware aTokens.\n\n** Deposit**\n\nWhenever a user deposits or lends assets, the liquidity of the protocol is increased. The protocol updates the interest rates according to the liquidity. \nMint equivalent amount of aTokens in 1:1 ratio. Transferring assets to the reserve is a crucial step in asset management. The reserve is where all assets \nare stored, so this step must be carried out correctly. Whenever user deposits an amount m in the protocol, his scaled balance updates as follows\n  \n ScBt(x) = ScBt-1(x) + m/NIt\n Where,\n* ScB is the scaled balance \n* m is the deposited amount\n* NIt is the ongoing interest cumulated by the reserve\n\n**Supply APY**\n\nThe borrow interest rates paid are distributed as yield for aToken holders supplied to the protocol, excluding a share of yields sent to the ecosystem \nreserve defined by the reserve factor. This interest rate is generated on the asset that is borrowed out and then shared among all the liquidity providers. \nThe supply APY, S\n S = Ut(SBt*St+VBt*Vt)(1−Rt)\n \n* Ut -Utilization ratio It is the ratio of total borrowed assets and total liquidity in the protocol.\n* SBt- share of stable borrows, It is the total assets borrowed at a stable rate in percentage.\n* St-the average stable rate, is the average stable rate of that particular asset.\n* VBt-share of variable borrows, It is the total amount borrowed  in variable rate in percentage.\n* Vt, variable rate, \n* Rt, reserve factor\n\nThe average supply rate in a period includes flash loan fees. The interest generated is represented as aTokens.If the user decides to redeem the assets, \nthey can withdraw them instantly to their wallet. During the process, the aTokens will be burnt, and the assets will be supplied to the user’s wallet.\n\n**Redeem**\n\nIn the process of withrawing the aTokens are burnt to redeem the underlying assets. Reserve must have enough liquidity and user's health factor must be above 1 \nto withraw assets.\n",
+      "content": "### How Lending  works in Aave\n\nAave's lending is entirely decentralized, so there's no need to share personal information. Aave uses a tokenization strategy to provide liquidity. \nUsers can work with the platform without worrying about sharing their data. Upon deposit, the depositor receives a corresponding amount of derivative tokens \ncalled aTokens .aTokens are minted in a 1:1 ratio. The balance of aTokens of every depositor grows over time, driven by the perpetual accrual of interest of \ndeposits. aTokens are fully ERC20 compliant. The lender's money is stored within each specific aToken.This gives the protocol better segregation between assets,\nwhich favors the implementation of yield farming aware aTokens.\n\n** Deposit**\n\nWhenever a user deposits or lends assets, the liquidity of the protocol is increased. The protocol updates the interest rates according to the liquidity. \nMint equivalent amount of aTokens in 1:1 ratio. Transferring assets to the reserve is a crucial step in asset management. The reserve is where all assets \nare stored, so this step must be carried out correctly. Whenever user deposits an amount m in the protocol, his scaled balance updates as follows\n  \n ScBt(x) = ScBt-1(x) + m/NIt\n Where,\n* ScB is the scaled balance \n* m is the deposited amount\n* NIt is the ongoing interest cumulated by the reserve\n\n**Supply APY**\n\nThe borrow interest rates paid are distributed as yield for aToken holders supplied to the protocol, excluding a share of yields sent to the ecosystem \nreserve defined by the reserve factor. This interest rate is generated on the asset that is borrowed out and then shared among all the liquidity providers. \nThe supply APY, S\n S = Ut(SBt*St+VBt*Vt)(1−Rt)\n \n* Ut -Utilization ratio It is the ratio of total borrowed assets and total liquidity in the protocol.\n* SBt- share of stable borrows, It is the total assets borrowed at a stable rate in percentage.\n* St-the average stable rate, is the average stable rate of that particular asset.\n* VBt-share of variable borrows, It is the total amount borrowed  in variable rate in percentage.\n* Vt, variable rate, \n* Rt, reserve factor\n\nThe average supply rate in a period includes flash loan fees. The interest generated is represented as aTokens.If the user decides to redeem the assets, \nthey can withdraw them instantly to their wallet. During the process, the aTokens will be burnt, and the assets will be supplied to the user’s wallet.\n\n**Redeem**\n\nIn the process of withrawing the aTokens are burnt to redeem the underlying assets. Reserve must have enough liquidity and user's health factor must be above 1 \nto withraw assets.\n",
       "stepItems": []
     },
     {
@@ -346,11 +346,11 @@
               "key": "A"
             },
             {
-              "content": "reserve factor",
+              "content": "Reserve factor",
               "key": "B"
             },
             {
-              "content": "variable rate",
+              "content": "Variable rate",
               "key": "C"
             },
             {
@@ -369,7 +369,7 @@
           "type": "MultipleChoice",
           "choices": [
             {
-              "content": "assets are bridged to other chain",
+              "content": "Assets are bridged to other chain",
               "key": "A"
             },
             {
@@ -377,7 +377,7 @@
               "key": "B"
             },
             {
-              "content": "interest rates are updated",
+              "content": "Interest rates are updated",
               "key": "C"
             },
             {
@@ -401,11 +401,11 @@
               "key": "A"
             },
             {
-              "content": "liquidity is decreased",
+              "content": "Liquidity is decreased",
               "key": "B"
             },
             {
-              "content": "interest rates are updated",
+              "content": "Interest rates are updated",
               "key": "C"
             },
             {
