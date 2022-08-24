@@ -20,21 +20,173 @@
       "stepItems": []
     },
     {
+      "uuid": "da663f34-ab93-4778-bd03-0b238908438d",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "6a08e0f7-a646-460c-be2e-3e4c47e4fc43",
+          "type": "SingleChoice",
+          "content": "What do Flash loans mean?",
+          "answerKeys": [
+            "D"
+          ],
+          "choices": [
+            {
+              "content": "Slow loan processing without collateral.",
+              "key": "A"
+            },
+            {
+              "content": "Instant loan processing with collateral",
+              "key": "B"
+            },
+            {
+              "content": "Slow loan processing with collateral.",
+              "key": "C"
+            },
+            {
+              "content": "Instant loan processing without collateral.",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "34614be2-be98-485b-9389-def42c48ef7e",
+          "type": "SingleChoice",
+          "content": "A flash loan can extend to how many transactions?",
+          "answerKeys": [
+            "A"
+          ],
+          "choices": [
+            {
+              "content": "1",
+              "key": "A"
+            },
+            {
+              "content": "2",
+              "key": "B"
+            },
+            {
+              "content": "5",
+              "key": "C"
+            },
+            {
+              "content": "10",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "uuid": "7e3ff517-674f-4897-8d4a-6e77a685177a",
       "name": "What is a Transaction in Ethereum",
       "content": "A transaction is a way of transferring value or any other type of token using Ethereum. In order to transfer \ncryptocurrency, you must have a digital wallet. This wallet must have a public and private key. You can think of \nit like this: your wallet is your bank account, your public key is your account number, and your private key is \nyour pin code.\n\nOnce you have connected your wallet, you can use various decentralized exchanges and decentralized finance \nplatforms to complete transactions. On every transaction, a fee is added, which acts as an incentive to miners \nto keep the chain secure. \n\nUsers can perform various tasks like lending, borrowing, transferring and converting currencies using blockchain.\n\nBut have you ever imagined? Taking a loan without any colleteral, utilizing it and then returning it back in the \nsame transaction? That's what Flash Loans are.\n",
       "stepItems": []
     },
     {
+      "uuid": "e56fa5f0-87c4-4fc3-9010-d81705e40a4a",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "f2ae75d8-20c6-4470-9b9d-450af954a124",
+          "type": "SingleChoice",
+          "content": "What is the collateral amount needed to get a flash loan?",
+          "answerKeys": [
+            "A"
+          ],
+          "choices": [
+            {
+              "content": "No collateral",
+              "key": "A"
+            },
+            {
+              "content": "10%",
+              "key": "B"
+            },
+            {
+              "content": "125%",
+              "key": "C"
+            },
+            {
+              "content": "25%",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "uuid": "85f66561-9874-4d67-9b1c-ce1745277f8a",
       "name": "Working of Flash Loan",
-      "content": "Aave V3 offers two options for flash loans:\n\n  * ``[`flashLoan`](../core-contracts/pool.md#flashloan)`:` Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\\\n  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](../core-contracts/aclmanager.md))\n  \n  * ``[`flashLoanSimple`](../core-contracts/pool.md#flashloansimple):  Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.\n\n### Execution Flow\n\nFor developers, a helpful mental model to consider when developing your solution:\n  \n  1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using [flashLoanSimple()](../core-contracts/pool.md#flashloansimple) or [`flashLoan()`](../core-contracts/pool.md#flashloan).\n  2. After some sanity checks, the `Pool` transfers the requested `amounts` of the `reserves` to your contract, then calls `executeOperation()` on `receiver` contract .\n  3. Your contract, now holding the flash loaned `amount(s)`, executes any arbitrary operation in its code.&#x20;\n  * If you are performing a **flashLoanSimple**, then when your code has finished, you approve Pool for flash loaned amount + fee.\n  * If you are performing **flashLoan,** then for all the reserves either depending on  `interestRateMode` passed for the asset, either the Pool must be approved for flash loaned amount + fee or must or sufficient collateral or credit delegation should be available to open debt position.\n  * If the amount owing is not available (due to a lack of balance or approvaln or insufficient collateral for debt), then the transaction is reverted.\n  4. All of the above happens in 1 transaction (hence in a single ethereum block).\n",
+      "content": "Aave V3 offers two options for flash loans:\n\n  * `flashLoan`: Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\\\n  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by ACLManager)\n  \n  * `flashLoanSimple`:  Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.\n\n### Execution Flow\n\nFor developers, a helpful mental model to consider when developing your solution:\n  \n  1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using `flashLoanSimple()` or `flashLoan()`.\n  2. After some sanity checks, the `Pool` transfers the requested `amounts` of the `reserves` to your contract, then calls `executeOperation()` on `receiver` contract .\n  3. Your contract, now holding the flash loaned `amount(s)`, executes any arbitrary operation in its code.&#x20;\n  * If you are performing a **flashLoanSimple**, then when your code has finished, you approve Pool for flash loaned amount + fee.\n  * If you are performing **flashLoan,** then for all the reserves either depending on  `interestRateMode` passed for the asset, either the Pool must be approved for flash loaned amount + fee or must or sufficient collateral or credit delegation should be available to open debt position.\n  * If the amount owing is not available (due to a lack of balance or approvaln or insufficient collateral for debt), then the transaction is reverted.\n  4. All of the above happens in 1 transaction (hence in a single ethereum block).\n",
       "stepItems": []
+    },
+    {
+      "uuid": "5dd4bc36-1ffc-4df6-8a0a-baf9e566091c",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "ad2c7c7c-5afc-4d20-9151-0cbf2ac06f65",
+          "type": "MultipleChoice",
+          "content": "What are the two differents methods which can be called to get Flash Loans?",
+          "answerKeys": [
+            "A",
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "`flashLoanSimple`",
+              "key": "A"
+            },
+            {
+              "content": "`doFlashLoan`",
+              "key": "B"
+            },
+            {
+              "content": "`flashLoan`",
+              "key": "C"
+            },
+            {
+              "content": "`instantLoan`",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "2826d351-7de1-4560-9481-a60edfd61474",
+          "type": "SingleChoice",
+          "content": "Which method is called on the receiver contract for Flash Loan?",
+          "answerKeys": [
+            "D"
+          ],
+          "choices": [
+            {
+              "content": "`useFlashLoan`",
+              "key": "A"
+            },
+            {
+              "content": "`executeLoan`",
+              "key": "B"
+            },
+            {
+              "content": "`executeFlashLoan`",
+              "key": "C"
+            },
+            {
+              "content": "`executeOperation`",
+              "key": "D"
+            }
+          ]
+        }
+      ]
     },
     {
       "uuid": "6a9b80fa-bb8a-4913-9d6c-4b758caee3c0",
       "name": "Code using Flash Loan",
-      "content": "```solidity\n  // SPDX-License-Identifier: agpl-3.0\n  pragma solidity 0.8.10;\n  pragma experimental ABIEncoderV2;\n  \n  \n  import { IPoolAddressesProvider } from \"https://github.com/aave/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol\";\n  import { IPool } from \"https://github.com/aave/aave-v3-core/contracts/interfaces/IPool.sol\";\n  import { IFlashLoanSimpleReceiver } from \"https://github.com/aave/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol\";\n  import { IERC20 } from \"https://github.com/aave/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol\";\n  import { SafeMath } from \"https://github.com/aave/aave-v3-core/contracts/dependencies/openzeppelin/contracts/SafeMath.sol\";\n  \n  interface IFaucet {\n    function mint(address _token, uint256 _amount) external;\n  }\n  \n  abstract contract FlashLoanSimpleReceiverBase is IFlashLoanSimpleReceiver {\n    using SafeMath for uint256;\n\n    IPoolAddressesProvider public immutable override ADDRESSES_PROVIDER;\n    IPool public immutable override POOL;\n    IFaucet public immutable FAUCET;\n\n    constructor(IPoolAddressesProvider provider, IFaucet faucet) {\n      ADDRESSES_PROVIDER = provider;\n      POOL = IPool(provider.getPool());\n      FAUCET = faucet;\n    }\n  }\n  \n  \n  /**\n  !!!\n    Never keep funds permanently on your FlashLoanSimpleReceiverBase contract as they could be\n    exposed to a 'griefing' attack, where the stored funds are used by an attacker.\n  !!!\n  */\n  contract MySimpleFlashLoanV3 is FlashLoanSimpleReceiverBase {\n    using SafeMath for uint256;\n  \n    constructor(IPoolAddressesProvider _addressProvider, IFaucet _faucet) FlashLoanSimpleReceiverBase(_addressProvider, _faucet) {}\n  \n    /**\n    This function is called after your contract has received the flash loaned amount\n    */\n    function executeOperation(\n      address asset,\n      uint256 amount,\n      uint256 premium,\n      address initiator,\n      bytes calldata params\n    )\n    external\n    override\n    returns (bool)\n    {\n    \n      //\n      // This contract now has the funds requested.\n      // Your logic goes here.\n      //\n      \n      // At the end of your logic above, this contract owes\n      // the flashloaned amounts + premiums.\n      // Therefore ensure your contract has enough to repay\n      // these amounts.\n      \n      // Approve the LendingPool contract allowance to *pull* the owed amount\n      uint amountOwed = amount.add(premium);\n      FAUCET.mint(asset,premium);\n      IERC20(asset).approve(address(POOL), amountOwed);\n      \n      return true;\n    }\n  \n    function executeFlashLoan( address asset, uint256 amount) public {\n      address receiverAddress = address(this);\n      \n      bytes memory params = \"\";\n      uint16 referralCode = 0;\n      \n      POOL.flashLoanSimple(receiverAddress, asset, amount, params, referralCode);\n    }\n}\n```\nThis coude can be found at [https://github.com/defispartan/hackmoney-demo](https://github.com/defispartan/hackmoney-demo)\n",
+      "content": "```solidity\n  /**\n  !!!\n    Never keep funds permanently on your FlashLoanSimpleReceiverBase contract as they could be\n    exposed to a 'griefing' attack, where the stored funds are used by an attacker.\n  !!!\n  */\n  contract MySimpleFlashLoanV3 is FlashLoanSimpleReceiverBase {\n    using SafeMath for uint256;\n  \n    constructor(IPoolAddressesProvider _addressProvider, IFaucet _faucet) FlashLoanSimpleReceiverBase(_addressProvider, _faucet) {}\n  \n    /**\n    This function is called after your contract has received the flash loaned amount\n    */\n    function executeOperation(\n      address asset,\n      uint256 amount,\n      uint256 premium,\n      address initiator,\n      bytes calldata params\n    )\n    external\n    override\n    returns (bool)\n    {\n    \n      //\n      // This contract now has the funds requested.\n      // Your logic goes here.\n      //\n      \n      // At the end of your logic above, this contract owes\n      // the flashloaned amounts + premiums.\n      // Therefore ensure your contract has enough to repay\n      // these amounts.\n      \n      // Approve the LendingPool contract allowance to *pull* the owed amount\n      uint amountOwed = amount.add(premium);\n      FAUCET.mint(asset,premium);\n      IERC20(asset).approve(address(POOL), amountOwed);\n      \n      return true;\n    }\n  \n    function executeFlashLoan( address asset, uint256 amount) public {\n      address receiverAddress = address(this);\n      \n      bytes memory params = \"\";\n      uint16 referralCode = 0;\n      \n      POOL.flashLoanSimple(receiverAddress, asset, amount, params, referralCode);\n    }\n}\n```\nThis code can be found at [https://github.com/defispartan/hackmoney-demo](https://github.com/defispartan/hackmoney-demo)\n",
       "stepItems": []
     },
     {
@@ -42,6 +194,65 @@
       "name": "Applications of Flash Loans",
       "content": "#### Arbitrage \nUsers can earn a decent profit by trading assets at different platforms that offer different values. For example, \nusers can buy crypto from one exchange and sell it on another with varying rates and make a profit doing so.\n\nWith flash loans, traders can launch an arbitrage without any existing assets. When a price difference is found, \ntraders can instantly borrow a considerable amount of money using a flash loan service. Therefore, arbitrage trades \nusing a flash loan become \"cost-free\" as long as the traders can afford the gas and flash loan fee to launch the \ntransaction.\n\n\n#### Swapping Collateral    \nCrypto asset investors can use collateral swapping to change out their investments without having to repay the \ndebt of the original investment. This can be important in a volatile market where timing is key to avoiding \nliquidation. Collateral swapping lets an investor replace their position with borrowed assets.\n\nUsers can choose to pay back their CDP debt and take out all collateral, using part of it to repay flash loans \nand keeping the remaining for themselves.\n\n#### Self Liquidation\n\nMarkets can be very volatile and can lead liquidation of the sensative positions. Liquidation can be quite expensive\non certail platforms, and it might make sense to write a simple script to self-liquidate your loans using flash \nloans and your own deposit to pay them back.\n\nThere are many applications that make use of flash loans and liquidate the positions on user's behalf saving the \nuser hefty liquidation fees of the protocol.\n",
       "stepItems": []
+    },
+    {
+      "uuid": "088abc7e-f960-4279-bbad-c5979aa3cef7",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "e4b49abe-7b29-4bdd-a2a1-e6f98a83e48d",
+          "type": "SingleChoice",
+          "content": "How does DeFi solve the volatility of cryptocurrency?",
+          "answerKeys": [
+            "B"
+          ],
+          "choices": [
+            {
+              "content": "Using smart contracts",
+              "key": "A"
+            },
+            {
+              "content": "Using Stablecoins",
+              "key": "B"
+            },
+            {
+              "content": "Using Flash Loans",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "88e01391-7073-4ee5-8710-1b045443b8a7",
+          "type": "SingleChoice",
+          "content": "Which one is not a use case of Flash Loan?",
+          "answerKeys": [
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "Flash Minting",
+              "key": "A"
+            },
+            {
+              "content": "Collateral swapping",
+              "key": "B"
+            },
+            {
+              "content": "Slow loan processing",
+              "key": "C"
+            },
+            {
+              "content": "Wash-trading",
+              "key": "D"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

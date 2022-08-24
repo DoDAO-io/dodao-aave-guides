@@ -25,6 +25,34 @@ actions. This helps to ensure that funds are safe during a transaction.
 
 
 ---
+## Evaluation
+
+
+
+
+
+##### What do Flash loans mean?  
+
+- [ ]  Slow loan processing without collateral.
+- [ ]  Instant loan processing with collateral
+- [ ]  Slow loan processing with collateral.
+- [x]  Instant loan processing without collateral.
+
+
+
+
+
+##### A flash loan can extend to how many transactions?  
+
+- [x]  1
+- [ ]  2
+- [ ]  5
+- [ ]  10
+
+    
+
+
+---
 ## What is a Transaction in Ethereum
 
 A transaction is a way of transferring value or any other type of token using Ethereum. In order to transfer 
@@ -46,20 +74,37 @@ same transaction? That's what Flash Loans are.
 
 
 ---
+## Evaluation
+
+
+
+
+
+##### What is the collateral amount needed to get a flash loan?  
+
+- [x]  No collateral
+- [ ]  10%
+- [ ]  125%
+- [ ]  25%
+
+    
+
+
+---
 ## Working of Flash Loan
 
 Aave V3 offers two options for flash loans:
 
-  * ``[`flashLoan`](../core-contracts/pool.md#flashloan)`:` Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
-  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](../core-contracts/aclmanager.md))
+  * `flashLoan`: Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
+  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by ACLManager)
   
-  * ``[`flashLoanSimple`](../core-contracts/pool.md#flashloansimple):  Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
+  * `flashLoanSimple`:  Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
 
 ### Execution Flow
 
 For developers, a helpful mental model to consider when developing your solution:
   
-  1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using [flashLoanSimple()](../core-contracts/pool.md#flashloansimple) or [`flashLoan()`](../core-contracts/pool.md#flashloan).
+  1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using `flashLoanSimple()` or `flashLoan()`.
   2. After some sanity checks, the `Pool` transfers the requested `amounts` of the `reserves` to your contract, then calls `executeOperation()` on `receiver` contract .
   3. Your contract, now holding the flash loaned `amount(s)`, executes any arbitrary operation in its code.&#x20;
   * If you are performing a **flashLoanSimple**, then when your code has finished, you approve Pool for flash loaned amount + fee.
@@ -72,39 +117,37 @@ For developers, a helpful mental model to consider when developing your solution
 
 
 ---
+## Evaluation
+
+
+
+
+
+##### What are the two differents methods which can be called to get Flash Loans?  
+
+- [x]  `flashLoanSimple`
+- [ ]  `doFlashLoan`
+- [x]  `flashLoan`
+- [ ]  `instantLoan`
+
+
+
+
+
+##### Which method is called on the receiver contract for Flash Loan?  
+
+- [ ]  `useFlashLoan`
+- [ ]  `executeLoan`
+- [ ]  `executeFlashLoan`
+- [x]  `executeOperation`
+
+    
+
+
+---
 ## Code using Flash Loan
 
 ```solidity
-  // SPDX-License-Identifier: agpl-3.0
-  pragma solidity 0.8.10;
-  pragma experimental ABIEncoderV2;
-  
-  
-  import { IPoolAddressesProvider } from "https://github.com/aave/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol";
-  import { IPool } from "https://github.com/aave/aave-v3-core/contracts/interfaces/IPool.sol";
-  import { IFlashLoanSimpleReceiver } from "https://github.com/aave/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol";
-  import { IERC20 } from "https://github.com/aave/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol";
-  import { SafeMath } from "https://github.com/aave/aave-v3-core/contracts/dependencies/openzeppelin/contracts/SafeMath.sol";
-  
-  interface IFaucet {
-    function mint(address _token, uint256 _amount) external;
-  }
-  
-  abstract contract FlashLoanSimpleReceiverBase is IFlashLoanSimpleReceiver {
-    using SafeMath for uint256;
-
-    IPoolAddressesProvider public immutable override ADDRESSES_PROVIDER;
-    IPool public immutable override POOL;
-    IFaucet public immutable FAUCET;
-
-    constructor(IPoolAddressesProvider provider, IFaucet faucet) {
-      ADDRESSES_PROVIDER = provider;
-      POOL = IPool(provider.getPool());
-      FAUCET = faucet;
-    }
-  }
-  
-  
   /**
   !!!
     Never keep funds permanently on your FlashLoanSimpleReceiverBase contract as they could be
@@ -159,7 +202,7 @@ For developers, a helpful mental model to consider when developing your solution
     }
 }
 ```
-This coude can be found at [https://github.com/defispartan/hackmoney-demo](https://github.com/defispartan/hackmoney-demo)
+This code can be found at [https://github.com/defispartan/hackmoney-demo](https://github.com/defispartan/hackmoney-demo)
 
 
     
@@ -195,6 +238,34 @@ loans and your own deposit to pay them back.
 There are many applications that make use of flash loans and liquidate the positions on user's behalf saving the 
 user hefty liquidation fees of the protocol.
 
+
+    
+
+
+---
+## Evaluation
+
+
+
+
+
+##### How does DeFi solve the volatility of cryptocurrency?  
+
+- [ ]  Using smart contracts
+- [x]  Using Stablecoins
+- [ ]  Using Flash Loans
+- [ ]  None of these
+
+
+
+
+
+##### Which one is not a use case of Flash Loan?  
+
+- [ ]  Flash Minting
+- [ ]  Collateral swapping
+- [x]  Slow loan processing
+- [ ]  Wash-trading
 
     
 
