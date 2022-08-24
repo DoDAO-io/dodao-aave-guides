@@ -9,25 +9,24 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 ## Important terms
 
 
-Decentralized borrowing refers to the the process of borrowing assets from Decentralized finance. In order to understand 
+Decentralized borrowing refers to the process of borrowing assets from a protocol run using smart contracts. In order to understand 
 its workings and uses, we need to know a few of these important terms first.
 
-- **Liquidation:**
-The selling of collateral to cover the debt is called liquidation.
+- **Liquidation:** - The selling of collateral to cover the debt is called liquidation.
 
-- **LTV (Loan to Value):**
-Loan to value is the ratio used to decide how much loan can be borrowed against the collateral produced. It is expressed in terms of percentages. (e.g., at LTV=75%, for every 1 ETH worth of collateral, borrowers will be able to borrow 0.75 ETH worth of the corresponding currency). 
+- **LTV (Loan to Value):** - Loan to value is the ratio used to decide how much loan can be borrowed against the 
+  collateral produced. It is expressed in terms of percentages. (e.g., at LTV=75%, for every 1 ETH worth of collateral, 
+  borrowers will be able to borrow 0.75 ETH worth of the corresponding currency). 
 
-- **Liquidation Threshold:**
-The liquidation threshold is the percentage at which a loan is deemed undercollateralized. For example, a Liquidation threshold of 70% means that if the loan's value rises above 70% of the collateral, the position is undercollateralized and could be liquidated.
+- **Liquidation Threshold:** - The liquidation threshold is the percentage at which a loan is deemed undercollateralized. 
+  For example, a Liquidation threshold of 70% means that if the loan's value rises above 70% of the collateral, 
+  the position is undercollateralized and could be liquidated.
 
-- **Liquidation Penalty:**
-The liquidation penalty is a fee rendered on the price of assets of the collateral when liquidators purchase it as part of the liquidation of a loan that has passed the liquidation threshold.
+- **Liquidation Penalty:** - The liquidation penalty is a fee rendered on the price of assets of the collateral when 
+  liquidators purchase it as part of the liquidation of a loan that has passed the liquidation threshold.
 
-- **Health Factor:**
-It is a risk parameter that decides whether a borrow position is at risk of getting liquidated. It is calculated by,
-
-( H.F = ΣCollateral in ETH x Liquidation threshold / Total borrows )
+- **Health Factor:** - It is a risk parameter that decides whether a borrow position is at risk of getting liquidated. 
+  It is calculated by, `( H.F = ΣCollateral in ETH x Liquidation threshold / Total borrows )`
 
 
     
@@ -40,12 +39,12 @@ It is a risk parameter that decides whether a borrow position is at risk of gett
 
 
 
-##### Which parameter decides the risk of an loan's liquidation?  
+##### Which two parameters decides the risk of a loan's liquidation?  
 
 - [x]  Health Factor
-- [ ]  Liquidation penalty
-- [ ]  LTV
-- [x]  Liquidation threshold
+- [ ]  Liquidation Penalty
+- [ ]  Loan to Value
+- [x]  Liquidation Threshold
 
 
 
@@ -65,7 +64,7 @@ It is a risk parameter that decides whether a borrow position is at risk of gett
 ##### LTV stands for  
 
 - [x]  Loan to Value
-- [ ]  Load to vector
+- [ ]  Load to Vector
 - [ ]  Loading the value
 - [ ]  None of these
 
@@ -78,7 +77,7 @@ It is a risk parameter that decides whether a borrow position is at risk of gett
 
 - [ ]  LTV
 - [ ]  Liquidation percentage
-- [x]  Liquidation threshold
+- [x]  Liquidation Threshold
 - [ ]  None of these
 
     
@@ -106,10 +105,10 @@ It is a risk parameter that decides whether a borrow position is at risk of gett
 
 
 
-##### Which of these borrowing options is costlier  
+##### Which of these borrowing options is inefficient  
 
-- [ ]  Traditional loan
-- [x]  DeFi loan
+- [x]  Traditional loan
+- [ ]  DeFi loan
 - [ ]  Both of these
 - [ ]  None of these
 
@@ -117,7 +116,7 @@ It is a risk parameter that decides whether a borrow position is at risk of gett
 
 
 
-##### The features of Traditional finance are:
+##### The limitations of Traditional finance are:
   
 
 - [x]  Repayment time for borrowed amount is fixed
@@ -154,23 +153,28 @@ It is a risk parameter that decides whether a borrow position is at risk of gett
 ---
 ## Use cases of overcollateralized loans
 
-- **Credit enchancement:**
-Traditionally, overcollaterization is used as a credit enhancement technique, That is it is used as a means of risk-reduction to the lender in case of financial stress. By overcollaterization, credit risk is eliminated; The lender could liquidate the collateral to recover any possible loan losses.
-This also works in the borrowers favor. With the increased security provided to the lender, The borrower is put in a position where they can negotiate for a better interest offer on the loan.
+Over-colleteralized borrowing seems to be not relevant initially as the amount of collateral needed to borrow the 
+tokens can be quite high. But there are many use cases for it.
+* **Yield Farming** - The process involves leveraging DeFi protocols to lend cryptocurrencies for high returns that can 
+  go up to 100% APY (Annual Percentage Yield). Yield farming originates from banks’ process in lending your deposits; the difference 
+  is that DeFi yield farming compounds the interest earned.
 
-- **Security:**
-Overcollaterization comes to the rescue when dealing with highly volatile assets like cryptocurrencies. In case the value of the collateral dips beyond the actual value of the loan taken, Then the lender’s assets are compromised. To prevent this, DeFi organizations set the percentage of overcollateralization. In case the value of the collateral dips beyond a certain point, It is liquidated and the position of the lender is secured.
+* **Arbitrage** - Arbitrage takes advantage of the fact that an asset may be worth more in one market than another. While 
+  this usually happens because of market inefficiencies, it can also be used to exploit differences in rates between 
+  different platforms.
 
-- **Buffer:**
-An overcollateralized stablecoin has a large number of cryptocurrency tokens maintained at a reserve for issuing a lower number of stablecoins. This offers a buffer against price fluctuations.
+* **Margin Trading (Leverage)** - Taking out a loan with extra collateral can help you gain leverage, and you can repeat 
+  the process until you reach the limit.
 
-- **Leverage:**
-Leveraging interest rates of currency taken loan against and invested in. 
+* **Liquidation** - Liquidations can be quite profitable, especially for tech-savvy traders. Usually, a liquidator has to 
+  compete against other people for the same job, so he uses bots. They work by "sniping" the loans that are under the 
+  collateralization ratio. This way, they can liquidate the collateral and reimburse the lender. In turn, the liquidator 
+  receives a reward fee for his services.
 
-- **Liquidity Generation:**
-Another simple use case would be liquidity. You just generated liquidity without losing hold of your cryptocurrency by borrowing a loan with it as collateral.
-
-- Overcollateralization is a common practice in securitized financial products like Collateralized loan obligations (CLO) and Mortgage Backed Securities (MBO). 
+* **Risk-reduction/Hedging** - No matter how well you think you know the markets, there will always be bumps in the road. As 
+  a trader, you need to find ways to protect your investment from risk, and this is where crypto hedging strategies come in. 
+  Hedging encompasses opening positions in opposing market directions to reduce the risks and impacts of market swings. By doing this, 
+  you can help to offset any potential losses that might occur.
 
 
     
@@ -183,35 +187,12 @@ Another simple use case would be liquidity. You just generated liquidity without
 
 
 
-##### Overcollateralization is a common practice in:
-  
+##### What do you mean by Yield Farming?  
 
-- [ ]  CLO
-- [ ]  MBO
-- [x]  Securitized financial products
-- [ ]  All of these
-
-
-
-
-
-##### In what way is overcollateralization beneficial?  
-
-- [x]  Liquidity
-- [x]  Leveraging
-- [x]  For favourable loan terms
-- [ ]  To spend excess assets
-
-
-
-
-
-##### Traditionally, over-collateralization is used as?  
-
-- [x]  Credit enhancement technique
-- [ ]  Credit producing technique
-- [ ]  Credit advancement technique
-- [ ]  None of these
+- [x]  The process involves leveraging DeFi protocols to lend cryptocurrencies for high returns
+- [ ]  It encompasses opening positions in opposing market directions to reduce the risks
+- [x]  Returns can go up to 100% APY (Annual Percentage Yield)
+- [ ]  Returns do not go above 10% APY (Annual Percentage Yield)
 
 
 
@@ -224,42 +205,35 @@ Another simple use case would be liquidity. You just generated liquidity without
 - [ ]  Semi-stable assets
 - [ ]  None of these
 
+
+
+
+
+##### Pick the incorrect statements.  
+
+- [x]  Margin Trading involves leveraging DeFi protocols to lend cryptocurrencies for high returns
+- [x]  Hedging involves taking out a loan with extra collateral can help you gain leverage
+- [ ]  Hedging encompasses opening positions in opposing market directions to reduce any potential losses
+- [ ]  Arbitrage takes advantage of the fact that an asset may be worth more in one market than another
+
     
 
 
 ---
 ## Borrowing in Aave and Debt Tokenization
 
-Aave uses debt tokenization to keep track of debt accumulated by the borrower.
+We have talked about how we can pay back the loan at any time and that Aave uses something called debt tokenization 
+to keep track of our debt. 
 
-## What _is_ debt tokenization? How exactly does it work?
+## What is debt tokenization? How exactly does it work?
 
-Debt tokenization is like a representation of the debt held in a borrower's name in the form of tokens. 
-When the borrower incurs debt, debt tokens are minted. The debt gets accrued to the debt tokens with interest. 
-The debt tokens are burnt as the debt is repaid.
+Debt tokenization is like a representation of the debt held in a borrower's name in the form of tokens. When the borrower incurs debt, debt tokens are minted. The debt gets accrued to the debt tokens with interest. The debt tokens are burnt as the debt is repaid.
 
-## Process of borrowing in Aave
+Now that we have established that users can borrow loans from Aave without any paperwork or minimum criteria.
 
+We know that the loan can be repaid at any time in any quantity, and no extra fees are attached. But what happens when the Health Factor value of the borrow position dips below 1 or the loan starts becoming riskier?
 
-
-*     Before borrowing, the users must put forward collateral. The LTV of each coin is different. For stablecoins, LTV is generally higher, while LTV is a bit lower for more volatile assets. Since the probability of the value of a more volatile coin dipping is higher, this is done to protect the lender's position in case of liquidation.
-
-    **Note:** All assets are borrowed upon over-collateralization.
-
-* You can find the crypto you wish to borrow on the Aave page once you are done paying collateral.
-* Click "borrow" on the right of the screen.
-* The user is then prompted to connect their web 3.0 digital wallet. Once connected, choose the amount you would like to borrow.
-* The website has options for stable interest rates and variable interest rates.
-* Choose the preferred interest rate and confirm the transaction through your web 3.0 digital wallet.
-
-## Changes in Aave 2.0
- * Borrowers can swap between variable and stable interest rates, which means the user can get the best possible interest rate offer at any given time.
-
- * Collateral deposited before borrowing funds can now be swapped for another cryptocurrency inside Aave. 
-
- * You can now directly repay debt using collateral. In V1, they will first need to withdraw the collateral, use it to buy the asset borrowed, then finally repay the debt and unlock all the deposited collateral. This operation costs time and requires, at best, four separate transactions on several protocols.
-
- * Anyone can trade their debt position from one asset to another natively. You could, for example, borrow DAI and change your debt position to USDC as soon as USDC becomes cheaper to borrow, all of this within a single transaction.
+This is handled by Liquidation which is explained in detail in the next step
 
 
     
@@ -267,28 +241,6 @@ The debt tokens are burnt as the debt is repaid.
 
 ---
 ## Evaluation
-
-
-
-
-
-##### Overcollateralization in normal DeFi borrowing is?  
-
-- [x]  Mandatory
-- [ ]  Never used
-- [ ]  Sometimes used
-- [ ]  None of these
-
-
-
-
-
-##### The function of Debt tokens is?  
-
-- [x]  To keep count of the interest on debt for a given address/user
-- [ ]  To keep count of the interest on deposited money for a given address/user
-- [ ]  To be used in voting for changes in the protocol
-- [ ]  None of these
 
 
 
@@ -301,75 +253,6 @@ The debt tokens are burnt as the debt is repaid.
 - [x]  debtTokens
 - [ ]  Both A and B
 
-
-
-
-
-##### You can find the crypto you wish to borrow on the Aave page once you are done doing?  
-
-- [ ]  Interest rate decision
-- [ ]  Logging on to Aave
-- [x]  Paying collateral
-- [ ]  None of these
-
-    
-
-
----
-## Interest rates in Aave
-
-
-
-    
-
-
----
-## Evaluation
-
-
-
-
-
-##### By what percentage can the staked AAVE tokens of the token holders be slashed incase of a liquidity crisis?  
-
-- [x]  30%
-- [ ]  50%
-- [ ]  80%
-- [ ]  10%
-
-
-
-
-
-##### The Aave token holders are incentivized in return for which of the following?  
-
-- [ ]  For approving the governance proposals
-- [ ]  For proposing AIPs and voting
-- [x]  For bearing the risk of the protocol i.e. by staking
-- [ ]  None of these
-
-
-
-
-
-##### By what percentage can the staked AAVE tokens of the token holders be slashed incase of a liquidity crisis?  
-
-- [x]  30%
-- [ ]  50%
-- [ ]  80%
-- [ ]  10%
-
-
-
-
-
-##### The Aave token holders are incentivized in return for which of the following?  
-
-- [ ]  For approving the governance proposals
-- [ ]  For proposing AIPs and voting
-- [x]  For bearing the risk of the protocol i.e. by staking
-- [ ]  None of these
-
     
 
 
@@ -377,29 +260,30 @@ The debt tokens are burnt as the debt is repaid.
 ## Liquidation in Aave
 
 ## Liquidation
-The act of selling off collateral in order to cover for debt. 
-Liquidation is a process that occurs when a borrower's health factor goes below 1 due to their collateral value not properly covering their loan/debt value. 
-This might happen when the collateral decreases in value or the borrowed debt increases in value against each other. 
-This collateral vs loan value ratio is shown in the health factor (H.F.).
+The act of selling off collateral in order to cover for debt is called Liquidation. 
+It occurs when a borrower's health factor goes below 1 due to their collateral value not properly covering their 
+loan/debt value. This might happen when the collateral decreases in value or the borrowed debt increases in value 
+against each other. This collateral vs loan value ratio is shown in the health factor (H.F.).
 
-The Health factor of a loan ( i.e., H.F. = ΣCollateral in ETH x Liquidation threshold / Total borrows ) should be maintained above one by the borrower at all costs.
-This is because if the H.F. drops below 1, The collateral is bound to be liquidated because H.F. less than one indicates that the loan is undercollateralized. 
-So the collateral is liquidated, and a part of the loan is paid off to bring the H.F. back to more than 1. 
-The collateral is sold off to a liquidity provider with an incentive bonus. T
-The users who pay off the loans and buy collateral are called **liquidators**.
+The Health Factor (HF) of a loan needs to stay above one at all times. If the HF falls below one, it means that 
+the loan is undercollateralized and the collateral will be liquidated. To bring the HF back up to more than one, 
+the collateral is sold off to a liquidity provider with an incentive bonus. The users who pay off the loans and 
+buy collateral are called liquidators.
 
-## Preventation of liquidation
-Liquidation is an event triggered by the H.F. value of loan dipping below 1. 
+## Preventation of Liquidation
+
+Liquidation is an event triggered by the Health Factor value of loan dipping below 1. 
+
 This can be prevented by two ways.
 1. Deposit more collateral into the loan
 2. Repay part of the loan such that the H.F. goes comfortably above 1. 
 
-One should be mindful of the stablecoin price fluctuations due to market conditions and how it might affect one’s H.F.
+One should be mindful of the token price fluctuations due to market conditions and how it might affect one’s H.F.
 
 ## Significance of Liquidation
-The current system of liquidation is beneficial for those who perform the liquidations. They are given a significant amount of money as a reward, which acts as an incentive.
-This ensures that the lenders are provided with safety against loan defaults and bad loans, though the loan might be overcollateralized, without liquidators to buy the collateral, the excessive collateral just sits there idly.
-Liquidations come very handy in bearish markets from the lender point of view.
+The system of liquidation is good for those who do the liquidations because they get a significant amount of money 
+as a reward. This acts as an incentive to make sure that lenders are provided with safety against loan defaults and 
+bad loans. Liquidations are especially useful during bearish markets when viewed from the lender's point of view.
 
 
     
