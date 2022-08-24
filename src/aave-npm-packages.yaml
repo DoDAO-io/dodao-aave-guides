@@ -1,7 +1,7 @@
-uuid: 3b2bff62-b11c-4fae-a10a-94c2840470e1
-key: borrowing-in-aave
-name: Decentralized Borrowing
-content: How Borrowing works in Decentralized Finance
+uid: 2d18e8b5-f7d3-47e9-9b62-26abee6e49d4
+key: aave-npm-packages
+name: AAVE NPM Packages
+content: Explains the important NPM packages
 guideType: onboarding
 created: "2022-08-02T04:15:13.911Z"
 categories:
