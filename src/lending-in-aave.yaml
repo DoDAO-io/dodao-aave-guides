@@ -5,8 +5,7 @@ content: How Lending works Aave
 guideType: onboarding
 created: "2022-08-02T04:15:13.911Z"
 categories:
-  - developer
-  - engineering
+  - overview
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/guides/eth/aave/Lending_in_aave.png
 publishStatus: Live
 socialShareImage:
@@ -16,7 +15,6 @@ steps:
     name: Overview
     content: |
       ### Lending in Web3
-
       Crypto Projects use the money lent in various ways like Staking on different protocols for  Yield Farming, interest, etc. There is no limit for lending assets. 
       lending money is even more opaque than traditional finance, and the user is not informed about how the money is being used. So the user should be aware of 
       how the funds will be used and the risks associated with lending the money. AAVE is a lending and borrowing protocol provide full transparency on how the 
@@ -25,8 +23,7 @@ steps:
       interest mostly goes to lenders.
       
       
-      ### Important Terms 
-      
+      ### Important Terms       
       1. **APY-** The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
       2. **aTokens-** aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
       3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same 
