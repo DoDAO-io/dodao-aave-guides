@@ -48,10 +48,10 @@ steps:
     content: |
       Aave V3 offers two options for flash loans:
   
-        * ``[`flashLoan`](../core-contracts/pool.md#flashloan)`:` Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
-        NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](../core-contracts/aclmanager.md))
+        * `flashLoan`: Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
+        NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by ACLManager)
         
-        * ``[`flashLoanSimple`](../core-contracts/pool.md#flashloansimple):  Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
+        * `flashLoanSimple`:  Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
       
       ### Execution Flow
       
@@ -69,36 +69,6 @@ steps:
     name: Code using Flash Loan
     content: |
       ```solidity
-        // SPDX-License-Identifier: agpl-3.0
-        pragma solidity 0.8.10;
-        pragma experimental ABIEncoderV2;
-        
-        
-        import { IPoolAddressesProvider } from "https://github.com/aave/aave-v3-core/contracts/interfaces/IPoolAddressesProvider.sol";
-        import { IPool } from "https://github.com/aave/aave-v3-core/contracts/interfaces/IPool.sol";
-        import { IFlashLoanSimpleReceiver } from "https://github.com/aave/aave-v3-core/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol";
-        import { IERC20 } from "https://github.com/aave/aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol";
-        import { SafeMath } from "https://github.com/aave/aave-v3-core/contracts/dependencies/openzeppelin/contracts/SafeMath.sol";
-        
-        interface IFaucet {
-          function mint(address _token, uint256 _amount) external;
-        }
-        
-        abstract contract FlashLoanSimpleReceiverBase is IFlashLoanSimpleReceiver {
-          using SafeMath for uint256;
-      
-          IPoolAddressesProvider public immutable override ADDRESSES_PROVIDER;
-          IPool public immutable override POOL;
-          IFaucet public immutable FAUCET;
-      
-          constructor(IPoolAddressesProvider provider, IFaucet faucet) {
-            ADDRESSES_PROVIDER = provider;
-            POOL = IPool(provider.getPool());
-            FAUCET = faucet;
-          }
-        }
-        
-        
         /**
         !!!
           Never keep funds permanently on your FlashLoanSimpleReceiverBase contract as they could be
@@ -153,7 +123,7 @@ steps:
           }
       }
       ```
-      This coude can be found at [https://github.com/defispartan/hackmoney-demo](https://github.com/defispartan/hackmoney-demo)
+      This code can be found at [https://github.com/defispartan/hackmoney-demo](https://github.com/defispartan/hackmoney-demo)
     stepItems: []
   - uuid: 031e3564-5caf-4ecf-90dd-d94af9082b80
     name: Applications of Flash Loans
