@@ -13,7 +13,8 @@ socialShareImage:
 showIncorrectOnCompletion: true
 steps:
   - uuid: 5db956ef-4e00-4ac1-8c25-64c5dbebfa73
-    name: @aave/core-v3, @aave/core-v2
+    name:  |
+     @aave/core-v3, @aave/core-v2
     content: |
 
      ## @aave/coreV3
@@ -86,7 +87,8 @@ steps:
  
 
   - uuid: 16959203-96fa-4b9a-ac7b-67e0905d7533
-    name: @aave/aave-token
+    name: |
+     @aave/aave-token
     content: |
      ## @aave/aave-token:
      The AAVE token is an ERC-20 compatible token that implements governance-inspired features. This will allow Aave to bootstrap the rewards program for safety and ecosystem growth. 
@@ -163,7 +165,8 @@ steps:
              false
    
   - uuid: f800407f-477c-43f4-abd7-0839496e09de
-    name: @aave/contract-helpers, @aave/math-utils,  @aave/periphery-v3
+    name: |
+     @aave/contract-helpers, @aave/math-utils,  @aave/periphery-v3
     content: |
      
      ## @aave/contract-helpers:
@@ -252,7 +255,8 @@ steps:
     
   
   - uuid: 48b327fc-9ad8-481c-8948-989dad8020e1
-    name: @aave/protocol-js, @aave/safety-module, @aave/protocol-v2
+    name: |
+     @aave/protocol-js, @aave/safety-module, @aave/protocol-v2
     content: |
      
      ## @aave/protocol-js
