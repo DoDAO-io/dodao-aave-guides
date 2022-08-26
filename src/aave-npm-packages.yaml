@@ -1,7 +1,7 @@
 uuid: 2d18e8b5-f7d3-47e9-9b62-26abee6e49d4
-key: aave-npm-packages
-name: AAVE NPM Packages
-content: Explains the important NPM packages
+key: borrowing-in-aave
+name: Decentralized Borrowing
+content: How Borrowing works in Decentralized Finance
 guideType: onboarding
 created: "2022-08-02T04:15:13.911Z"
 categories:
@@ -13,10 +13,10 @@ socialShareImage:
 showIncorrectOnCompletion: true
 steps:
   - uuid: 5db956ef-4e00-4ac1-8c25-64c5dbebfa73
-    name: Aave core and stake
+    name: @aave/core-v3, @aave/core-v2
     content: |
 
-     ## Aave coreV3
+     ## @aave/coreV3
      This package contains the smart contracts source code and markets configuration related to Aave Protocol V3. 
      It uses Docker Compose and Hardhat as development environment for compilation, testing and deployment tasks.
 
@@ -27,14 +27,13 @@ steps:
      Before any action like test or deploy, you must run docker-compose up to start the contracts-env container, and then connect to the container console through docker-compose exec contracts-env bash.
      You can run a full test suite using Docker Compose commands.
 
-     ## Aave coreV2
+     ## @aave/coreV2
      This is the previous version of Aave core V3. and so it has features similar to V3.
      The repository uses Docker Compose to manage sensitive keys and load the configuration. 
      Prior any action like test or deploy, you must run docker-compose up to start the contracts-env container, and then connect to the container console via docker-compose exec contracts-env bash.
 
-     ## Aave Stake
-     Sets of smart contracts to enable stake of Aave-related assets and rewards distribution based on them.
-    
+     
+  
     stepItems: []
 
   - uuid: 94c7d162-1dc7-48a8-bd9c-9da32acb6382
@@ -87,157 +86,9 @@ steps:
  
 
   - uuid: 16959203-96fa-4b9a-ac7b-67e0905d7533
-    name: Aave Lens Protocol
+    name: @aave/aave-token
     content: |
-
-     ## Aave Lens Protocol
-     Decentralized social networking is something that the team behind Lens Protocol is working on. 
-     This would be a network that is not owned or controlled by any one entity, and it would use mechanisms that are similar to what we currently see on Web2 social interaction mechanisms. 
-     However, the functionality would be significantly expanded to allow communities to form, and for participants to own their own social graph.
-
-     Like Aave core, Aave Lens Protocol also uses Docker Compose which provides the developer with commands to compile, run and test
-     the code.
-
-     The Lens Protocol is a way for social graph participants to own their data. By creating direct links between profiles and followers, people can control who sees their information and how it's used. 
-     This system also allows for things like monetization to happen on a profile-by-profile basis.
-
-     The components of Lens Protocol are,
-       |
-     **Profiles:**
-     Any address can create a profile and get ERC721 token, Lens Profile in return. These profiles are represented by a profileStruct.
-     Each profile has a URI associated with them that points to metadata related to the profile, such as link to profile picture or 
-     display name. 
-     **Note that:** JSON standard for this URI is not yet determined. Profile owners can always change their follow module or profile URI.
-     
-     **Publications:**
-     Profile owners can publish to any profile they own. There are three publication types: Post, Comment and Mirror. Profile owners can also set and initialize the Follow Module associated with their profile.
-     Publications are on-chain content created and published via profiles.
-
-     * **Types of publications:**
-     * **Post:**
-     This is the standard publication type, akin to a regular post on traditional social media platforms. 
-     
-     Posts contain:
-     A URI, pointing to the actual publication body's metadata JSON, including any images or text.
-     An uninitialized pointer, since pointers are only needed in mirrors and comments.
-     
-     * **Comment:**
-     This is a publication type that points back to another publication, whether it be a post, comment or mirror, akin to a regular comment on traditional social media. 
-     
-     Comments contain:
-     A URI, just like posts, pointing to the publication body's metadata JSON.
-     An initialized pointer, containing the profile ID and the publication ID of the publication commented on.
-     
-     * **Mirror:**
-     This is a publication type that points to another publication, note that mirrors cannot, themselves, be mirrored (doing so instead mirrors the pointed content). Mirrors have no original content of its own. 
-     Akin to a "share" on traditional social media. 
-     
-     Mirrors contain:
-     An empty URI, since they cannot have content associated with them.
-     An initialized pointer, containing the profile ID and the publication ID of the mirrored publication.
-
-     **Follows:**
-     Wallets can follow profiles, and each profile has a unique FollowNFT contract that is deployed when the profile is followed. 
-     Follow NFTs are NFTs that can be voted and delegated.
-     Follow NFTs have the ability to create a spontaneous DAO through voting and delegation. 
-     Furthermore, holding follow NFTs allows followers to collect publications from the original profile. However, collect cannot be done 
-     on a mirror post.
-     
-     **Collects:**
-     Collecting data happens in a modular way, too. Every publication needs a Collect Module to be chosen and started. This module, which is similar to follow modules, can have any type of code that needs to be run when collecting. If the collect is successful, a new and unique NFT is minted. 
-     **This NFT is like a saved copy of the original publication.**
-     There is one collect NFT contract per publication. This contract is deployed when the first successful collect happens.
-     When a mirror is collected, two publications are collected- the original and the mirror. The mirror publisher's profile ID is passed as a "referrer." This allows collect modules that incur a fee to, for instance, reward referrals. 
-     Note that the Collected event indexes the profile and publication that was directly passed. In the case of a mirror, this is different than the actual original publication.
-
-     **Modularity:**
-     The idea behind modules is to give the community as much freedom as possible to come up with new ways for social graph participants to interact. 
-     To make sure that these interactions are secure, a whitelist of modules is used. This whitelist is controlled by governance.
-     The modularity of Lens protocol is largely regarded as its core principle.
-     The available modules are,
-     Follow Modules contain custom logic to be executed upon follow.
-     Collect Modules contain custom logic to be executed upon collect. Typically, these modules include at least a check that the collector is a follower.
-     Reference Modules contain custom logic to be executed upon comment and mirror. These modules can be used to limit who is able to comment and interact with a profile.
-    
-     The ModuleGlobals contract is a central data provider for modules. It is controlled by a governance address, which can be set to a different executor than the Hub's governance. 
-     Modules fetch dynamically changing data from the ModuleGlobals contract, such as the module globals governance address, the treasury address, the treasury fee, and a list of whitelisted currencies.
-     
-     **Upgradeablity:**
-     The current version of the Lens Protocol uses a proxy that can be upgraded, and that is controlled by the governance. The only part of the protocol that is upgradeable is the central hub. In an ideal world, the hub wouldn't need to be upgraded at all because of how modular and open the system is. 
-     Upgrades are only possible to implement new changes that would be impossible or unreasonable to do otherwise.
-
-     Note that, while ModuleGlobals does implement a currency whitelist, it is not upgradeable. 
-     So, in order to "remove" a currency whitelist from a module, you would need to create an entirely new module that doesn't query ModuleGlobals for information about whitelisted currencies.
-
-    stepItems: []
- 
-  - uuid: 097ed24e-61a8-4cf0-b7f3-c17f9de71621
-    name: Evaluation
-    content: |
-    stepItems:
-      - uuid: cfac48e3-2b77-4c95-a421-2e6f5e5ceb3b
-        content: Lens protocol is basically a?
-        answerKeys:
-          - B
-        type: SingleChoice
-        choices:
-          - content: Decentralized lending application
-            key: A
-          - content: Decentralized social platform
-            key: B
-          - content: Both of these
-            key: C
-          - content: None of these
-            key: D
-      - uuid: 9a8229eb-f548-4596-b938-7d7f63dc6adb
-        content: |
-         The possible features of Lens protocol are?
-        answerKeys:
-          - C
-          - A
-          - B
-          - D
-        type: MultipleChoice
-        choices:
-           - content: Post
-             key: A
-           - content: Comment
-             key: B
-           - content: Follow
-             key: C
-           - content: Collect
-             key: D
-      - uuid: 79207d77-d940-4887-a759-06d218838cba
-        content: |
-         Is lens protocol upgreadable?
-        answerKeys:
-          - A
-        type: SingleChoice
-        choices:
-          - content: Yes
-            key: A
-          - content: No
-            key: B
-   
-  - uuid: f800407f-477c-43f4-abd7-0839496e09de
-    name: Contract helpers, Periphery, math utils , UI kit and Aave token
-    content: |
-     
-     ## Contract Helpers:
-     The @aave/contract-helpers package offers a set of services which allow querying aggregated on-chain data via rpc.
-
-     ## Aave Periphery V3:
-     This repository contains the Rewards Controller contract, which allows you to incentivize assets with multiple rewards in Aave V3 markets. 
-     It also contains UI helpers and other external smart contracts utilities related to the Aave Protocol V3.
-
-     ## Aave math utils:
-     The @aave/math-utils data formatting methods act as a layer on top of the chain data. 
-     The use-cases range from "human readable formatting" to "approximating accrual over time"
-
-     ## Aave UI kit:
-     Package containing UI components and helpers used on the open source Aave interface.
-
-     ## Aave Token:
+     ## @aave/aave-token:
      The AAVE token is an ERC-20 compatible token that implements governance-inspired features. This will allow Aave to bootstrap the rewards program for safety and ecosystem growth. 
      
      **Roles:**
@@ -265,6 +116,88 @@ steps:
      In other words, when you redeem your LEND tokens for AAVE, you're also locking up an equivalent amount of AAVE in order to ensure that there's no net increase in the total supply of AAVE.
     
      The smartcontract can then be deployed to the testnet or the mainnet.
+
+
+    stepItems: []
+ 
+  - uuid: 097ed24e-61a8-4cf0-b7f3-c17f9de71621
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: 99ef03d5-d010-40da-aa36-b9a816797905
+        content: Does the original Aave token have an administrator role set up?
+        answerKeys:
+          - A
+        type: SingleChoice
+        choices:
+           - content: No
+             key: A
+           - content: Yes
+             key: B
+      - uuid: 9a8229eb-f548-4596-b938-7d7f63dc6adb
+        content: |
+         Aave token is a?
+        answerKeys:
+          - C
+        type: SingleChoice
+        choices:
+           - content: ERC721
+             key: A
+           - content: ERC42
+             key: B
+           - content: ERC20
+             key: C
+           - content: none of these
+             key: D
+      - uuid: 79207d77-d940-4887-a759-06d218838cba
+        content: |
+          Aave integrates EIP-2612 permit function.
+        answerKeys:
+          - A
+        type: SingleChoice
+        choices:
+          - content: |
+             true
+            key: A
+          - content: |
+             false
+   
+  - uuid: f800407f-477c-43f4-abd7-0839496e09de
+    name: @aave/contract-helpers, @aave/math-utils,  @aave/periphery-v3
+    content: |
+     
+     ## @aave/contract-helpers:
+     The @aave/contract-helpers package offers a set of services which allow querying aggregated on-chain data via rpc.
+     It contains methods for generating transacations based on method and parameter inputs. Basically, it is used to 
+     read and write data on the protocol contracts. Could be thought of like something that facilitates the querying and writing of 
+     data from and onto the original aave protocol.
+     It is part of a larger package, aave-utilities. Aave Utilities is a JavaScript SDK for interacting with V2 and V3 of the Aave Protocol
+     
+     ## @aave/math-utils:
+     The @aave/math-utils data formatting methods act as a layer on top of the chain data. 
+     The use-cases range from "human readable formatting" to "approximating accrual over time."
+     We know users interact with the aave protocol using smartcontracts, @aave/math-utils package is a collection of methods to take raw input data 
+     from these contracts, and format to use on a frontend interface such as Aave Ui or Aave info.
+
+     It formats two types of data, raw and indexed contract data, for front-end usage.
+      * ethers.js: 
+        ethers.js is considered raw contract data. ethers.js is a library for interacting with Ethereum and other EVM compatible blockchains.
+
+      * subgraph:
+        It is an indexed data type. Subgraphs work by indexing events that come from smart contracts. 
+        This allows for data to be queried via a graphql endpoint. In other words, for each network where the protocol is deployed, there is a subgraph that corresponds to it.
+      
+      * Caching servers:
+        The Aave UI uses decentralized hosting with IPFS, which means that it doesn't require any API keys to run. However, this also means that only public rpc endpoints can be used, which are quickly rate-limited. 
+        To respond for this, Aave has published a caching server that performs contract queries on one server and then serves the data to all frontend users through a graphQL endpoint.
+        
+        (Note: GraphQL has been mentioned multiple times, for those who are unfamiliar - it is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data.)
+    
+     ## @aave/periphery-v3:
+     This repository contains the Rewards Controller contract, which allows you to incentivize assets with multiple rewards in Aave V3 markets. 
+     It also contains UI helpers and other external smart contracts utilities related to the Aave Protocol V3.
+
+     
     stepItems: []
 
  
@@ -302,56 +235,59 @@ steps:
            - content: Aave tokens
              key: D
       - uuid: 27d319c1-c5ac-409d-b075-1a05a4140f03
-        content: Which of these packages contains UI components?
+        content: mathutils formats which of these following data for use in frontend?
         answerKeys:
           - A
-        type: SingleChoice
+          - B
+        type: MultipleChoice
         choices:
-          - content: UI kit
+          - content: ethers.js
             key: A
-          - content: Contract helpers
+          - content: indexed data 
             key: B
-          - content: Math utils
+          - content: hardhat
             key: C
           - content: None of these
             key: D
-      - uuid: 99ef03d5-d010-40da-aa36-b9a816797905
-        content: Does the original Aave token have an administrator role set up?
-        answerKeys:
-          - A
-        type: SingleChoice
-        choices:
-           - content: No
-             key: A
-           - content: Yes
-             key: B
+    
   
   - uuid: 48b327fc-9ad8-481c-8948-989dad8020e1
-    name: Borrowing in Aave and Debt Tokenization
+    name: @aave/protocol-js, @aave/safety-module, @aave/protocol-v2
     content: |
      
-     ## Governance-crosschain-bridges
-     This repo contains smart contracts and related code for Aave cross-chain bridges. This is intended to extend Aave governance on Ethereum to other networks. 
-     This repo currently contains contracts to support bridging to Polygon and Arbitrum.
-     The BridgeExecutorBase contract allows for the executions of sets of actions on other chains after approval from Aave's governance process on Ethereum. This cross-chain transaction can queue sets of actions for execution on the downstream chain. 
-     However, these actions must wait for a delay period prior to being executed. During this delay, a guardian address has the power to cancel the execution. If the delay period passes and the action
-     The BridgeExecutorBase is abstract and intentionally leaves the _queue function internal. 
-     This requires another contract to extend the BridgeExecutorBase to handle network specific logic, cross-chain transaction validation, and permissioning, prior to calling the internal _queue function.
-    
-     ## Protocol js
+     ## @aave/protocol-js
      AAVE is a decentralized non-custodial liquidity market protocol where users can participate as depositors or borrowers. 
      The AAVE Protocol is a set of open source smart contracts which facilitate the lending and borrowing of user funds. These contracts, 
      and all user transactions/balances are stored on a public ledger called a blockchain, making them accessible to anyone.
 
-     ## Safety Module
-     The Aave Protocol is secured by a smart contract-based component called the Safety Module (SM). AAVE holders can lock tokens into the SM to incentivize them to act as a mitigation tool in case of a Shortfall Event within the Aave ecosystem. 
-     A Shortfall Event occurs when there is a deficit in one of the money markets that belong to the Aave ecosystem. The interpretation for the occurrence of a Shortfall Event is subject to the Protocol Governance vote.
+     ethers js, something we discussed about earlier, is a peer dependancy (PeerDependency, it is not automatically installed. Instead, the code that includes the package must include it as its dependency.) for protocol-js.
+
+     The aave-js data formatting methods are a layer beyond graphql which wraps protocol data into more usable formats. Each method will require inputs from AAVE subgraph queries.
+     As you can see, we have already discussed about formatting packages (@aave/math-utils), these features are enclosed in this package. It has data formatting services which allow the querying of 
+     User data and reserve data.
+     It also encloses various transaction methods and the **Lending pool V2**, of which we have talked about in detail. For a short summary,
+     Lending pool is just a smart contract which acts as a reserve (pool) of assets, lent by liquidity providers for the protocol to use
+     for loaning. It contains methods like deposit, borrow, repay, withdraw, etc which can be called by users via smartcontracts.
+     It also encloses other vast concepts like aave governance.
+
+     ## @aave/safety-module
+     The Aave Protocol is secured by a smart contract-based component called the Safety Module (SM). AAVE holders can lock tokens into the SM to incentivize them to act as a 
+     mitigation tool in case of a Shortfall Event within the Aave ecosystem. A Shortfall Event occurs when there is a deficit in one of the money markets that belong 
+     to the Aave ecosystem. The interpretation for the occurrence of a Shortfall Event is subject to the Protocol Governance vote.
      
-     In the event of a Shortfall, a portion of the locked AAVE is auctioned off to be sold in order to make up for the deficit. The SM has a built-in backstop mechanism to prevent too much AAVE from entering the open market, which would lower the value of AAVE. 
-     By locking AAVE into the SM, participants are accepting the possibility of a Shortfall Event occurring, in exchange for rewards in the form of Safety Incentives (SI).
+     The Safety Module is designed to work with existing AMM technologies. The module will have an 80% AAVE/20% ETH liquidity pool that uses Balancer. This is meant to provide benefits like market depth for the AAVE token and earnings from locking AAVE. 
+     The module will also cover BAL tokens and trading fees. Plus, it will reduce the impact of a Shortfall Event on the AAVE token.
+     In the event of a Shortfall, a portion of the locked AAVE is auctioned off to be sold in order to make up for the deficit. The SM has a built-in backstop mechanism to prevent too 
+     much AAVE from entering the open market, which would lower the value of AAVE. By locking AAVE into the SM, participants are accepting the possibility of a Shortfall Event occurring, 
+     in exchange for rewards in the form of Safety Incentives (SI).
     
-     AAVE holders can deposit their tokens into the Staking Mechanism to contribute to the safety of the protocol and receive incentives. In return, they will receive a tokenized position that can be freely moved within the underlying network. 
-     The holder of the tokenized position can redeem their share from the SM at any time, triggering a cooldown period of one week (which can be further extended by the governance).
+     AAVE holders can deposit their tokens into the Staking Mechanism to contribute to the safety of the protocol and receive incentives. In return, they will receive a tokenized position
+     that can be freely moved within the underlying network. The holder of the tokenized position can redeem their share from the SM at any time, triggering a cooldown period of 
+     one week (which can be further extended by the governance, mentioned in the protocol-js).
+
+     ## @aave/protocol-v2
+     This repository contains the smart contracts source code and markets configuration for Aave Protocol V2. The repository uses Docker Compose and Hardhat as development enviroment for compilation, testing and deployment tasks.
+     This is bascially an all encompassing package which has all functions of the aave protocol as a whole. Helps the developer interact with the aave protocol from their development environment.
 
     stepItems: []
 
@@ -360,16 +296,19 @@ steps:
     content: |
     stepItems:
       - uuid: 881f3900-a654-4868-8d62-b80153494bf8
-        content: Which of these helps in extending Aave governance to other blockchain networks?
+        content: | 
+         @aave/protocol-js encloses which of these?
         answerKeys:
+          - A
+          - B
           - C
-        type: SingleChoice
+        type: MultipleChoice
         choices:
-          - content: Safety Module
+          - content: aave governance 
             key: A
-          - content: Protocol Js
+          - content: aave lending pool
             key: B
-          - content: crosschain-bridges
+          - content: data formatting and transaction methods
             key: C
           - content: None of these
             key: D
@@ -402,16 +341,16 @@ steps:
           - content: Both A and B
             key: D
       - uuid: f2d03203-7def-4afe-b3a8-378df1df6035
-        content: What do the users who contribute to the safety module receive?
+        content: What is a peer dependancy?
         answerKeys:
-          - C
+          - B
         type: SingleChoice
         choices:
-           - content: Incentives from the SM
+           - content: Dependancy that comes installed with the packages
              key: A
-           - content: Reedembale position with a week's cooldown time
+           - content: Dependancy that the package uses, but is not pre-installed.
              key: B
-           - content: Both A and B
+           - content: Dependancy that is optional
              key: C
            - content: None of these
              key: D
