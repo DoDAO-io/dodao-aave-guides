@@ -163,6 +163,7 @@ steps:
             key: A
           - content: |
              false
+            key: B
    
   - uuid: f800407f-477c-43f4-abd7-0839496e09de
     name: |
