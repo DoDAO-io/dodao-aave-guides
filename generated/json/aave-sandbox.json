@@ -1,12 +1,13 @@
 {
-  "uuid": "49a5f5b2-ef0c-43cc-93a6-dd7dde8dd0e8",
+  "uuid": "e7d8ce31-5246-4e2d-a198-2ddf2931ab72",
   "key": "aave-sandbox",
   "name": "AAVE Sandbox",
   "content": "Explains how you can use AAVE Sandbox",
   "guideType": "onboarding",
   "created": "2022-08-02T04:15:13.911Z",
   "categories": [
-    "developer"
+    "developer",
+    "engineering"
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/guides/eth/aave/AAVE_Sandbox.png",
   "publishStatus": "Live",
@@ -14,10 +15,360 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "uuid": "8c914bb2-274a-490b-aa88-c3d6ec5f210f",
+      "uuid": "88c68eee-9362-4359-bc55-efc8283d0be1",
       "name": "Aave Sandbox",
-      "content": "Aave Sandbox\nSee here - https://github.com/aave/aave-sandbox\n",
+      "content": "### Aave Sandbox\n\nAave sandbox is a GitHub repository that replicates the forked production environment.The environment is \nenvisioned for testing liquidations and other integrations that require a production state using hardhat node and alchemy.\n\nSee here - https://github.com/aave/aave-sandbox\n\n\n### Setting up the environment:\n\n1. Set up a code editor like VScode and install node js and git.\n2. Clone repository using git clone [https://github.com/aave/aave-sandbox.git](https://github.com/aave/aave-sandbox.git)\n3. Install npm i (type npm i in the terminal for installation).\n4. Create a .env file.(touch.env)\n5. Create an alchemy key from the alchemy website\n\nWhat is a Hardhat node?\n\nHardhat is a framework for testing, running, and deploying smart contracts and scripts in the blockchain. It features clear error messages, \nforking the mainnet and other networks, mining nodes, logging, etc.\n\nHardhat Network has the ability to copy the state of the mainnet blockchain into your local environment, including all balances and deployed contracts. \nThis is known as the \"forking mainnet.\"\n",
       "stepItems": []
+    },
+    {
+      "uuid": "fa13ea91-c4be-4315-816b-b323cac83578",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "97078da7-f72b-4418-be8c-3fa2ae7dddd6",
+          "content": "What are the tools we are using for aave sandbox?",
+          "answerKeys": [
+            "B",
+            "C"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Ganache",
+              "key": "A"
+            },
+            {
+              "content": "Hardhat",
+              "key": "B"
+            },
+            {
+              "content": "Alchemy",
+              "key": "C"
+            },
+            {
+              "content": "Truffle",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "cf1c0f4f-7a32-41b0-9733-a8a2720f1fe3",
+          "content": "What are requirements we need to install for forking?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "Npm and Hardhat",
+              "key": "A"
+            },
+            {
+              "content": "Alchemy API key and nodejs",
+              "key": "B"
+            },
+            {
+              "content": "Truffle",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "ec0f4246-37f4-492d-bf04-7cc6c75f8173",
+          "content": "Which of the following is correct about Aave sanbox?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "Sandbox is framework for deploying and testing smart-contracts",
+              "key": "A"
+            },
+            {
+              "content": "Sandbox is a github repository that replicates the forked production environment.",
+              "key": "B"
+            },
+            {
+              "content": "Sandbox is a smartcontract for Aave",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "41f72e60-8eaf-412c-b7af-6afa591a1fe6",
+      "name": "Forking Aave markets",
+      "content": "\n###Forking Aave v3 markets.\n\nFor forking, we need to complete the installation of npm and hardhat.Now clone the Aave sandbox repository or use \n\n```\ngit clone https://github.com/aave/aave-sandbox.git\n```\n\nAfter cloning the repository, create an Alchemy API key from the alchemy website. Store the alchemy key in the created .env file, as shown below.\n\n```\n# Content of .env file\nALCHEMY_KEY=your-alchemy-key\n```\nNote: Dont share your API key and mention the .env file in the gitignore so that it wont be pushed.\n\nIf you want to integrate any deployed Aave V3 markets, you can spin a sandbox node in the following way.\nIn a separate window, run the sandbox Hardhat fork node that will be reachable via JSON RPC at `http://127.0.0.1:8545/`. \nYou can spin the sandbox node with the following command, replacing \"polygon\" with the desired chain:\n\n```\nnpm run node:fork:polygon-v3\n```\n\n\nNow you can connect to the Hardhat Node via JSON RPC at `http://127.0.0.1:8545/` in your project and use official deployed addresses to \ninteract with the market. Once the node runs, the following tasks will point to the sandbox node.\nTasks like feed-account,print-balance,print-accounts,etc. It will be useful for analyzing the market.\n\nIf you need the official ERC20 tokens in the sandbox environment, you can get ERC20 tokens using the `feed-account` task. \nThe task will override the balance of the address via `hardhat_setStorage`.\nYou can use the following command as a faucet to get all ERC20 tokens used inside a market.\n\n\n```\nnpm run feed-accounts:polygon-v3 --accounts 0x976EA74026E726554dB657fA54763abd0C3a0aa9,<other-user-address>\n```\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "4f5f9ca3-1145-453f-b658-3507971ce787",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "40698d81-db1e-4b32-9b9f-efb0bb433705",
+          "content": "Where should we store the alchemy key?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "MultipleChoice",
+          "choices": [
+            {
+              "content": "in the created variable ALCHEMY_KEY",
+              "key": "A"
+            },
+            {
+              "content": "we need to store in the contracts",
+              "key": "B"
+            },
+            {
+              "content": "We need to store in the environment variable which we have created as .env",
+              "key": "C"
+            },
+            {
+              "content": "we dont use API keys",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "c97d1a91-8844-412d-9001-140f17d50156",
+          "content": "How to connect the forked chain to the Hardhat node?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "We need to edit the hardhat config file and set the requirements for the connecting it with the forked market.",
+              "key": "A"
+            },
+            {
+              "content": "We can use command connect hardhat for connecting it.",
+              "key": "B"
+            },
+            {
+              "content": "we wont connect it.",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "ea85dfef-a533-4d88-b96f-079f70fdb5b3",
+          "content": "How to get the official ERC-20 tokens in the sandbox node?",
+          "answerKeys": [
+            "C"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "we can get it by using smart-contracts",
+              "key": "A"
+            },
+            {
+              "content": "We can get it by connecting our wallet to a faucet",
+              "key": "B"
+            },
+            {
+              "content": "We need to use the feed-account task.",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "74086aeb-08ad-4610-a971-549e5480935e",
+      "name": "Aave arc sandbox",
+      "content": "###Aave arc sandbox\n\nIn a separate window, run the sandbox Hardhat node that will be reachable \nvia JSON RPC at `http://127.0.0.1:8545/`. You can spin the sandbox node with the following command:\n\n```\nnpm run node:fork:arc\n```\nOnce the node is running, the following tasks will point to the sandbox node. You can also point your project to target the sandbox node.\nTo add liquidity to the Aave Arc, proceed to feed liquidity and create possible liquidable positions:\n\n```\nnpm run feed-market:arc\n```\nOnce there is liquidity at the market, you can view the users balance and possible liquidable positions with the following command:\n\n```\nnpm run print-accounts:arc\n```\nOutput:\nUser Info:\n- Address: 0x976EA74026E726554dB657fA54763abd0C3a0aa9\n- Health Factor:  0.918421511765627487\n- Balances\n┌─────────┬───────────────────┬───────────────────┬──────────────────────────┬────────┐\n│ (index) │ enabledCollateral │ collateralBalance │       debtBalance        │ symbol │\n├─────────┼───────────────────┼───────────────────┼──────────────────────────┼────────┤\n│    0    │       true        │     '50000.0'     │          '0.0'           │ 'USDC' │\n│    1    │       false       │       '0.0'       │          '43.0'          │ 'WBTC' │\n│    2    │       false       │       '0.0'       │ '543.999999948668340512' │ 'WETH' │\n│    3    │       true        │     '50000.0'     │          '0.0'           │ 'AAVE' │\n└─────────┴───────────────────┴───────────────────┴──────────────────────────┴────────┘\n[...]\n\n\n\nFor whitelisting your accounts or smart contracts like liquidation bots into Aave Arc Sandbox, you can use the following command:\n\n```\nwhitelist-accounts:arc --accounts <your-account-address>,<your-smart-contract-address>\n```\nNow you can connect your project to the Hardhat Node via JSON RPC at `http://127.0.0.1:8545/` in your project and use official \ndeployed addresses to interact with the market.\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "7c205bd2-073d-455a-a64c-25d53929b0db",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "4c1c35f8-3e00-4351-8f94-b0bb7b9be7f8",
+          "content": "How to view the user's and markets information after forking?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "We need to create a smartcontract and ask for the details required",
+              "key": "A"
+            },
+            {
+              "content": "We can use the tasks which was defined in the sandbox repo to analyse and view market.",
+              "key": "B"
+            },
+            {
+              "content": "Use can view it by using the command in the terminal give users info.",
+              "key": "C"
+            },
+            {
+              "content": "We cannot view users and market information after forking.",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "a23df227-10db-4c13-828a-35d9da316740",
+          "content": "Which of the following command is correct about adding liquidity to the Aave arc?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "npm run node:fork:arc",
+              "key": "A"
+            },
+            {
+              "content": "npm run feed-market:arc",
+              "key": "B"
+            },
+            {
+              "content": "npm run print-accounts:arc",
+              "key": "C"
+            },
+            {
+              "content": "npm run node:fork:polygon-v3",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "5c567966-6d7a-4df4-8d18-6b0d2cbedd96",
+          "content": "How to view the user's and markets information after forking?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "We need to create a smartcontract and ask for the details required",
+              "key": "A"
+            },
+            {
+              "content": "We can use the tasks which was defined in the sandbox repo to analyse and view market.",
+              "key": "B"
+            },
+            {
+              "content": "Use can view it by using the command in the terminal give users info.",
+              "key": "C"
+            },
+            {
+              "content": "We cannot view users and market information after forking.",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "f655ad16-ff3a-4ae8-b268-17f11e979dc7",
+      "name": "Forking Aave v2 main",
+      "content": "###Aave V2 Main\n\nIf you want to integrate the permissionless Aave market, you can also spin a sandbox in the following way.\nIn a separate window, run the sandbox Hardhat node that will be reachable via JSON RPC at `http://127.0.0.1:8545/`. You can spin the sandbox node \nwith the following command:\n\n```\nnpm run node:fork:main-v2\n```\n\nNow you can connect to the Hardhat Node via JSON RPC at `http://127.0.0.1:8545/` in your project and use official deployed addresses to interact with the market.\nOnce the node runs, the following tasks will point to the sandbox node.To add liquidity to the Aave Main market, proceed to feed liquidity and create possible liquidate positions:\n\n```\nnpm run feed-market:main-v2\n```\n\nView users positions at the Main market and possible liquidable positions, but only limited to a subset of addresses passed by the argument `--accounts`:\n\n```\nnpm run print-accounts:main-v2 -- --accounts 0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f,0x14dC79964da2C08b23698B3D3cc7Ca32193d9955\n```\n###Utilities        \n**Enable mining by interval**\n\nBy default Hardhat node mines block every time you perform a transaction, but for some scenarios you may need the node to mine blocks by interval.\nYou can enable Hardhat to mine blocks every 5 seconds with the following command:\n```\nnpm run set-interval-mining\n```\nTo disable mining empty blocks, you can run:\n\n```\nnpm run set-interval-mining: off\n```\n",
+      "stepItems": []
+    },
+    {
+      "uuid": "3c0fb489-ebf1-460e-a030-497f8266ca19",
+      "name": "Evaluation",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "73fd305a-3e6c-4d88-816e-659c19673650",
+          "content": "Which of the following is correct command for forking Aave mainnet market?",
+          "answerKeys": [
+            "B"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "npm run feed-market:main-v2",
+              "key": "A"
+            },
+            {
+              "content": "npm run node:fork:main-v2",
+              "key": "B"
+            },
+            {
+              "content": "npm run set-interval-mining",
+              "key": "C"
+            },
+            {
+              "content": "hardhat --fork:mainnet",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "1e91a6d7-c96a-466d-a4fa-80288ab5fa07",
+          "content": "Which of the following is correct about seeting interval for mining the blocks?",
+          "answerKeys": [
+            "A"
+          ],
+          "type": "SingleChoice",
+          "choices": [
+            {
+              "content": "npm run set-interval-mining",
+              "key": "A"
+            },
+            {
+              "content": "npm run node:fork:main-v2",
+              "key": "B"
+            },
+            {
+              "content": "npm set interval [5]",
+              "key": "C"
+            },
+            {
+              "content": "hardhat set interval --block",
+              "key": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "ed2e5424-10fc-43f9-b183-8b34bb53f284",
+      "name": "Your Info",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "cb2c807f-eab8-40e3-a890-cf5aceed8bd0",
+          "label": "Nick Name",
+          "required": true,
+          "type": "PublicShortInput"
+        },
+        {
+          "uuid": "5af585ab-32ef-45a6-95ea-60608e13c506",
+          "type": "UserDiscordConnect"
+        }
+      ]
     }
   ]
 }
