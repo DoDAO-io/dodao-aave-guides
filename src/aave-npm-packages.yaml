@@ -100,36 +100,34 @@ steps:
     name: |
      @aave/aave-token
     content: |
-     ## @aave/aave-token:
-     The AAVE token is an ERC-20 compatible token that implements governance-inspired features. This will allow Aave to bootstrap the rewards program for safety and ecosystem growth. 
+      ## @aave/aave-token:
+      The AAVE token is an ERC-20 compatible token that implements governance-inspired features. This will allow Aave to bootstrap the rewards program for safety and ecosystem growth. 
+      
+      **Roles:**
+      The original AAVE token contract does not have any administrator roles set up. The contract will use the Openzeppelin implementation of the EIP-1967 Transparent Proxy pattern, which will have an administrator role. 
+      The proxy's administrator will be set when the contract is deployed to the Aave governance contracts.
+ 
+      The AAVE token implements the standard methods of the ERC-20 interface, with a balance snapshot feature to keep track of the balances of users at specific block heights. This is helpful for the Aave governance integration of AAVE.
+      AAVE also integrates the EIP 2612 permit function - which allows gasless transactions and one tx approval/transfer.
+ 
+      **LendToAaveMigrator:**
+      It is the smart contract for LEND token holders to execute the migration to the AAVE token, using part of the initial emission of AAVE for it.
+ 
+      The contract is covered by a proxy, whose owner will be the AAVE governance. 
+      Once the governance passes the corresponding proposal, the proxy will be connected to the implementation and LEND holders will be able to call the migrateFromLend() function, 
+      which, after LEND approval, will pull LEND from the holder wallet and transfer back an equivalent AAVE amount defined by the LEND_AAVE_RATIO constant.
+ 
+      Form the npm docs,
+      One tradeOff of migrateFromLend() is that, as the AAVE total supply will be lower than LEND, the LEND_AAVE_RATIO will be always > 1, causing a loss of precision for amounts of LEND that are not multiple of LEND_AAVE_RATIO. E.g. a person sending 1.000000000000000022 LEND, with a LEND_AAVE_RATIO == 100, will receive 0.01 AAVE, losing the value of the last 22 small units of LEND. 
+      Taking into account the current value of LEND and the future value of AAVE, a lack of precision for less than LEND_AAVE_RATIO small units represents a value several orders of magnitude smaller than 0.01$. 
+ 
+      **Redemption process:**
+      The Aave team will be responsible for the first step in bootstrapping AAVE emissions by deploying the AAVE token contract and the LendToAaveMigrator contract. Upon deployment, the ownership of the Proxy of the AAVE contract and the LendToAaveMigrator will be transferred to the Aave Governance. 
+      In order to start the LEND redemption process at that point, the Aave team will create an AIP (Aave Improvement Proposal) and submit it as a proposal to the Aave governance for approval.
+      The proposal will, once approved, activate the LEND/AAVE redemption process and the ecosystem incentives, which will mark the initial emission of AAVE on the market. The result of the migration procedure will see the supply of LEND being progressively locked within the new AAVE smart contract, while at the same time an equivalent amount of AAVE is being issued. The amount of AAVE equivalent to the LEND tokens burned in the initial phase of the AAVE protocol will remain locked in the LendToAaveMigrator contract. 
+      In other words, when you redeem your LEND tokens for AAVE, you're also locking up an equivalent amount of AAVE in order to ensure that there's no net increase in the total supply of AAVE.
      
-     **Roles:**
-     The original AAVE token contract does not have any administrator roles set up. The contract will use the Openzeppelin implementation of the EIP-1967 Transparent Proxy pattern, which will have an administrator role. 
-     The proxy's administrator will be set when the contract is deployed to the Aave governance contracts.
-
-     The AAVE token implements the standard methods of the ERC-20 interface, with a balance snapshot feature to keep track of the balances of users at specific block heights. This is helpful for the Aave governance integration of AAVE.
-     AAVE also integrates the EIP 2612 permit function - which allows gasless transactions and one tx approval/transfer.
-
-     **LendToAaveMigrator:**
-     It is the smart contract for LEND token holders to execute the migration to the AAVE token, using part of the initial emission of AAVE for it.
-
-     The contract is covered by a proxy, whose owner will be the AAVE governance. 
-     Once the governance passes the corresponding proposal, the proxy will be connected to the implementation and LEND holders will be able to call the migrateFromLend() function, 
-     which, after LEND approval, will pull LEND from the holder wallet and transfer back an equivalent AAVE amount defined by the LEND_AAVE_RATIO constant.
-
-     Form the npm docs,
-     One tradeOff of migrateFromLend() is that, as the AAVE total supply will be lower than LEND, the LEND_AAVE_RATIO will be always > 1, causing a loss of precision for amounts of LEND that are not multiple of LEND_AAVE_RATIO. E.g. a person sending 1.000000000000000022 LEND, with a LEND_AAVE_RATIO == 100, will receive 0.01 AAVE, losing the value of the last 22 small units of LEND. 
-     Taking into account the current value of LEND and the future value of AAVE, a lack of precision for less than LEND_AAVE_RATIO small units represents a value several orders of magnitude smaller than 0.01$. 
-
-     **Redemption process:**
-     The Aave team will be responsible for the first step in bootstrapping AAVE emissions by deploying the AAVE token contract and the LendToAaveMigrator contract. Upon deployment, the ownership of the Proxy of the AAVE contract and the LendToAaveMigrator will be transferred to the Aave Governance. 
-     In order to start the LEND redemption process at that point, the Aave team will create an AIP (Aave Improvement Proposal) and submit it as a proposal to the Aave governance for approval.
-     The proposal will, once approved, activate the LEND/AAVE redemption process and the ecosystem incentives, which will mark the initial emission of AAVE on the market. The result of the migration procedure will see the supply of LEND being progressively locked within the new AAVE smart contract, while at the same time an equivalent amount of AAVE is being issued. The amount of AAVE equivalent to the LEND tokens burned in the initial phase of the AAVE protocol will remain locked in the LendToAaveMigrator contract. 
-     In other words, when you redeem your LEND tokens for AAVE, you're also locking up an equivalent amount of AAVE in order to ensure that there's no net increase in the total supply of AAVE.
-    
-     The smartcontract can then be deployed to the testnet or the mainnet.
-
-
+      The smartcontract can then be deployed to the testnet or the mainnet.
     stepItems: []
 
   - uuid: 097ed24e-61a8-4cf0-b7f3-c17f9de71621

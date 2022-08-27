@@ -16,7 +16,7 @@
     {
       "uuid": "5db956ef-4e00-4ac1-8c25-64c5dbebfa73",
       "name": "@aave/core-v3, @aave/core-v2\n",
-      "content": "\n## @aave/coreV3\nThis package contains the smart contracts source code and markets configuration related to Aave Protocol V3. \nIt uses Docker Compose and Hardhat as development environment for compilation, testing and deployment tasks.\n\nYou can install @aave/aave-v3-core as an npm package to your hardhat or truffle workspace to get access to contracts and \ninterfaces provided by Aave V3\n\nThe repository uses Docker Compose to manage sensitive keys and load the configuration. \nBefore any action like test or deploy, you must run docker-compose up to start the contracts-env container, and then connect to the container console through docker-compose exec contracts-env bash.\nYou can run a full test suite using Docker Compose commands.\n\n## @aave/coreV2\nThis is the previous version of Aave core V3. and so it has features similar to V3.\nThe repository uses Docker Compose to manage sensitive keys and load the configuration. \nPrior any action like test or deploy, you must run docker-compose up to start the contracts-env container, and then connect to the container console via docker-compose exec contracts-env bash.\n",
+      "content": "\n## @aave/coreV3\nThis package contains the smart contracts source code and markets configuration related to Aave Protocol V3. \nIt uses Docker Compose and Hardhat as development environment for compilation, testing and deployment tasks.\n\nYou can install @aave/aave-v3-core as an npm package to your hardhat or truffle workspace to get access to contracts and \ninterfaces provided by Aave V3\n\nYou can install `@aave/core-v3` as an NPM package in your Hardhat or Truffle project to import the contracts and interfaces:\n\n`npm install @aave/core-v3`\n\nImport at Solidity files:\n\n```solidity\n  import {IPool} from \"@aave/core-v3/contracts/interfaces/IPool.sol\";\n\n  contract Misc {\n\n    function supply(address pool, address token, address user, uint256 amount) public {\n      IPool(pool).supply(token, amount, user, 0);\n      {...}\n    }\n  }\n```\n\nThe JSON artifacts with the ABI and Bytecode are also included into the bundled NPM package at `artifacts/` directory.\n\nImport JSON file via Node JS `require`:\n\n```\n  const PoolV3Artifact = require('@aave/core-v3/artifacts/contracts/protocol/pool/Pool.sol/Pool.json');\n\n  // Log the ABI into console\n  console.log(PoolV3Artifact.abi)\n```\n\n## @aave/coreV2\nThis is the previous version of Aave core V3. and so it has features similar to V3.\n\nJust like @aave/core-v3, you can  install @aave/protocol-v2 as an NPM package by running `npm install @aave/protocol-v2`\n\nYou can import Solidity and ABI files, just like the V3 files shown above. \n",
       "stepItems": []
     },
     {
@@ -52,7 +52,7 @@
         },
         {
           "uuid": "41e5ceb5-058e-463b-8033-62f17b5070cd",
-          "content": "Aave V3 uses which of these as development environment?",
+          "content": "Aave V3 uses which of these tools to set-up development environment?",
           "answerKeys": [
             "C",
             "B"
@@ -69,32 +69,6 @@
             },
             {
               "content": "Docker Compose",
-              "key": "C"
-            },
-            {
-              "content": "None of these",
-              "key": "D"
-            }
-          ]
-        },
-        {
-          "uuid": "30296e0b-cd58-4713-96f1-4d4c1e6f2214",
-          "content": "Which of these packages enable stake of Aave related assets?",
-          "answerKeys": [
-            "A"
-          ],
-          "type": "SingleChoice",
-          "choices": [
-            {
-              "content": "Aave-stake",
-              "key": "A"
-            },
-            {
-              "content": "Truffle commands",
-              "key": "B"
-            },
-            {
-              "content": "Aave Core v3",
               "key": "C"
             },
             {
