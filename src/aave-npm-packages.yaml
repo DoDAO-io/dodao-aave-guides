@@ -1,13 +1,12 @@
-uuid: 2d18e8b5-f7d3-47e9-9b62-26abee6e49d4
-key: borrowing-in-aave
-name: Decentralized Borrowing
-content: How Borrowing works in Decentralized Finance
+uuid: 0de15878-df46-4b62-a536-d1446d3eef80
+key: aave-npm-packages
+name: AAVE NPM Packages
+content: Explains the important NPM packages
 guideType: onboarding
 created: "2022-08-02T04:15:13.911Z"
 categories:
   - developer
-  - engineering
-thumbnail: https://d31h13bdjwgzxs.cloudfront.net/guides/eth/aave/Borrowing_in_aave.png
+thumbnail: https://d31h13bdjwgzxs.cloudfront.net/guides/eth/aave/AAVE_NPM_Packages.png
 publishStatus: Live
 socialShareImage:
 showIncorrectOnCompletion: true
@@ -34,7 +33,7 @@ steps:
      Prior any action like test or deploy, you must run docker-compose up to start the contracts-env container, and then connect to the container console via docker-compose exec contracts-env bash.
 
      
-  
+
     stepItems: []
 
   - uuid: 94c7d162-1dc7-48a8-bd9c-9da32acb6382
@@ -51,7 +50,7 @@ steps:
             key: A
           - content: Math util
             key: B
-          - content: Lens protocol 
+          - content: Lens protocol
             key: C
           - content: None of these
             key: D
@@ -84,7 +83,7 @@ steps:
             key: C
           - content: None of these
             key: D
- 
+
 
   - uuid: 16959203-96fa-4b9a-ac7b-67e0905d7533
     name: |
@@ -121,7 +120,7 @@ steps:
 
 
     stepItems: []
- 
+
   - uuid: 097ed24e-61a8-4cf0-b7f3-c17f9de71621
     name: Evaluation
     content: |
@@ -164,7 +163,7 @@ steps:
           - content: |
              false
             key: B
-   
+
   - uuid: f800407f-477c-43f4-abd7-0839496e09de
     name: |
      @aave/contract-helpers, @aave/math-utils,  @aave/periphery-v3
@@ -201,10 +200,10 @@ steps:
      This repository contains the Rewards Controller contract, which allows you to incentivize assets with multiple rewards in Aave V3 markets. 
      It also contains UI helpers and other external smart contracts utilities related to the Aave Protocol V3.
 
-     
+
     stepItems: []
 
- 
+
   - uuid: d43cb58b-ae6b-497a-8d56-cdcc0d077090
     name: Evaluation
     content: |
@@ -247,14 +246,14 @@ steps:
         choices:
           - content: ethers.js
             key: A
-          - content: indexed data 
+          - content: indexed data
             key: B
           - content: hardhat
             key: C
           - content: None of these
             key: D
-    
-  
+
+
   - uuid: 48b327fc-9ad8-481c-8948-989dad8020e1
     name: |
      @aave/protocol-js, @aave/safety-module, @aave/protocol-v2
@@ -309,7 +308,7 @@ steps:
           - C
         type: MultipleChoice
         choices:
-          - content: aave governance 
+          - content: aave governance
             key: A
           - content: aave lending pool
             key: B
@@ -360,6 +359,6 @@ steps:
            - content: None of these
              key: D
 
- 
 
-    
+
+

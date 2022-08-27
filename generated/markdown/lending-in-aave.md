@@ -9,7 +9,6 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 ## Overview
 
 ### Lending in Web3
-
 Crypto Projects use the money lent in various ways like Staking on different protocols for  Yield Farming, interest, etc. There is no limit for lending assets. 
 lending money is even more opaque than traditional finance, and the user is not informed about how the money is being used. So the user should be aware of 
 how the funds will be used and the risks associated with lending the money. AAVE is a lending and borrowing protocol provide full transparency on how the 
@@ -18,8 +17,7 @@ such as no taxes and the possibility of higher returns. The elimination of the m
 interest mostly goes to lenders.
 
 
-### Important Terms 
-
+### Important Terms       
 1. **APY-** The annual percentage yield (APY) is the real rate of return earned on an investment, taking into account the effect of compounding interest. 
 2. **aTokens-** aTokens are the interest-bearing tokens which is minted and burnt in 1:1 ratio upon deposit and redeem.
 3. **ERC-20-** The ERC-20 introduces a standard for Fungible Tokens. In other words, they have a property that makes each Token precisely the same 
