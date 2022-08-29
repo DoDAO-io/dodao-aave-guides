@@ -12,31 +12,126 @@ socialShareImage:
 showIncorrectOnCompletion: true
 steps:
   - uuid: fac2cc55-453f-4b49-8d5e-fe29d0f70a60
-    name: Risk Overview
+    name: Introduction
     content: |
-      Risk Overview
-      * What is Risk in decenralized finance
-      * What type of risks are there
-      https://docs.aave.com/risk/
+      The Aave protocol is a popular liquidity protocol on Ethereum. It allows users to supply and borrow crypto assets 
+      on Ethereum. Active borrowers who are willing to pay interest have access to pools of crypto assets supplied by 
+      users who seek yield on their savings..
+      
+      DeFi is all about liquidity; without it, the whole ecosystem would grind to a halt. And because of the way that different 
+      components in DeFi are interconnected, any risks in one area can quickly flow through the entire system. With the 
+      market growing so quickly, it's more important than ever to remember that there are many risks associated with DeFi.
+      
+      Aave's risk framework provides a comprehensive guide for the different risks associated 
+      with the protocol as well as the different ways to mitigate them. By taking into account market, counterparty, and 
+      smart contract risks, Aave Protocol aims to set a higher standard for risk management within the DeFi space.
+      
+      The team at Aave constantly strives to make the protocol safer.
     stepItems: []
   - uuid: 6d902d63-d49f-4a56-b39d-dea20ca21bae
-    name: Asset Risk
+    name: Risk by Addition of a new token
     content: |
-      Asset Risk
-      * Risks associated with adding an asset
-      * Methodology
-      * Risk per asset
-      * Risk Parameters
-      https://docs.aave.com/risk/asset-risk/introduction
+      Aave enables users to supply and borrow digital assets through liquidity pools. Suppliers receive protocol-issued 
+      aTokens, holding the user’s supplied assets and accrued yield.
+      
+      The collateral secures each borrow and acts as a risk mitigation tool against default.
+      
+      Following are the risks associated with the addition of tokens -
+      
+      ### The protocol risk of insolvency      
+        Adding a new token involves the risk of insolvency. While adding new tokens the Aave Community considers the 
+        following important points -      
+          1. Only the assets with best risk profiles should be supported as collateral
+          2. Riskier assets should only be enabled as collateral in Isolation _mode_
+          3. New assets with higher risk and lower liquidity should be only considered listed in Isolation _mode_ (for both borrow and collateral use)
+      
+      ### Centralisation risk      
+      A centralized asset accepted as collateral exposes the protocol to centralization risk. The single point of failure 
+      risks of the underlying tokens enter into the Aave Protocol due to the centralized asset being accepted as collateral.
+      
+      ### Risk of collateral assets
+      Tokens that are enabled only for supplying and borrowing and are not usable as collateral, present lower risk for 
+      the protocol. Collaterals are the assets of the protocol. For solvency, these assets must remain greater than the 
+      liabilities borrowed from the protocol. Tokens that can only be used for borrowing should always be excessively backed 
+      by collateral assets (e.g., a user can supply DAI as collateral and borrow DAI in variable mode backed by DAI as collateral).
+      
+      ### Risk of manipulable oracles      
+      Assets that have risk of manipulable oracles are listed as single borrow assets. If a user borrows the mentioned asset, 
+      they cannot borrow any other asset (Siloed assets).
+      
+      ### **Token Concentration(Low diversity)**
+      If there are just a couple of tokens in the protocol, then volatilie conditions of those tokens can affect the full protocol. But by 
+      having many markets/pools, the risk is diversified.
     stepItems: []
   - uuid: ffd7e0fd-34b0-4988-8db2-4d29d4ffd702
-    name: Liquidity Risk
+    name: Types of Risks
     content: |
-      Liquidity Risk
+
+      ## Smart contract risk
+      The focus of smart contract risk is on assessing the security of the code that underlies any asset. Only code that 
+      has been thoroughly audited by well-respected auditors is appropriate for the Aave protocol. Users are advised to 
+      be vigilant, as even beyond audits, smart contract risk does exist and it can never be eliminated completely.
+      
+      One interesting mechanism that Aave plans to use to help reduce smart contract risk is bug bounties.
+      
+      Also, to prevent hacks, Aave protocol advices to onboard the contracts with strict risk mitigation such as supply caps or isolation mode.
+      
+      ## Counterparty Risk
+      When it comes to decentralized governance models, there are varying degrees to which control over funds (or even 
+      attack vectors) may be given to the governing architecture. 
+      
+      Counterparty risk is determined by the level of centralization within the system, which can be measured by 
+      things like the number of parties controlling a token's protocol, as well as the number and distribution of holders, 
+      and the level of trust in the entity, project, or community running the show.      
+      
+      ## Market Risk      
+      Aave assesses market risk by taking into account the size of the asset pool, as well as supply and demand. The 
+      market needs to have enough volume to handle any liquidations, which can lower the price of the asset. Aave uses 
+      average daily volume to assess liquidity risk.
+      
+      The volatility risk is based on the normalized fluctuations in the token price and is calculated as the standard 
+      deviation of the logarithmic returns.
+      
+      Tokens can be subject to sudden volatility spikes, and it is not uncommon to witness a 50% price change within a 
+      week or a month. When a price increase occurs, a parameter readjustment may be implemented to limit the risks of 
+      new operations.
+      
+      Finally, Aave also considers the market capitalisation representing the size of the market and potential exposure.
+      
+      Market risks are used to calibrate the model’s risk parameters. Volatility helps to define the required level of 
+      collateralisation. The liquidity risks are contained by liquidation incentives.
+
     stepItems: []
   - uuid: 2c2f0abf-7a6b-4ac6-b0a0-f25a6ce7cb4d
+    name: Liquidity Risk
+    content: |
+      The liquidity of the protocol is very important as it allows for the basic protocol operations to take place, such 
+      as borrowing assets that are backed by collateral. It also allows users to claim supplied assets along with the 
+      interest that has accrued. Measuring the liquidity is done by taking into account the utilisation ratio, which is 
+      the amount of the reserve that is currently borrowed in relation to the Aave supply of each asset.
+      
+      There are tools in place to help mitigate liquidity risk, such as the borrow interest rate model and alternative 
+      sources of aToken liquidity.
+      
+      Aave mitigates the liquidity risk by the following two ways
+      
+      ### 1. Borrow Interest Rate
+      Aave's interest rate algorithm is designed to carefully manage liquidity risk and optimize utilization. The borrow 
+      interest rates are derived from the Utilisation Rate, which is an indicator of the availability of capital within 
+      the pool. The interest rate model manages liquidity risk in the protocol by incentivizing users to support liquidity: When capital is available, 
+      low interest rates encourage borrowing. When capital is scarce, high interest rates encourage repayments of debt and additional supplying.
+      
+      ### 2. aToken Liquidity
+      In order to mitigate aTokens' liquidity risk, Aave has set up liquidity pools on Uniswap and Balancer, as well as 
+      the Aave Curve pool. This provides users with alternative sources of liquidity, enabling them to redeem aTokens 
+      even when there is no liquidity available in the protocol.
+    stepItems: []
+  - uuid: c01db5d9-3522-4cab-8515-b3d669337cec
     name: External Audits & Analysis
     content: |
-      External Audits & Analysis
+      As the Aave ecosystem expands, so do the potential risks and rewards. Security is always our top priority, and we 
+      have put in place best practices like automated testing and independent security audits to mitigate risk. Below you 
+      will find a summary of our recent security audits, which cover all aspects of the Aave protocol including smart 
+      contracts, algorithms, stress testing, and governance. Audit reports are available on GitHub.
     stepItems: []
 
