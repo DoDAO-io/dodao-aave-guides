@@ -10,7 +10,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
 The Aave protocol is a popular liquidity protocol on Ethereum. It allows users to supply and borrow crypto assets 
 on Ethereum. Active borrowers who are willing to pay interest have access to pools of crypto assets supplied by 
-users who seek yield on their savings..
+users who seek yield on their savings.
 
 DeFi is all about liquidity; without it, the whole ecosystem would grind to a halt. And because of the way that different 
 components in DeFi are interconnected, any risks in one area can quickly flow through the entire system. With the 
@@ -27,6 +27,23 @@ The team at Aave constantly strives to make the protocol safer.
 
 
 ---
+## Evaluation
+
+
+
+
+
+##### Which of these are the risks that Aave team tries to mitigate?  
+
+- [x]  Market Risks
+- [x]  Smart Contract Risks
+- [ ]  Change in Price of ETH
+- [x]  Counter-Party Risks
+
+    
+
+
+---
 ## Risk by Addition of a new token
 
 Aave enables users to supply and borrow digital assets through liquidity pools. Suppliers receive protocol-issued 
@@ -36,12 +53,16 @@ The collateral secures each borrow and acts as a risk mitigation tool against de
 
 Following are the risks associated with the addition of tokens -
 
+### Increase in gas price
+Adding of a new token can lead to increase in gas prices for most of the protocol operations. So it's important to 
+know the impact on the protocol. 
+
 ### The protocol risk of insolvency      
   Adding a new token involves the risk of insolvency. While adding new tokens the Aave Community considers the 
   following important points -      
     1. Only the assets with best risk profiles should be supported as collateral
-    2. Riskier assets should only be enabled as collateral in Isolation _mode_
-    3. New assets with higher risk and lower liquidity should be only considered listed in Isolation _mode_ (for both borrow and collateral use)
+    2. Riskier assets should only be enabled as collateral in isolation mode
+    3. New assets with higher risk and lower liquidity should be only considered listed in Isolation mode (for both borrow and collateral use)
 
 ### Centralisation risk      
 A centralized asset accepted as collateral exposes the protocol to centralization risk. The single point of failure 
@@ -57,10 +78,38 @@ by collateral assets (e.g., a user can supply DAI as collateral and borrow DAI i
 Assets that have risk of manipulable oracles are listed as single borrow assets. If a user borrows the mentioned asset, 
 they cannot borrow any other asset (Siloed assets).
 
-### **Token Concentration(Low diversity)**
+### Token Concentration(Low diversity)
 If there are just a couple of tokens in the protocol, then volatilie conditions of those tokens can affect the full protocol. But by 
 having many markets/pools, the risk is diversified.
 
+
+    
+
+
+---
+## Evaluation
+
+
+
+
+
+##### Which of these is not a risk associated with adding of a new asset?  
+
+- [ ]  Increase in gas price
+- [x]  Risk of adding unknown tokens
+- [ ]  Risk of collateral assets
+- [ ]  Risk of manipulable oracles
+
+
+
+
+
+##### What is the best way to add new high risk assets?  
+
+- [x]  New assets with higher risk and lower liquidity should be only considered listed in Isolation mode (for both borrow and collateral use)
+- [ ]  New assets cannot be added
+- [ ]  Allow them to be borrowed against other volatile assets
+- [ ]  Allow them to be used as collateral for stable coins
 
     
 
@@ -103,6 +152,34 @@ Finally, Aave also considers the market capitalisation representing the size of 
 Market risks are used to calibrate the model’s risk parameters. Volatility helps to define the required level of 
 collateralisation. The liquidity risks are contained by liquidation incentives.
 
+
+    
+
+
+---
+## Evaluation
+
+
+
+
+
+##### Which of these can result in Counterparty Risk?  
+
+- [ ]  Adding of a new asset
+- [ ]  Bug in Smart Contract
+- [x]  A whale accumulating most of the protocol's token leading to centralized governance
+- [ ]  Volatility of a particulat token
+
+
+
+
+
+##### Which of these can lead to Market Risks?  
+
+- [ ]  A whale accumulating most of the protocol's token leading to centralized governance
+- [x]  Volatility of a particulat token
+- [ ]  Bug in Smart Contract
+- [ ]  None of these
 
     
 
@@ -165,6 +242,51 @@ Below are the links to all audit reports and formal verification for Aave V3
 
 ### Formal Verification
 Formal verification by [Certora](https://github.com/aave/aave-v3-core/blob/master/Certora/certora/Verification\_Report.pdf)
+
+
+    
+
+
+---
+## Evaluation
+
+
+
+
+
+##### How does AAVE protect its protocol from Liquidity related risks?  
+
+- [ ]  Balancing the Borrow Interest Rate bases on demand
+- [ ]  Using stable coins
+- [x]  Aave has set up liquidity pools on Uniswap and Balancer, as well as the Aave Curve pool that provides users with alternative sources of liquidity
+- [ ]  By code reviews
+
+
+
+
+
+##### What is the difference in Code review and External Audit?  
+
+- [ ]  External audits are performaed by the team members whereas code reviews are performed by external teams
+- [x]  External audits are performaed by external teams whereas code reviews are performed by the team members
+- [ ]  They are one as the same
+- [ ]  No bugs are reported in audits, but bugs are reported in code reviews
+
+    
+
+
+---
+## Your Info
+
+
+
+
+
+| Label | Type | Required |
+| ----------- | ----------- | ---- |
+| Nick Name        | PublicShortInput   |  true    |
+
+
 
 
     

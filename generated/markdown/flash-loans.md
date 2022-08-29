@@ -271,6 +271,23 @@ user hefty liquidation fees of the protocol.
 
 
 ---
+## Your Info
+
+
+
+
+
+| Label | Type | Required |
+| ----------- | ----------- | ---- |
+| Nick Name        | PublicShortInput   |  true    |
+
+
+
+
+    
+
+
+---
 ## Footer
 This is the course header. This will be added on top of every page. Go to [DoDAO.io](https://www.dodao.io) to know more.
 

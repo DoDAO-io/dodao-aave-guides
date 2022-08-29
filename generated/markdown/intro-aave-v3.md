@@ -258,6 +258,23 @@ The aim and goals of Aave are to build an algorithmic loan market that allows th
 
 
 ---
+## Your Info
+
+
+
+
+
+| Label | Type | Required |
+| ----------- | ----------- | ---- |
+| Nick Name        | PublicShortInput   |  true    |
+
+
+
+
+    
+
+
+---
 ## Footer
 This is the course header. This will be added on top of every page. Go to [DoDAO.io](https://www.dodao.io) to know more.
 

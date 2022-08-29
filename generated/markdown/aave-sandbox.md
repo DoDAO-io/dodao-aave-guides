@@ -11,7 +11,8 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 ### Aave Sandbox
 
 Aave sandbox is a GitHub repository that replicates the forked production environment.The environment is 
-envisioned for testing liquidations and other integrations that require a production state using hardhat node and alchemy.
+envisioned for testing liquidations and other integrations that require a production state using hardhat node and 
+alchemy.
 
 See here - https://github.com/aave/aave-sandbox
 
@@ -24,7 +25,7 @@ See here - https://github.com/aave/aave-sandbox
 4. Create a .env file.(touch.env)
 5. Create an alchemy key from the alchemy website
 
-What is a Hardhat node?
+### What is a Hardhat node?
 
 Hardhat is a framework for testing, running, and deploying smart contracts and scripts in the blockchain. It features clear error messages, 
 forking the mainnet and other networks, mining nodes, logging, etc.
@@ -54,11 +55,11 @@ This is known as the "forking mainnet."
 
 
 
-##### What are requirements we need to install for forking?  
+##### What is Hardhat?  
 
-- [x]  Npm and Hardhat
-- [ ]  Alchemy API key and nodejs
-- [ ]  Truffle
+- [x]  Hardhat is a framework for testing,running and deploying smart contracts.
+- [ ]  Hardhat is a Defi platform.
+- [ ]  Hardhat is a programming language for writing smart contracts
 - [ ]  None of these
 
 
@@ -79,7 +80,7 @@ This is known as the "forking mainnet."
 ## Forking Aave markets
 
 
-###Forking Aave V3 markets.
+### Forking Aave V3 markets.
 
 For forking, we need to complete the installation of npm and hardhat.Now clone the Aave sandbox repository or use 
 
@@ -106,7 +107,16 @@ npm run node:fork:polygon-v3
 
 Now you can connect to the Hardhat Node via JSON RPC at `http://127.0.0.1:8545/` in your project and use official deployed addresses to 
 interact with the market. Once the node runs, the following tasks will point to the sandbox node.
-Tasks like feed-account,print-balance,print-accounts,etc. It will be useful for analyzing the market.
+
+**Tasks**
+
+* feed-account (`npm run feed-accounts:market_name -accounts <addresses>`)
+* feed market  (`npm run feed-market:market_name -accounts <addresses>`)
+* Print accounts  (`npm run print-accounts:market_name -accounts <addresses>`)
+* Print balances  (`npm run print-balances:market_name -accounts <addresses>`)
+* Print local accounts  (`npm run print-local-accounts:market_name -accounts <addresses>`)
+* Set interval timing (`npm run set-interval-mining`)
+* Whitelist accounts `(whitelist-accounts:arc --accounts <your-account-address>,<your-smart-contract-address>)`
 
 If you need the official ERC20 tokens in the sandbox environment, you can get ERC20 tokens using the `feed-account` task. 
 The task will override the balance of the address via `hardhat_setStorage`.
@@ -152,7 +162,7 @@ npm run feed-accounts:polygon-v3 --accounts 0x976EA74026E726554dB657fA54763abd0C
 
 ##### How to get the official ERC-20 tokens in the sandbox node?  
 
-- [ ]  we can get it by using smart-contracts
+- [ ]  We can't get them
 - [ ]  We can get it by connecting our wallet to a faucet
 - [x]  We need to use the feed-account task.
 - [ ]  None of these
@@ -163,7 +173,7 @@ npm run feed-accounts:polygon-v3 --accounts 0x976EA74026E726554dB657fA54763abd0C
 ---
 ## Aave arc sandbox
 
-###Aave arc sandbox
+### Aave arc sandbox
 
 In a separate window, run the sandbox Hardhat node that will be reachable 
 via JSON RPC at `http://127.0.0.1:8545/`. You can spin the sandbox node with the following command:
@@ -182,19 +192,20 @@ Once there is liquidity at the market, you can view the users balance and possib
 ```
 npm run print-accounts:arc
 ```
-Output:
+### Output:
 User Info:
 - Address: 0x976EA74026E726554dB657fA54763abd0C3a0aa9
 - Health Factor:  0.918421511765627487
+
 - Balances
-┌─────────┬───────────────────┬───────────────────┬──────────────────────────┬────────┐
-│ (index) │ enabledCollateral │ collateralBalance │       debtBalance        │ symbol │
-├─────────┼───────────────────┼───────────────────┼──────────────────────────┼────────┤
-│    0    │       true        │     '50000.0'     │          '0.0'           │ 'USDC' │
-│    1    │       false       │       '0.0'       │          '43.0'          │ 'WBTC' │
-│    2    │       false       │       '0.0'       │ '543.999999948668340512' │ 'WETH' │
-│    3    │       true        │     '50000.0'     │          '0.0'           │ 'AAVE' │
-└─────────┴───────────────────┴───────────────────┴──────────────────────────┴────────┘
+
+| index | enabled collateral | collateral balance | debt balance | symbol |
+|:-----:|:------------------:|:------------------:|:------------:|:------:|
+|   0   |       true         |    '50000.00'      |    '0.0'     | 'USDC' |
+|   1   |       false        |       '0.0'        |    '43.0'    | 'BAT'  |
+|   2   |       false        |       '0.0'        |  '560.99686' | 'AAVE' |
+|   3   |       true         |     '50000.0'      |   '890.56'   | 'WBTC' |
+        
 [...]
 
 
@@ -222,8 +233,8 @@ deployed addresses to interact with the market.
 
 - [ ]  We need to create a smartcontract and ask for the details required
 - [x]  We can use the tasks which was defined in the sandbox repo to analyse and view market.
-- [ ]  Use can view it by using the command in the terminal give users info.
 - [ ]  We cannot view users and market information after forking.
+- [ ]  None of these
 
 
 
@@ -240,12 +251,12 @@ deployed addresses to interact with the market.
 
 
 
-##### How to view the user's and markets information after forking?  
+##### How to whitelist accounts and smartcontracts  
 
-- [ ]  We need to create a smartcontract and ask for the details required
-- [x]  We can use the tasks which was defined in the sandbox repo to analyse and view market.
-- [ ]  Use can view it by using the command in the terminal give users info.
-- [ ]  We cannot view users and market information after forking.
+- [ ]  We can do that by simply adding a variable whitelist.
+- [ ]  We can use the command (whitelist-accounts:<your-account-address>,<your-smart-contract-address>)
+- [x]  we can use the command (whitelist-accounts:arc --accounts <your-account-address>,<your-smart-contract-address>)
+- [ ]  We cannot do that
 
     
 
@@ -253,7 +264,7 @@ deployed addresses to interact with the market.
 ---
 ## Forking Aave v2 main
 
-###Aave V2 Main
+### Aave V2 Main
 
 If you want to integrate the permissionless Aave market, you can also spin a sandbox in the following way.
 In a separate window, run the sandbox Hardhat node that will be reachable via JSON RPC at `http://127.0.0.1:8545/`. You can spin the sandbox node 
@@ -275,7 +286,7 @@ View users positions at the Main market and possible liquidable positions, but o
 ```
 npm run print-accounts:main-v2 -- --accounts 0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f,0x14dC79964da2C08b23698B3D3cc7Ca32193d9955
 ```
-###Utilities        
+### Utilities        
 **Enable mining by interval**
 
 By default Hardhat node mines block every time you perform a transaction, but for some scenarios you may need the node to mine blocks by interval.
@@ -311,7 +322,7 @@ npm run set-interval-mining: off
 
 
 
-##### Which of the following is correct about seeting interval for mining the blocks?  
+##### Which of the following is correct about setting interval for mining the blocks?  
 
 - [x]  npm run set-interval-mining
 - [ ]  npm run node:fork:main-v2

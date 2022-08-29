@@ -273,3 +273,13 @@ steps:
             key: C
           - content: Wash-trading
             key: D
+  - uuid: f3086f62-8f2d-45f1-9c29-e9cbf68e0afa
+    name: Your Info
+    content: |
+    stepItems:
+      - uuid: 122d3e89-91d3-4e00-9fad-f965075b8eec
+        label: Nick Name
+        required: true
+        type: PublicShortInput
+      - uuid: 3a9ec06a-3bf7-41e3-922b-9589a3168d53
+        type: UserDiscordConnect
