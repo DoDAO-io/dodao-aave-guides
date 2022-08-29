@@ -10,7 +10,8 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
 
 
-## @aave/coreV3
+## @aave/coreV3 (https://www.npmjs.com/package/@aave/core-v3)
+
 This package contains the smart contracts source code and markets configuration related to Aave Protocol V3. 
 It uses Docker Compose and Hardhat as development environment for compilation, testing and deployment tasks.
 
@@ -46,8 +47,8 @@ Import JSON file via Node JS `require`:
   console.log(PoolV3Artifact.abi)
 ```
 
-## @aave/coreV2
-This is the previous version of Aave core V3. and so it has features similar to V3.
+## @aave/protocol-v2 (https://www.npmjs.com/package/@aave/protocol-v2)
+Package contains smart contracts related to v2.
 
 Just like @aave/core-v3, you can  install @aave/protocol-v2 as an NPM package by running `npm install @aave/protocol-v2`
 
@@ -89,7 +90,7 @@ You can import Solidity and ABI files, just like the V3 files shown above.
 ## @aave/aave-token
 
 
-## @aave/aave-token:
+## @aave/aave-token (https://www.npmjs.com/package/@aave/aave-token):
 The AAVE token is an ERC-20 compatible token that implements governance-inspired features. This will allow Aave to bootstrap the rewards program for safety and ecosystem growth. 
 
 **Roles:**
@@ -166,34 +167,37 @@ The smartcontract can then be deployed to the testnet or the mainnet.
 
 
 
-## @aave/contract-helpers:
+## @aave/contract-helpers (https://www.npmjs.com/package/@aave/contract-helpers):
 The @aave/contract-helpers package offers a set of services which allow querying aggregated on-chain data via rpc.
 It contains methods for generating transacations based on method and parameter inputs. Basically, it is used to 
 read and write data on the protocol contracts. Could be thought of like something that facilitates the querying and writing of 
 data from and onto the original aave protocol.
 It is part of a larger package, aave-utilities. Aave Utilities is a JavaScript SDK for interacting with V2 and V3 of the Aave Protocol
 
-## @aave/math-utils:
+## @aave/math-utils (https://www.npmjs.com/package/@aave/math-utils):
 The @aave/math-utils data formatting methods act as a layer on top of the chain data. 
 The use-cases range from "human readable formatting" to "approximating accrual over time."
 We know users interact with the aave protocol using smartcontracts, @aave/math-utils package is a collection of methods to take raw input data 
 from these contracts, and format to use on a frontend interface such as Aave Ui or Aave info.
 
-It formats two types of data, raw and indexed contract data, for front-end usage.
+math-utils package formats two types of data, raw and indexed contract data, for front-end usage.
+These input data can be obtained from different ways, such as
  * ethers.js: 
-   ethers.js is considered raw contract data. ethers.js is a library for interacting with Ethereum and other EVM compatible blockchains.
+   ethers.js is used to obtain raw contract data. 
+   ethers.js is a library for interacting with Ethereum and other EVM compatible blockchains.
 
  * subgraph:
-   It is an indexed data type. Subgraphs work by indexing events that come from smart contracts. 
+   It is used to obtain indexed data type. Subgraphs work by indexing events that come from smart contracts. 
    This allows for data to be queried via a graphql endpoint. In other words, for each network where the protocol is deployed, there is a subgraph that corresponds to it.
  
  * Caching servers:
    The Aave UI uses decentralized hosting with IPFS, which means that it doesn't require any API keys to run. However, this also means that only public rpc endpoints can be used, which are quickly rate-limited. 
-   To respond for this, Aave has published a caching server that performs contract queries on one server and then serves the data to all frontend users through a graphQL endpoint.
+   To respond for this, Aave has published a caching server. Caching server queries for data from the smart contracts and then sends it to the frontend users through different 
+   GraphQL endpoints. Caching servers provide indexed data from smart contracts.
    
    (Note: GraphQL has been mentioned multiple times, for those who are unfamiliar - it is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data.)
 
-## @aave/periphery-v3:
+## @aave/periphery-v3 (https://www.npmjs.com/package/@aave/periphery-v3): 
 This repository contains the Rewards Controller contract, which allows you to incentivize assets with multiple rewards in Aave V3 markets. 
 It also contains UI helpers and other external smart contracts utilities related to the Aave Protocol V3.
 
@@ -246,22 +250,36 @@ It also contains UI helpers and other external smart contracts utilities related
 
 
 
-## @aave/protocol-js
+## @aave/protocol-js (https://www.npmjs.com/package/@aave/protocol-js):
 AAVE is a decentralized non-custodial liquidity market protocol where users can participate as depositors or borrowers. 
 The AAVE Protocol is a set of open source smart contracts which facilitate the lending and borrowing of user funds. These contracts, 
 and all user transactions/balances are stored on a public ledger called a blockchain, making them accessible to anyone.
 
 ethers js, something we discussed about earlier, is a peer dependancy (PeerDependency, it is not automatically installed. Instead, the code that includes the package must include it as its dependency.) for protocol-js.
 
-The aave-js data formatting methods are a layer beyond graphql which wraps protocol data into more usable formats. Each method will require inputs from AAVE subgraph queries.
-As you can see, we have already discussed about formatting packages (@aave/math-utils), these features are enclosed in this package. It has data formatting services which allow the querying of 
-User data and reserve data.
-It also encloses various transaction methods and the **Lending pool V2**, of which we have talked about in detail. For a short summary,
+
+It encloses various transaction methods and the **Lending pool V2**, of which we have talked about in detail. For a short summary,
 Lending pool is just a smart contract which acts as a reserve (pool) of assets, lent by liquidity providers for the protocol to use
 for loaning. It contains methods like deposit, borrow, repay, withdraw, etc which can be called by users via smartcontracts.
 It also encloses other vast concepts like aave governance.
 
-## @aave/safety-module
+The aave-js data formatting methods are a layer beyond graphql which wraps protocol data into more usable formats. Each method will require inputs from AAVE subgraph queries.
+As you can see, we have already discussed about formatting packages (@aave/math-utils), these features are enclosed in this package. It has data formatting services which allow the querying of 
+User data and reserve data. 
+
+
+
+You can install protocol-js, but first install ethers.js
+
+npm install --save ethers
+
+then install protocol-js by,
+
+npm install --save ethers
+
+
+
+## @aave/safety-module (https://www.npmjs.com/package/@aave/safety-module):
 The Aave Protocol is secured by a smart contract-based component called the Safety Module (SM). AAVE holders can lock tokens into the SM to incentivize them to act as a 
 mitigation tool in case of a Shortfall Event within the Aave ecosystem. A Shortfall Event occurs when there is a deficit in one of the money markets that belong 
 to the Aave ecosystem. The interpretation for the occurrence of a Shortfall Event is subject to the Protocol Governance vote.
@@ -276,10 +294,6 @@ AAVE holders can deposit their tokens into the Staking Mechanism to contribute t
 that can be freely moved within the underlying network. The holder of the tokenized position can redeem their share from the SM at any time, triggering a cooldown period of 
 one week (which can be further extended by the governance, mentioned in the protocol-js).
 
-## @aave/protocol-v2
-This repository contains the smart contracts source code and markets configuration for Aave Protocol V2. The repository uses Docker Compose and Hardhat as development enviroment for compilation, testing and deployment tasks.
-This is bascially an all encompassing package which has all functions of the aave protocol as a whole. Helps the developer interact with the aave protocol from their development environment.
-
 
     
 
@@ -291,11 +305,11 @@ This is bascially an all encompassing package which has all functions of the aav
 
 
 
-##### @aave/protocol-js encloses which of these?
+##### @aave/protocol-js includes which of these?
   
 
-- [x]  aave governance
-- [x]  aave lending pool
+- [x]  Aave governance
+- [x]  Aave lending pool
 - [x]  data formatting and transaction methods
 - [ ]  None of these
 
