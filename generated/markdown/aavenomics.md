@@ -67,13 +67,13 @@ to be earned instead of being minted.
 The ways to earn Aave include buying it on exchanges and then staking it within the protocol’s “safety module.”
 Aave Protocol offers governance powers and financial rewards.
 
-AAVE ,the governance token of the protocol, grants the token holders the right to make proposals, cast their vote on 
+AAVE, the governance token of the protocol, grants the token holders the right to make proposals, cast their vote on 
 protocol parameters and decide on new parameters in the ecosystem. The token shares the power between stakeholders 
 within the Aave ecosystem in order to secure the Aave Protocol.
 
-The components of Aave Genesis governance architecture's smart contracts are-
+The components of Aave Genesis governance architecture's smart contracts are
 
-**Aave proto governance**
+### **Aave proto governance**
 
 Aave proto governance is a core component of governance which allows voting by the LEND token holders and permits 
 the execution of approved proposals. Only LEND tokens are allowed to vote with one token being equivalent to one vote.
@@ -81,11 +81,10 @@ the execution of approved proposals. Only LEND tokens are allowed to vote with o
 This contract includes the ownerships needed to execute the proposals containing all the bootstrapping actions of 
 the Aave ecosystem. Asset Voting Weight Provider defines weights a voter can vote on proposals.
 
-**Governance Process**
+### **Governance Process**
 
 The Governance Process is undertaken via governance forums at governance.aave.com and ratified through on-chain Aave Improvement Proposals (AIPs) using AAVE.
 The AAVE token empowers holders to collectively act as governors of the protocol by enabling them with the capability to vote and propose.
-For the $AAVE token, Aave has committed to utilize treasury reserves to buy and burn $AAVE tokens, which would imply a decrease in supply and a possibility of increase in price.
 
 
     
@@ -120,18 +119,16 @@ required. The occurrence of a shortfall event involves selling off the locked AA
 order to set off the deficit.
 
 The presence of a built-in backstop mechanism prevents excess flow of AAVE ensuring that the value of Aave itself 
-is not reduced. The AAVE holders secure the protocol by locking Aave in return for receiving rewards, in the form 
+is not reduced. The AAVE holders secure the protocol by locking AAVE tokens in return for receiving rewards, in the form 
 of Safety Incentives (SI).
 
-To contribute to the safety of the protocol and receive incentives, AAVE holders deposit their tokens into the SM 
+To contribute to the safety of the protocol and receive incentives, AAVE holders deposit their tokens into the Safety Module 
 and receive a tokenized position.
 
-The share from SM can be redeemed anytime by the holder of the tokenized position can be redeemed any time which shall 
-trigger a cooldown period of one week. The holder of the tokenized position can redeem their share from the Safety module 
-at any time, triggering a cooldown period of one week.
+The share from the Safety Module can be redeemed by the holder of the tokenized position at any time, triggering a cooldown period of one week.
 
 The main role of the Safety Module is to protect the protocol against unexpected loss of funds arising from various 
-shortfall events which include-
+shortfall events which include
 
 * **Smart contract risk** : The risks of a bug in the system, design flaw or potential attack surfaces on the smart 
 contract layer.
@@ -153,7 +150,7 @@ liquidations.
 
 
 
-##### What are the two types of risks arising from the shortfall events?  
+##### What are the types of risks that can lead to the shortfall event?  
 
 - [ ]  Smart contract risk
 - [ ]  Liquidation risk
@@ -167,9 +164,9 @@ liquidations.
 ##### What happens incase a deficit arises in the Shortfall event?  
 
 - [ ]  The token holders are supposed to bear the additional loss to set off the deficit.
-- [ ]  The locked AAVE is sold off by the process of auctioning in order to set off the deficit.
+- [x]  The locked AAVE is sold off by the process of auctioning in order to set off the deficit.
 - [ ]  The token value depreciates instantly to cope up with the deficit.
-- [x]  The lending and borrowing is halted to curb down the deficit.
+- [ ]  The lending and borrowing is halted to curb down the deficit.
 
     
 
@@ -181,10 +178,9 @@ Financial incentives are used to shape behaviors within the Aave ecosystem with 
 objective. For Aave, the common goal is to ensure the safety of the Aave Protocol, cost-efficient usage by the market 
 participants, and proper ecosystem incentives to drive innovation and long-term growth of the ecosystem.
 
-Aave is secured by a Safety Module (SM), a staking mechanism for AAVE tokens to act as insurance against 
-Shortfall Events. Stakers earn AAVE as Safety Incentives (SI) along with a percentage of protocol fees.
+AAVE holders get to participate in two type of incentives
 
-### Safety Incentives (SI)      
+### 1. Safety Incentives (SI)      
 Safety Incentives ensure the safety of the protocol by incentivizing AAVE holders to participate in the Safety 
 Module. This is achieved with a set of incentives pushing behavior to naturally create a positive feedback loop 
 within the Aave Protocol. In that sense, the essence of those systemic incentives is to materially fade away while 
@@ -199,8 +195,8 @@ withdrawn and are redistributed to the SI participants.
 The participants are incentivized with the rewards for contributing to the safety of the protocol in its early stages.
 The SI emission is controlled by the governance and adjusted to the protocol's needs.
 
-### Ecosystem Incentives (EI)      
-Represents the part of the periodic issuance of AAVE (AI) used to incentivise liquidity providers, software 
+### 2. Ecosystem Incentives (EI)      
+Represents the part of the periodic issuance of AAVE (EI) used to incentivize liquidity providers, software 
 developers and integrators to build value within the Aave ecosystem.
 
 
@@ -214,7 +210,7 @@ developers and integrators to build value within the Aave ecosystem.
 
 
 
-##### What are the two types of invcentives received by the AAVE members?  
+##### What are the two types of invcentives received by the AAVE token holders?  
 
 - [ ]  AIP incentives
 - [ ]  Ecosystem Incentives
