@@ -262,7 +262,7 @@ steps:
 
   - uuid: f800407f-477c-43f4-abd7-0839496e09de
     name: |
-     @aave/contract-helpers, @aave/math-utils,  @aave/periphery-v3
+     @aave/contract-helpers, @aave/math-utils
     content: |
      
      ## @aave/contract-helpers (https://www.npmjs.com/package/@aave/contract-helpers):
