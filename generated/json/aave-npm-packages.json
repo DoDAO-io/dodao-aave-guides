@@ -82,7 +82,7 @@
     {
       "uuid": "16959203-96fa-4b9a-ac7b-67e0905d7533",
       "name": "@aave/protocol-js\n",
-      "content": "## [@aave/protocol-js](https://www.npmjs.com/package/@aave/protocol-js)\n\nContains smart-contracts and methods that allows user to interact with and develop applications using the Aave protocol.\nThese smart-contracts can be grouped depending on their functionality. They provide the user with libraries which provide methods to\ndo many of the basic functionality of the Aave protocol.\n\n#### Data Formatting methods\n`formatUserSummaryData`:\nReturns formatted summary of AAVE user portfolio including: array of holdings, total liquidity, total collateral, \ntotal borrows, liquidation threshold, health factor, and available borrowing power\n\n`formatReserves`:\nReturns formatted summary of each AAVE reserve asset.\n \n #### LendingPool \nIt encloses various transaction methods and the underlying logic and smartcontract for **Lending pool V2**, of which we have talked about in detail. For a short summary,\nLending pool is just a smart contract which acts as a reserve (pool) of assets, lent by liquidity providers for the protocol to use\nfor loaning. \n\nIt contains the following methods,\n`deposit`:\nWhen this function is called, it takes in the address of the depositor(user), the address of the reserve to deposit to(reserve),\nthe amount to be deposited (amount) as parameters. This method deposits the asset into its corresponding reserve, then mints aTokens (Debt tokenization).\nYou can also pass in a parameter onBehalfOf, which allows the user to deposit on behalf of another address. By default it is the user address.\n\n`borrow`:\nThe user must set the ethereum address of the reserve he wishes to borrow against, the amount and the type of interestRateMode rate he wishes to borrow on. \nInvoking this method would meant the user address receives the amount mentioned as parameter for loan, give that \nthe user has enough aTokens in their wallet (collateralized position). Note that, interestRateMode takes in values from the enum\nInterestRate, which contains 'none', 'stable', and 'variable' as values.\n\n`withdraw`:\nInvoked when the user needs to withdraw assets. onBehalfOf address can also be passed in as a parameter,\nallows the withdraw action to be done onbehalf of another address. By default it points to user address.\n\nthere are other functions whose use cases are more particular,\n\n`swapBorrowRateMode`:\nShifts the type of interest rate on the borrow position.\n\n`setUsageAsCollateral`:\nThis is a function which allows the depositor to accept or deny a specific asset as collateral.\nA boolean value of useAsCollateral is used to specify whether or not assets from this ethererum \nreserve can be used as collateral.\n\n`liquidateCall`:\nThis function enables user to liquidate an undercollateralized position.\nTakes in the address of the liquidator, the address of the borrower, ethereum address of the principle asset and the collateral asset,\nThe amount that the liquidator wants to liquidates as paramaters.\n\n`swapCollateral`:\nAllows user to change the collateral asset to another assets.\n\n`repayWithCollateral`:\nAllows the borrower to repay the loan with the collateral.\n \n #### Governance \nContains smartcontracts and methods which will implement Aave governance in the Aave protocol. \nMethods that can be called,\n`create` - creates a proposal, that needs to be validated by proposal validator.\n\n`cancel` - cancels a proposal. when called by guardian, has relaxed conditions. When called by a regular user,\n         executes given that the conditions placed on the executor are fulfilled.\n\n`queue` - Queue the proposal, given that it is succeeded.\n\n`execute` - Execute the proposal, given it is queued.\n\n`submitVote` - This function allows the caller of the function to caste a vote for/ against the proposal that is executed.\n\n`delegate` - This function allows the user to delegate his voting power to a chosen address.\n\n#### Staking\nAave staking is covered in the coming steps.\n \n",
+      "content": "## [@aave/protocol-js](https://www.npmjs.com/package/@aave/protocol-js)\n\nContains smart-contract interfaces and Javascript libraries that allows user to interact with and develop applications using the Aave protocol.\n the user with libraries which provide methods to\n Using this library, the user can use many of the basic functionality/features of the Aave protocol.\n\n#### Data Formatting methods\n`formatUserSummaryData`:\nReturns formatted summary of AAVE user portfolio including: array of holdings, total liquidity, total collateral, \ntotal borrows, liquidation threshold, health factor, and available borrowing power\n\n`formatReserves`:\nReturns formatted summary of each AAVE reserve asset.\n \n #### LendingPool \nIt encloses various transaction methods and the underlying logic and smartcontract for **Lending pool V2**, of which we have talked about in detail. For a short summary,\nLending pool is just a smart contract which acts as a reserve (pool) of assets, lent by liquidity providers for the protocol to use\nfor loaning. \n\nIt contains the following methods,\n`deposit`:\nWhen this function is called, it takes in the address of the depositor(user), the address of the reserve to deposit to(reserve),\nthe amount to be deposited (amount) as parameters.\n\n`borrow`:\nThe user must set the ethereum address of the reserve he wishes to borrow against, the amount and the type of interestRateMode rate he wishes to borrow on. \nNote that, interestRateMode takes in values from the enum InterestRate, which contains 'none', 'stable', and 'variable' as values.\n\n`withdraw`:\nInvoked when the user needs to withdraw assets. onBehalfOf address can also be passed in as a parameter,\nallows the withdraw action to be done onbehalf of another address. By default it points to user address.\n\nthere are other functions whose use cases are more particular,\n\n`swapBorrowRateMode`:\nShifts the type of interest rate on the borrow position.\n\n`setUsageAsCollateral`:\nThis is a function which allows the depositor to accept or deny a specific asset as collateral.\nA boolean value of useAsCollateral is used to specify whether or not assets from this ethererum \nreserve can be used as collateral.\n\n`liquidateCall`:\nThis function enables user to liquidate an undercollateralized position.\nTakes in the address of the liquidator, the address of the borrower, ethereum address of the principle asset and the collateral asset,\nThe amount that the liquidator wants to liquidates as paramaters.\n\n`swapCollateral`:\nAllows user to change the collateral asset to another assets.\n\n`repayWithCollateral`:\nAllows the borrower to repay the loan with the collateral.\n \n #### Governance \nContains smartcontracts and methods which will implement Aave governance in the Aave protocol. \nMethods that can be called,\n`create` - creates a proposal, that needs to be validated by proposal validator.\n\n`cancel` - cancels a proposal. when called by guardian, has relaxed conditions. When called by a regular user,\n         executes given that the conditions placed on the executor are fulfilled.\n\n`queue` - Queue the proposal, given that it is succeeded.\n\n`execute` - Execute the proposal, given it is queued.\n\n`submitVote` - This function allows the caller of the function to caste a vote for/ against the proposal that is executed.\n\n`delegate` - This function allows the user to delegate his voting power to a chosen address.\n\n#### Staking\nAave staking is covered in the coming steps.\n \n",
       "stepItems": []
     },
     {
@@ -120,7 +120,7 @@
         },
         {
           "uuid": "9a8229eb-f548-4596-b938-7d7f63dc6adb",
-          "content": "setUsageAsCollateral method allows the user to?",
+          "content": "`setUsageAsCollateral` method allows the user to?",
           "answerKeys": [
             "C"
           ],
@@ -139,7 +139,7 @@
               "key": "C"
             },
             {
-              "content": "none of these",
+              "content": "None of these",
               "key": "D"
             }
           ]
@@ -203,7 +203,7 @@
     {
       "uuid": "f800407f-477c-43f4-abd7-0839496e09de",
       "name": "@aave/contract-helpers, @aave/math-utils\n",
-      "content": "\n## [@aave/contract-helpers](https://www.npmjs.com/package/@aave/contract-helpers):\n\nTo install contract-helpers with npm,\n\n_npm install @aave/contract-helpers_ \n\nwith yarn,\n\n_yarn add @aave/contract-helpers_ \n\nThe @aave/contract-helpers package offers a set of services which allow querying aggregated on-chain data via rpc.\nIt contains methods for generating transacations based on method and parameter inputs. \nBasically, it is used to read and write data on the protocol contracts. Could be thought of like something that facilitates the querying and writing of \ndata from and onto the original aave protocol. It is part of a larger package, aave-utilities. Aave Utilities is a JavaScript SDK for interacting with V2 and V3 of the Aave Protocol.\n\n## [@aave/math-utils](https://www.npmjs.com/package/@aave/math-utils):\n\nTo install math-utils with npm,\n\n_npm install @aave/math-utils_\n\nwith yarn,\n\n_yarn add @aave/math-utils_\n\nThe @aave/math-utils data formatting methods act as a layer on top of the chain data. Meaning, the methods provide the user with an interface to be able to\ninteract with, and in turn comprehend the chain data, which otherwise might not be \"human readable\".\nThe use-cases range from \"human readable formatting\" to \"approximating accrual over time.\"\nWe know users interact with the aave protocol using smartcontracts, @aave/math-utils package is a collection of methods to take raw input data \nfrom these contracts, and format to use on a frontend interface such as Aave Ui or Aave info. math-utils package formats two types of data, \nraw and indexed contract data, for front-end usage.\n",
+      "content": "\n## [@aave/contract-helpers](https://www.npmjs.com/package/@aave/contract-helpers):\n\nTo install contract-helpers with npm,\n\n_npm install @aave/contract-helpers_ \n\nwith yarn,\n\n_yarn add @aave/contract-helpers_ \n\nThe @aave/contract-helpers package offers a set of services which allow querying aggregated on-chain data via rpc.\nIt contains methods for generating transacations based on method and parameter inputs. \nBasically, it is used to read and write data on the protocol contracts. Could be thought of like something that facilitates the querying and writing of \ndata from and onto the original aave protocol. It is part of a larger package, aave-utilities. Aave Utilities is a JavaScript SDK for interacting with V2 and V3 of the Aave Protocol.\n\n## [@aave/math-utils](https://www.npmjs.com/package/@aave/math-utils):\n\nTo install math-utils with npm,\n\n_npm install @aave/math-utils_\n\nwith yarn,\n\n_yarn add @aave/math-utils_\n\nThe @aave/math-utils data formatting methods act as a layer on top of the chain data. Meaning, the methods provide the user with an interface to be able to\ninteract with, and in turn comprehend the chain data, which otherwise might not be \"human readable\".\nThe use-cases range from \"human readable formatting\" to \"approximating accrual over time.\"\n",
       "stepItems": []
     },
     {
@@ -213,52 +213,26 @@
       "stepItems": [
         {
           "uuid": "a03824f0-73a2-4448-89fa-d78713cdbef6",
-          "content": "which package offers a set of services which allow querying aggregated on-chain data?\n",
+          "content": "which package offers a set of methods which allow querying aggregated on-chain data?\n",
           "answerKeys": [
             "C"
           ],
           "type": "SingleChoice",
           "choices": [
             {
-              "content": "UI kit",
+              "content": "@aave/math-utils",
               "key": "A"
             },
             {
-              "content": "Math utils",
+              "content": "@aave/contract-helpers",
               "key": "B"
             },
             {
-              "content": "Contract helpers",
+              "content": "@aave/coreV3",
               "key": "C"
             },
             {
               "content": "All of these",
-              "key": "D"
-            }
-          ]
-        },
-        {
-          "uuid": "a2e3fdd9-2505-4e0e-9cb5-904ecf635f46",
-          "content": "What does \"A layer on top of existing chain data\" stand for?",
-          "answerKeys": [
-            "B"
-          ],
-          "type": "SingleChoice",
-          "choices": [
-            {
-              "content": "It is information that is of more relevance than the chain data",
-              "key": "A"
-            },
-            {
-              "content": "A layer of data based off of chain data, but comprehensible to normal user",
-              "key": "B"
-            },
-            {
-              "content": "A layer of data that is closely related to binary code",
-              "key": "C"
-            },
-            {
-              "content": "None of these",
               "key": "D"
             }
           ]
@@ -308,11 +282,11 @@
               "key": "B"
             },
             {
-              "content": "Altering the Aave protocol",
+              "content": "Voting on proposals",
               "key": "C"
             },
             {
-              "content": "providing user with lower forms of data (closer to binary code)",
+              "content": "Formatting of proposals",
               "key": "D"
             }
           ]
@@ -322,7 +296,7 @@
     {
       "uuid": "48b327fc-9ad8-481c-8948-989dad8020e1",
       "name": "@aave/periphery-v3\n",
-      "content": "\n## [@aave/periphery-v3](https://www.npmjs.com/package/@aave/periphery-v3): \nThis repository contains smart-contracts, which allow you to incentivize assets with multiple rewards in Aave V3 markets. \nIt also contains UI helpers and other external smart contracts utilities related to the Aave Protocol V3.\nIt contains rewards controller and rewards distrubutor contracts, which help to standardize and incentivize the liquidity of deposits and borrows\nin various Aave markets. The incentives now include multiple tokens instead of only one, unlike previous implementations of the same concept.\n\n**Rewards Distrubutor:**\nThe RewardsDistributor abstract contract contains all the storage and logic functions for proper accounting of the rewards supported in the protocol.\nThe contract supports multiple incentivized assets and multiple rewards with different emissions and distribution end per reward. Each reward must be an ERC20 compatible contract.\n\nTo track the accounting of rewards, _updateUserRewardsInternal function is called to update the rewards of a single incentivized asset.\n_distrubuteRewards is called to synchronise all rewards in a batch of incentivized assets.\n\nThis smart contract contains methods whcich can perform the following actions.\nDetermine the time duration of distrubution of incentives for given asset,\nto get the latest reward distrubution for asset, to get the configuration of the rewards distribution for a certain asset, to get the list of All\nreward assets configured, to get  single rewards balance of an user from contract storage state, not including virtually accrued or pending rewards since last distribution.\n\nThe rewards distrubutor contains methods with which you can query various data that can be used for proper accounting of the incentive system \nin the protocol.\n\n**Rewards controller:**\nThe RewardsController contract is responsible of configuring the different rewards and the claim process. It inherits RewardsDistrubutor to handle the\ndistrubution of incentives.(Note: The contract that inherits RewardsDistributor is in charge to provide the userBalance and the totalSupply of each incentivized asset to the RewardsDistributor) \nThe user does not have to stake or hold/ keep their assets locked in a smart contract. As long as the user has\ntokens in their possession, the tokens will accrue the rewards.\n\nThe rewards can be claimed with fine-grain control with the variety of methods offered by RewardsController,\n\nsetClaimer: Used to approve (whitelist) an address to be able to claim rewards on another address's behalf.\n\nsetTransferStrategy: Set the contract address that will determines the logic for the transfer strategy and source of rewards transfer.\n\nsetRewardOracle: Sets an Aave Oracle contract to enforce rewards with a source of value.\n\n(Note: The above setter methods have their getter counterparts to query information about the same.)\n\nconfigureAssets: Used to configure the incentives and their rate of emission for as long as the incentive distrubution is active for a given asset.\n\nhandleAction: This method is called by the corresponding asset, on every transfer to update the rewards distrubution of a user. That is,\nThe handleAction contains the amount of asset held by user, the amount of asset in the system to update the calculation of the rewards distrubution entitled to the user.\n\nclaimRewards/ claimAllRewards: **claimRewards** claims reward for a user to the desired address, on all the assets of the lending pool, accumulating the pending rewards.\nThe amount to be claimed can be specified.\n**claimAllRewards**, Works the same as claimRewards, but all the rewards entitiled to user are claimed in one go.\nThere are other reward claiming methods which are self explanatory:\nclaimRewardsOnBehalf, claimAllRewardsOnBehalf, claimRewardsToSelf and, claimAllRewardsToSelf.\n\n**Transfer Strategies:**\nThey are smart contracts that contain the logic for transaction of assets, they are of two types.\nThe PullRewardsStrategy supports common ERC20 incentives pulled from a external vault. This strategy contract allows to integrate any ERC20 token that want to \nincentivize deposits or borrows at Aave markets. You must provide the \"vault\" address where to accumulate rewards at the moment of claim.\n\n(Note that, In order for the PullRewardsStrategy to be able to send money on behalf of the vault, the PullRewardsStrategy contract must have  ERC20 approval\nfrom the vault.)\n\nThe RewardsController performs external calls to the transfer strategy contracts when the user calls claimRewards functions from the Rewards Distrubutor contracts. \nThe transfer strategy contract then uses custom logic to transfer the assets from the source to the destination.\nThe external function, performTransfer(address to, address reward, uint256 amount) is then called by the rewards distrubutor to transfer the\nrewards to the user. \n",
+      "content": "\n## [@aave/periphery-v3](https://www.npmjs.com/package/@aave/periphery-v3): \nThis repository contains smart-contracts, which allow you to incentivize assets with multiple rewards in Aave V3 markets. \nIt also contains UI helpers and other external smart contracts utilities related to the Aave Protocol V3.\nIt contains rewards controller and rewards distrubutor contracts, which help to standardize and incentivize the liquidity of deposits and borrows\nin various Aave markets. The incentives now include multiple tokens instead of only one, unlike previous implementations of the same concept.\n\n#### Rewards Distrubutor\nThe RewardsDistributor abstract contract contains all the storage and logic functions for proper accounting of the rewards supported in the protocol.\nThe contract supports multiple incentivized assets and multiple rewards with different emissions and distribution end per reward. Each reward must be an ERC20 compatible contract.\n\nThe rewards distrubutor contains methods with which you can query various data that can be used for proper accounting of the incentive system \nin the protocol.\n \n #### Rewards controller\nThe RewardsController contract is responsible of configuring the different rewards and the claim process. It inherits RewardsDistrubutor to handle the\ndistrubution of incentives.(Note: The contract that inherits RewardsDistributor is in charge to provide the userBalance and the totalSupply of each incentivized asset to the RewardsDistributor) \nThe user does not have to stake or hold/ keep their assets locked in a smart contract. As long as the user has\ntokens in their possession, the tokens will accrue the rewards.\n\nThe rewards can be claimed with fine-grain control with the variety of methods offered by RewardsController.\n\n#### Transfer Strategies\nThey are smart contracts that contain the logic for transaction of assets, they are of two types.\nThe PullRewardsStrategy supports common ERC20 incentives pulled from an external vault. This strategy contract allows to integrate any ERC20 token that want to \nincentivize deposits or borrows at Aave markets. You must provide the \"vault\" address where to accumulate rewards at the moment of claim.\n\n(Note that, In order for the PullRewardsStrategy to be able to send money on behalf of the vault, the PullRewardsStrategy contract must have  ERC20 approval\nfrom the vault.)\n\nThe RewardsController performs external calls to the transfer strategy contracts when the user calls claimRewards functions from the Rewards Distrubutor contracts. \nThe transfer strategy contract then uses custom logic to transfer the assets from the source to the destination.\nThe external function, performTransfer(address to, address reward, uint256 amount) is then called by the rewards distrubutor to transfer the\nrewards to the user.  \n",
       "stepItems": []
     },
     {
@@ -353,7 +327,7 @@
               "key": "C"
             },
             {
-              "content": "contractHelpers",
+              "content": "LendingPool",
               "key": "D"
             }
           ]
@@ -381,33 +355,6 @@
             },
             {
               "content": "Both A and B",
-              "key": "D"
-            }
-          ]
-        },
-        {
-          "uuid": "dc74ec13-870e-45be-963b-1638cbfc83c0",
-          "content": "When is the external function from TransferStrategy called by RewardsController, what is the name of this function?",
-          "answerKeys": [
-            "A",
-            "B"
-          ],
-          "type": "MultipleChoice",
-          "choices": [
-            {
-              "content": "The function is called when one of the claimRewards functions are called by user in RewardsController",
-              "key": "A"
-            },
-            {
-              "content": "The name of the function is performTransfer()",
-              "key": "B"
-            },
-            {
-              "content": "The function is called when the user receives the rewards",
-              "key": "C"
-            },
-            {
-              "content": "The name of the function is startTransfer()",
               "key": "D"
             }
           ]
@@ -442,8 +389,8 @@
     },
     {
       "uuid": "be52c571-1af9-4f97-b8fb-5b56df21de38",
-      "name": "@aave/safety-module, @aave/aave-stake-v2\n",
-      "content": "\n## [@aave/aave-stake-v2](https://github.com/aave/aave-stake-v2)\nThis package contains a series of smart-contracts which are related to the staking of aave tokens and the incentivization system based on them.\nThe package contains 3 main smart-contracts,\n\n**AaveDistrubutionManager:**\nThis smart contract contains the logic for the accounting, i.e., the calculation logic for the rewarding of staking tokens in AAVE.\nThe smartcontracts like AaveIncentivesController inherit this method, any contract that interacts with the user/ protocol in this package will inherit\nthe AaveDistrubutionManager. \nThe front contracts (Those which interact with users) provide data to the AaveDistrubutionManager about the holdings of the user. The AaveDistrubutionManager contains\nlogic to make use of this information and come up with the number of rewards entitled to the user. This calculation is done by using a distribution index representing the accumulation of \nrewards from an emission per second and snapshoting that index on each user to take into account how much of the total belongs to him.\n\nThis contract can be used to configure multiple distributions, Update user/distribution state on interaction (called by child contract), To get the unclaimed rewards of an user\nQuery information about distributions/users.\n\n**StakedAave:**\nContract to stake AAVE token, to be connected with a slashing mechanism in order to secure the Aave protocol called Aave SM (Security Module). \nThe users can stake their assets in these contracts and receive stkAAVE tokens in return. These tokens accrue the interests/ rewards accumulated by the \nuser over a given time period until which this token will be incentivized. Once the rewards are accrued, they can be redeemed at any given moment.\nBut, withdrawal of staked AAVE tokens cannot be done instantly. There is a cooldown period after activation, only after the cooldown period ends can the user withdraw their staked tokens.\n\nThis contract can be used to Stake AAVE tokens to start accruing rewards, Withdraw staked AAVE tokens, Activate the cooldown period,\nClaim the accrued rewards , and Query information about users.\n\ncooldown period: \nThe objective of the cooldown period is to avoid mass fund withdrawals in slashing events in the safety module. To achieve this, the most important condition is that users respect a cooldown period\nbefore withdrawing their stake. This should only negatively affect the cooldown period. That is, the more the withdrawals, the longer the cooldown period.\n\n**AaveIncentivesController:**\nContract in charge of the incentives for activity on the Aave protocol, inheriting from the AaveDistributionManager. \nEach time an event involving any incentive for an user happens on the Aave protocol (i.e., a deposit or a withdrawal of staked tokens, redemption of rewards etc.,.), \nthis contract is called to manage the update of the incentives state. In return, it provides the AaveDistributionManager with userdata and reserve data concerning the\ngiven asset, to apply logic and come up with new terms for rewarding the user for staking the asset.\n\nThis contract can be used to update the data for incentives, Claim of user rewards and Query information about users\n\n\n## [@aave/safety-module](https://www.npmjs.com/package/@aave/safety-module):\nThe Aave Protocol is secured by a smart contract-based component called the Safety Module (SM). AAVE holders can lock tokens (stake) into the SM to incentivize them to act as a \nmitigation tool in case of a Shortfall Event within the Aave ecosystem. A Shortfall Event occurs when there is a deficit in one of the money markets that belong \nto the Aave ecosystem. The interpretation for the occurrence of a Shortfall Event is subject to the Protocol Governance vote\n\nAAVE holders can deposit their tokens into the Staking Mechanism to contribute to the safety of the protocol and receive incentives. In return, they will receive a tokenized position\nthat can be freely moved within the underlying network. The holder of the tokenized position can redeem their share from the SM at any time, triggering a cooldown period of \none week (which can be further extended by the governance, mentioned in the protocol-js).\n",
+      "name": "@aave/aave-stake-v2\n",
+      "content": "## [@aave/aave-stake-v2](https://github.com/aave/aave-stake-v2)\nThis package contains a series of smart-contracts which are related to the staking of aave tokens and the incentivization system based on them.\nThe package contains 3 main smart-contracts,\n\n#### **AaveDistrubutionManager:**\nThis smart contract contains the logic for the accounting, i.e., the calculation logic for the rewarding of staking tokens in AAVE.\nThe smartcontracts like AaveIncentivesController inherit this method, any contract that interacts with the user/ protocol in this package will inherit\nthe AaveDistrubutionManager. \n\n\n**StakedAave:**\nContract to stake AAVE token, to be connected with a slashing mechanism in order to secure the Aave protocol called Aave SM (Security Module). \nThe users can stake their assets in these contracts and receive stkAAVE tokens in return. These tokens accrue the interests/ rewards accumulated by the \nuser over a given time period until which this token will be incentivized. Once the rewards are accrued, they can be redeemed at any given moment.\nBut, withdrawal of staked AAVE tokens cannot be done instantly. There is a cooldown period after activation, only after the cooldown period ends can the user withdraw their staked tokens.\n\n**AaveIncentivesController:**\nContract in charge of the incentives for activity on the Aave protocol, inheriting from the AaveDistributionManager. \nEach time an event involving any incentive for an user happens on the Aave protocol (i.e., a deposit or a withdrawal of staked tokens, redemption of rewards etc.,.), \nthis contract is called to manage the update of the incentives state. In return, it provides the AaveDistributionManager with userdata and reserve data concerning the\ngiven asset, to apply logic and come up with new terms for rewarding the user for staking the asset.\n",
       "stepItems": []
     },
     {
@@ -491,7 +438,7 @@
               "key": "B"
             },
             {
-              "content": "To validate whether a withdraw is done by the correct user",
+              "content": "To validate whether a withdrawl is done by the correct user",
               "key": "C"
             },
             {
@@ -522,33 +469,6 @@
             },
             {
               "content": "User and reserve data about all the assets in the ecosystem.",
-              "key": "D"
-            }
-          ]
-        },
-        {
-          "uuid": "2e730b6f-64e7-4eb8-b1e5-d6a587b10519",
-          "content": "Are the @aave/aave-stake-v2 and @aave/safety-module related, if yes/no, how?",
-          "answerKeys": [
-            "A",
-            "B"
-          ],
-          "type": "MultipleChoice",
-          "choices": [
-            {
-              "content": "Yes, safety modules are a layer above aave staking, in order to better secure the staking contracts",
-              "key": "A"
-            },
-            {
-              "content": "Yes, safety module is a slashing mechanism in the aave staking",
-              "key": "B"
-            },
-            {
-              "content": "No, safety module and aave staking are completely unrelated",
-              "key": "C"
-            },
-            {
-              "content": "No, safety module concerns with the protection of user data and aave-staking concerns with staking of assets",
               "key": "D"
             }
           ]

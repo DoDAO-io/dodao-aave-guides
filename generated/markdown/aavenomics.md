@@ -266,4 +266,6 @@ V2
 
 Cetora(Many developer videos) - https://www.youtube.com/channel/UC4DzjIwy_5afMxSI4mOpLHw/videos
 - https://www.youtube.com/watch?v=LzaS8IiqnPY
+
+- Aave v3 contracts with The3D | Solidity Fridays https://www.youtube.com/watch?v=l5RKksbi8e8
     
