@@ -372,3 +372,13 @@ steps:
              key: D
 
     
+  - uuid: d32f51e6-d766-4fdc-b6a6-9fe9bf406867
+    name: Your Info
+    content: |
+    stepItems:
+      - uuid: 8b20cd1e-047e-46ba-b291-3abfe6199453
+        label: Nick Name
+        required: true
+        type: PublicShortInput
+      - uuid: d04e6867-523a-4b99-b079-dd57f836ee6b
+        type: UserDiscordConnect

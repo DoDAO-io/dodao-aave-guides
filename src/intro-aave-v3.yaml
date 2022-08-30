@@ -272,4 +272,14 @@ steps:
       * Invest funds in pools to generate liquidity. Doing this should allow the users to offer loans to other users 
         who need them while also earning interest as liquidity providers.
     stepItems: []
+  - uuid: 2b1feaff-560a-4fb7-b7e8-a61fe3943edc
+    name: Your Info
+    content: |
+    stepItems:
+      - uuid: 826396a1-95e7-4fd0-816f-1fe3844cd624
+        label: Nick Name
+        required: true
+        type: PublicShortInput
+      - uuid: 5d3152ef-bc45-43a7-87b3-57393cb14b66
+        type: UserDiscordConnect
 

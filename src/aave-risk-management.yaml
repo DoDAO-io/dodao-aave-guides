@@ -16,7 +16,7 @@ steps:
     content: |
       The Aave protocol is a popular liquidity protocol on Ethereum. It allows users to supply and borrow crypto assets 
       on Ethereum. Active borrowers who are willing to pay interest have access to pools of crypto assets supplied by 
-      users who seek yield on their savings..
+      users who seek yield on their savings.
       
       DeFi is all about liquidity; without it, the whole ecosystem would grind to a halt. And because of the way that different 
       components in DeFi are interconnected, any risks in one area can quickly flow through the entire system. With the 
@@ -28,6 +28,29 @@ steps:
       
       The team at Aave constantly strives to make the protocol safer.
     stepItems: []
+  - uuid: b08e3882-dbbf-4663-85b9-a73802f490a5
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: b972b136-463e-4628-8846-2f5f002a7734
+        content: Which of these are the risks that Aave team tries to mitigate?
+        answerKeys:
+          - A
+          - B
+          - D
+        type: MultipleChoice
+        choices:
+          - content: Market Risks
+            key: A
+          - content: Smart Contract Risks
+            key: B
+          - content: Change in Price of ETH
+            key: C
+          - content: Counter-Party Risks
+            key: D
+
+
+
   - uuid: 6d902d63-d49f-4a56-b39d-dea20ca21bae
     name: Risk by Addition of a new token
     content: |
@@ -38,12 +61,16 @@ steps:
       
       Following are the risks associated with the addition of tokens -
       
+      ### Increase in gas price
+      Adding of a new token can lead to increase in gas prices for most of the protocol operations. So it's important to 
+      know the impact on the protocol. 
+      
       ### The protocol risk of insolvency      
         Adding a new token involves the risk of insolvency. While adding new tokens the Aave Community considers the 
         following important points -      
           1. Only the assets with best risk profiles should be supported as collateral
-          2. Riskier assets should only be enabled as collateral in Isolation _mode_
-          3. New assets with higher risk and lower liquidity should be only considered listed in Isolation _mode_ (for both borrow and collateral use)
+          2. Riskier assets should only be enabled as collateral in isolation mode
+          3. New assets with higher risk and lower liquidity should be only considered listed in Isolation mode (for both borrow and collateral use)
       
       ### Centralisation risk      
       A centralized asset accepted as collateral exposes the protocol to centralization risk. The single point of failure 
@@ -59,10 +86,45 @@ steps:
       Assets that have risk of manipulable oracles are listed as single borrow assets. If a user borrows the mentioned asset, 
       they cannot borrow any other asset (Siloed assets).
       
-      ### **Token Concentration(Low diversity)**
+      ### Token Concentration(Low diversity)
       If there are just a couple of tokens in the protocol, then volatilie conditions of those tokens can affect the full protocol. But by 
       having many markets/pools, the risk is diversified.
     stepItems: []
+  - uuid: dc2e08bd-8a9a-4e3a-89f5-fbdd0147181d
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: fa391b55-49fe-41b1-92cb-d20193ccf370
+        content: Which of these is not a risk associated with adding of a new asset?
+        answerKeys:
+          - B
+        type: SingleChoice
+        choices:
+          - content: Increase in gas price
+            key: A
+          - content: Risk of adding unknown tokens
+            key: B
+          - content: Risk of collateral assets
+            key: C
+          - content: Risk of manipulable oracles
+            key: D
+      - uuid: 60ce6964-93ae-44b0-b42b-8f26214cad76
+        content: What is the best way to add new high risk assets?
+        answerKeys:
+          - A
+        type: SingleChoice
+        choices:
+          - content: New assets with higher risk and lower liquidity should be only considered listed in Isolation mode (for both borrow and collateral use)
+            key: A
+          - content: New assets cannot be added
+            key: B
+          - content: Allow them to be borrowed against other volatile assets
+            key: C
+          - content: Allow them to be used as collateral for stable coins
+            key: D
+
+
+
   - uuid: ffd7e0fd-34b0-4988-8db2-4d29d4ffd702
     name: Types of Risks
     content: |
@@ -71,7 +133,7 @@ steps:
       The focus of smart contract risk is on assessing the security of the code that underlies any asset. Only code that 
       has been thoroughly audited by well-respected auditors is appropriate for the Aave protocol. Users are advised to 
       be vigilant, as even beyond audits, smart contract risk does exist and it can never be eliminated completely.
-  
+      
       One interesting mechanism that Aave plans to use to help reduce smart contract risk is bug bounties.
       
       Also, to prevent hacks, Aave protocol advices to onboard the contracts with strict risk mitigation such as supply caps or isolation mode.
@@ -100,8 +162,40 @@ steps:
       
       Market risks are used to calibrate the model’s risk parameters. Volatility helps to define the required level of 
       collateralisation. The liquidity risks are contained by liquidation incentives.
-      
+
     stepItems: []
+  - uuid: d4ee2568-8924-4c8e-8637-b5133c80bb5f
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: 27bf84c5-03dc-49e6-8b0c-d6130a69da27
+        content: Which of these can result in Counterparty Risk?
+        answerKeys:
+          - C
+        type: SingleChoice
+        choices:
+          - content: Adding of a new asset
+            key: A
+          - content: Bug in Smart Contract
+            key: B
+          - content: A whale accumulating most of the protocol's token leading to centralized governance
+            key: C
+          - content: Volatility of a particulat token
+            key: D
+      - uuid: cc3efd46-8144-4088-bbbf-a08dc0422401
+        content: Which of these can lead to Market Risks?
+        answerKeys:
+          - B
+        type: SingleChoice
+        choices:
+          - content: A whale accumulating most of the protocol's token leading to centralized governance
+            key: A
+          - content: Volatility of a particulat token
+            key: B
+          - content: Bug in Smart Contract
+            key: C
+          - content: None of these
+            key: D
   - uuid: 2c2f0abf-7a6b-4ac6-b0a0-f25a6ce7cb4d
     name: Liquidity Risk
     content: |
@@ -109,7 +203,7 @@ steps:
       as borrowing assets that are backed by collateral. It also allows users to claim supplied assets along with the 
       interest that has accrued. Measuring the liquidity is done by taking into account the utilisation ratio, which is 
       the amount of the reserve that is currently borrowed in relation to the Aave supply of each asset.
-  
+      
       There are tools in place to help mitigate liquidity risk, such as the borrow interest rate model and alternative 
       sources of aToken liquidity.
       
@@ -133,5 +227,70 @@ steps:
       have put in place best practices like automated testing and independent security audits to mitigate risk. Below you 
       will find a summary of our recent security audits, which cover all aspects of the Aave protocol including smart 
       contracts, algorithms, stress testing, and governance. Audit reports are available on GitHub.
-    stepItems: []
       
+      ### Security & Audits
+      Below are the links to all audit reports and formal verification for Aave V3
+
+      #### Audit Round 1
+
+      | Auditor       | Date       | Report                                                                                                               |
+      | ------------- | ---------- | -------------------------------------------------------------------------------------------------------------------- |
+      | ABDK          | 27-01-2022 | [ABDK\_AaveV3](https://github.com/aave/aave-v3-core/blob/master/audits/27-01-2022\_ABDK\_AaveV3.pdf)                 |
+      | OpenZeppelin  | 01-11-2021 | [OpenZeppelin\_AaveV3](https://github.com/aave/aave-v3-core/blob/master/audits/01-11-2021\_OpenZeppelin\_AaveV3.pdf) |
+      | Trail of Bits | 07-01-2022 | [TrailOfBits\_AaveV3](https://github.com/aave/aave-v3-core/blob/master/audits/07-01-2022\_TrailOfBits\_AaveV3.pdf)   |
+      | Peckshield    | 14-01-2022 | [PeckShield\_AaveV3](https://github.com/aave/aave-v3-core/blob/master/audits/07-01-2022\_TrailOfBits\_AaveV3.pdf)    |
+
+
+
+      #### Audit Round 2
+
+      | Auditor    | Date       | Report                                                                                                           |
+      | ---------- | ---------- | ---------------------------------------------------------------------------------------------------------------- |
+      | SigmaPrime | 27-01-2022 | [SigmaPrime\_AaveV3](https://github.com/aave/aave-v3-core/blob/master/audits/27-01-2022\_SigmaPrime\_AaveV3.pdf) |
+
+      ### Formal Verification
+      Formal verification by [Certora](https://github.com/aave/aave-v3-core/blob/master/Certora/certora/Verification\_Report.pdf)
+    stepItems: []
+  - uuid: c39335fc-df8d-410a-ae43-3c4da840dc39
+    name: Evaluation
+    content: |
+    stepItems:
+      - uuid: b333fda0-63e5-48ce-8a61-1854b2e1d706
+        content: How does AAVE protect its protocol from Liquidity related risks?
+        answerKeys:
+          - C
+        type: SingleChoice
+        choices:
+          - content: Balancing the Borrow Interest Rate bases on demand
+            key: A
+          - content: Using stable coins
+            key: B
+          - content: Aave has set up liquidity pools on Uniswap and Balancer, as well as the Aave Curve pool that provides users with alternative sources of liquidity
+            key: C
+          - content: By code reviews
+            key: D
+      - uuid: a353a1c6-c10d-4523-bef0-1749d5e5d421
+        content: What is the difference in Code review and External Audit?
+        answerKeys:
+          - B
+        type: SingleChoice
+        choices:
+          - content: External audits are performaed by the team members whereas code reviews are performed by external teams
+            key: A
+          - content: External audits are performaed by external teams whereas code reviews are performed by the team members
+            key: B
+          - content: They are one as the same
+            key: C
+          - content: No bugs are reported in audits, but bugs are reported in code reviews
+            key: D
+  - uuid: 9a91f884-7fbc-4137-a56a-8018006b3ba4
+    name: Your Info
+    content: |
+    stepItems:
+      - uuid: 8c2af041-a425-41f5-bafb-a0b75cd7b0ab
+        label: Nick Name
+        required: true
+        type: PublicShortInput
+      - uuid: 2cefc09c-32b9-40a6-890b-fd72e42e9928
+        type: UserDiscordConnect
+

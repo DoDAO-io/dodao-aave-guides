@@ -197,6 +197,23 @@
       "name": "AAVE Vision and Goals",
       "content": "## AAVE Vision \nAave believes in creating a protocol that can convert centralized financial services over to decentralized \nequivalents. The protocol also has the vision of creating a transparent, permissionless, and open-source financial \nservice environment that encourages everyone to interact. Aave further seeks to remain compatible with other \ndecentralized protocols via aTokens.\n\n## AAVE Goals\nThe aim and goals of Aave are to build an algorithmic loan market that allows the following:\n\n* Create a platform that can offer loans with different collaterals, operating policies, and collateralization \n  options. This is so that the protocol can adjust to the needs of different markets and its many users.\n* Invest funds in pools to generate liquidity. Doing this should allow the users to offer loans to other users \n  who need them while also earning interest as liquidity providers.\n",
       "stepItems": []
+    },
+    {
+      "uuid": "2b1feaff-560a-4fb7-b7e8-a61fe3943edc",
+      "name": "Your Info",
+      "content": "",
+      "stepItems": [
+        {
+          "uuid": "826396a1-95e7-4fd0-816f-1fe3844cd624",
+          "label": "Nick Name",
+          "required": true,
+          "type": "PublicShortInput"
+        },
+        {
+          "uuid": "5d3152ef-bc45-43a7-87b3-57393cb14b66",
+          "type": "UserDiscordConnect"
+        }
+      ]
     }
   ]
 }

@@ -490,3 +490,13 @@ steps:
             key: C
           - content: None of these
             key: D
+  - uuid: abe7e48f-e3df-4e5e-8e25-a504681c1f8c
+    name: Your Info
+    content: |
+    stepItems:
+      - uuid: 2f870eb3-b62d-45a9-a5b1-36c52088c5d7
+        label: Nick Name
+        required: true
+        type: PublicShortInput
+      - uuid: 7d5a027f-2162-4f24-bbf0-f06c817a9f29
+        type: UserDiscordConnect
