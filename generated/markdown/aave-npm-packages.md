@@ -10,7 +10,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
 
 
-## @aave/coreV3 (https://www.npmjs.com/package/@aave/core-v3)
+## [@aave/coreV3](https://www.npmjs.com/package/@aave/core-v3)
 
 This package contains the smart contracts source code and markets configuration (The underlying logic, and terms specified for the market to work) related to Aave Protocol V3. 
 It uses Docker Compose and Hardhat as development environment for compilation, testing and deployment tasks.
@@ -47,12 +47,12 @@ Import JSON file via Node JS `require`:
   console.log(PoolV3Artifact.abi)
 ```
 
-## @aave/protocol-v2 (https://www.npmjs.com/package/@aave/protocol-v2)
+## [@aave/protocol-v2](https://www.npmjs.com/package/@aave/protocol-v2)
 Package contains smart contracts related to v2.
 
 Just like @aave/core-v3, you can  install @aave/protocol-v2 as an NPM package by running `npm install @aave/protocol-v2`
 
-You can import Solidity and ABI files, just like the V3 files shown above. 
+You can import Solidity and ABI files, just like the V3 files shown above.
 
 
     
@@ -65,34 +65,23 @@ You can import Solidity and ABI files, just like the V3 files shown above.
 
 
 
-##### The smart contract source code and market configurations are contained within which repo?  
+##### The smart contract source code and market configurations for V3 are contained within which npm package?  
 
-- [x]  Aave core V3
-- [ ]  Math util
-- [ ]  Lens protocol
-- [ ]  None of these
-
-
+- [ ]  @aave/contract-helpers
+- [ ]  @aave/protocol-js
+- [ ]  @aave/protocol-v2
+- [x]  @aave/coreV3
 
 
 
-##### Aave V3 uses which of these tools to set-up development environment?  
+
+
+##### Aave V3 uses which of these tools to setup the development environment?  
 
 - [ ]  Truffle
 - [x]  Hardhat
 - [x]  Docker Compose
 - [ ]  None of these
-
-
-
-
-
-##### What does "market configurations" mean?  
-
-- [ ]  The price of assets in the market
-- [x]  The logic that is applied in the market
-- [x]  The terms followed by the market
-- [ ]  Both A and C
 
     
 
@@ -101,74 +90,79 @@ You can import Solidity and ABI files, just like the V3 files shown above.
 ## @aave/protocol-js
 
 
-## @aave/protocol-js (https://www.npmjs.com/package/@aave/protocol-js)
+## [@aave/protocol-js](https://www.npmjs.com/package/@aave/protocol-js)
 
 Contains smart-contracts and methods that allows user to interact with and develop applications using the Aave protocol.
 These smart-contracts can be grouped depending on their functionality. They provide the user with libraries which provide methods to
 do many of the basic functionality of the Aave protocol.
 
-**Data Formatting methods:**
-formatUserSummaryData:
+#### Data Formatting methods
+`formatUserSummaryData`:
 Returns formatted summary of AAVE user portfolio including: array of holdings, total liquidity, total collateral, 
 total borrows, liquidation threshold, health factor, and available borrowing power
 
-formatReserves:
+`formatReserves`:
 Returns formatted summary of each AAVE reserve asset.
-
-**LendingPool:** 
+ 
+ #### LendingPool 
 It encloses various transaction methods and the underlying logic and smartcontract for **Lending pool V2**, of which we have talked about in detail. For a short summary,
 Lending pool is just a smart contract which acts as a reserve (pool) of assets, lent by liquidity providers for the protocol to use
 for loaning. 
 
 It contains the following methods,
-deposit:
+`deposit`:
 When this function is called, it takes in the address of the depositor(user), the address of the reserve to deposit to(reserve),
 the amount to be deposited (amount) as parameters. This method deposits the asset into its corresponding reserve, then mints aTokens (Debt tokenization).
 You can also pass in a parameter onBehalfOf, which allows the user to deposit on behalf of another address. By default it is the user address.
 
-borrow:
+`borrow`:
 The user must set the ethereum address of the reserve he wishes to borrow against, the amount and the type of interestRateMode rate he wishes to borrow on. 
 Invoking this method would meant the user address receives the amount mentioned as parameter for loan, give that 
 the user has enough aTokens in their wallet (collateralized position). Note that, interestRateMode takes in values from the enum
 InterestRate, which contains 'none', 'stable', and 'variable' as values.
 
-withdraw:
+`withdraw`:
 Invoked when the user needs to withdraw assets. onBehalfOf address can also be passed in as a parameter,
 allows the withdraw action to be done onbehalf of another address. By default it points to user address.
 
 there are other functions whose use cases are more particular,
 
-swapBorrowRateMode:
+`swapBorrowRateMode`:
 Shifts the type of interest rate on the borrow position.
 
-setUsageAsCollateral:
+`setUsageAsCollateral`:
 This is a function which allows the depositor to accept or deny a specific asset as collateral.
 A boolean value of useAsCollateral is used to specify whether or not assets from this ethererum 
 reserve can be used as collateral.
 
-liquidateCall:
+`liquidateCall`:
 This function enables user to liquidate an undercollateralized position.
 Takes in the address of the liquidator, the address of the borrower, ethereum address of the principle asset and the collateral asset,
 The amount that the liquidator wants to liquidates as paramaters.
 
-swapCollateral:
+`swapCollateral`:
 Allows user to change the collateral asset to another assets.
 
-repayWithCollateral:
+`repayWithCollateral`:
 Allows the borrower to repay the loan with the collateral.
-
-**Governance:**
+ 
+ #### Governance 
 Contains smartcontracts and methods which will implement Aave governance in the Aave protocol. 
 Methods that can be called,
-create - creates a proposal, that needs to be validated by proposal validator.
-cancel - cancels a proposal. when called by guardian, has relaxed conditions. When called by a regular user,
-         executes given that the conditions placed on the executor are fulfilled.
-queue - Queue the proposal, given that it is succeeded.
-execute - Execute the proposal, given it is queued.
-submitVote - This function allows the caller of the function to caste a vote for/ against the proposal that is executed.
-delegate - This function allows the user to delegate his voting power to a chosen address.
+`create` - creates a proposal, that needs to be validated by proposal validator.
 
-**Staking:**
+`cancel` - cancels a proposal. when called by guardian, has relaxed conditions. When called by a regular user,
+         executes given that the conditions placed on the executor are fulfilled.
+
+`queue` - Queue the proposal, given that it is succeeded.
+
+`execute` - Execute the proposal, given it is queued.
+
+`submitVote` - This function allows the caller of the function to caste a vote for/ against the proposal that is executed.
+
+`delegate` - This function allows the user to delegate his voting power to a chosen address.
+
+#### Staking
 Aave staking is covered in the coming steps.
  
 
@@ -231,25 +225,22 @@ Aave staking is covered in the coming steps.
 
 
 
-## @aave/contract-helpers (https://www.npmjs.com/package/@aave/contract-helpers):
+## [@aave/contract-helpers](https://www.npmjs.com/package/@aave/contract-helpers):
 
 To install contract-helpers with npm,
 
 _npm install @aave/contract-helpers_ 
 
-
 with yarn,
 
 _yarn add @aave/contract-helpers_ 
-
 
 The @aave/contract-helpers package offers a set of services which allow querying aggregated on-chain data via rpc.
 It contains methods for generating transacations based on method and parameter inputs. 
 Basically, it is used to read and write data on the protocol contracts. Could be thought of like something that facilitates the querying and writing of 
 data from and onto the original aave protocol. It is part of a larger package, aave-utilities. Aave Utilities is a JavaScript SDK for interacting with V2 and V3 of the Aave Protocol.
 
-
-## @aave/math-utils (https://www.npmjs.com/package/@aave/math-utils):
+## [@aave/math-utils](https://www.npmjs.com/package/@aave/math-utils):
 
 To install math-utils with npm,
 
@@ -326,7 +317,7 @@ raw and indexed contract data, for front-end usage.
 
 
 
-## @aave/periphery-v3 (https://www.npmjs.com/package/@aave/periphery-v3): 
+## [@aave/periphery-v3](https://www.npmjs.com/package/@aave/periphery-v3): 
 This repository contains smart-contracts, which allow you to incentivize assets with multiple rewards in Aave V3 markets. 
 It also contains UI helpers and other external smart contracts utilities related to the Aave Protocol V3.
 It contains rewards controller and rewards distrubutor contracts, which help to standardize and incentivize the liquidity of deposits and borrows
@@ -446,7 +437,7 @@ rewards to the user.
 
 
 
-## @aave/aave-stake-v2 (https://github.com/aave/aave-stake-v2)
+## [@aave/aave-stake-v2](https://github.com/aave/aave-stake-v2)
 This package contains a series of smart-contracts which are related to the staking of aave tokens and the incentivization system based on them.
 The package contains 3 main smart-contracts,
 
@@ -483,7 +474,7 @@ given asset, to apply logic and come up with new terms for rewarding the user fo
 This contract can be used to update the data for incentives, Claim of user rewards and Query information about users
 
 
-## @aave/safety-module (https://www.npmjs.com/package/@aave/safety-module):
+## [@aave/safety-module](https://www.npmjs.com/package/@aave/safety-module):
 The Aave Protocol is secured by a smart contract-based component called the Safety Module (SM). AAVE holders can lock tokens (stake) into the SM to incentivize them to act as a 
 mitigation tool in case of a Shortfall Event within the Aave ecosystem. A Shortfall Event occurs when there is a deficit in one of the money markets that belong 
 to the Aave ecosystem. The interpretation for the occurrence of a Shortfall Event is subject to the Protocol Governance vote
@@ -538,10 +529,10 @@ one week (which can be further extended by the governance, mentioned in the prot
 
 ##### Are the @aave/aave-stake-v2 and @aave/safety-module related, if yes/no, how?  
 
-- [x]  yes, safety modules are a layer above aave staking, in order to better secure the staking contracts
-- [x]  yes, safety module is a slashing mechanism in the aave staking
-- [ ]  no, safety module and aave staking are completely unrelated
-- [ ]  no, safety module concerns with the protection of user data and aave-staking concerns with staking of assets
+- [x]  Yes, safety modules are a layer above aave staking, in order to better secure the staking contracts
+- [x]  Yes, safety module is a slashing mechanism in the aave staking
+- [ ]  No, safety module and aave staking are completely unrelated
+- [ ]  No, safety module concerns with the protection of user data and aave-staking concerns with staking of assets
 
     
 
