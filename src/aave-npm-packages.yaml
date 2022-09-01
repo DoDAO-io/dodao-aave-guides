@@ -180,14 +180,13 @@ steps:
         answerKeys:
           - A
           - B
-          - C 
         type: SingleChoice
         choices:
            - content: create
              key: A
            - content: queue
              key: B
-           - content: submitVote
+           - content: repayWithCollateral
              key: C
            - content: delegate
              key: D
@@ -201,7 +200,7 @@ steps:
              key: A
            - content: Configure the amount of collateral to be produced by borrower
              key: B
-           - content: Determine what assets are acceptable as collateral for the deposited collateral
+           - content: Set whic assets are acceptable as collateral for the deposited collateral
              key: C
            - content: None of these
              key: D
@@ -221,7 +220,7 @@ steps:
             key: D
 
       - uuid: 4aa31aea-1718-433c-9ebf-44cf22b442c7
-        content: Methods that concern with collaterals, allow the user to do which of the following?
+        content: What operations related to collaterals can the user perform using `@aave/protocol-js`?
         answerKeys:
           - A
           - B
@@ -232,9 +231,9 @@ steps:
             key: A
           - content: Use the collateral to repay loan
             key: B
-          - content: Withdraw all of the collateral on command
+          - content: Withdraw a part of collateral to user address
             key: C
-          - content: Determine which assets can qualify for collateral
+          - content: Set assets which qualify for collateral
             key: D
 
   - uuid: f800407f-477c-43f4-abd7-0839496e09de
