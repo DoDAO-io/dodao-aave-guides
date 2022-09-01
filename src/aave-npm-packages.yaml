@@ -200,7 +200,7 @@ steps:
              key: A
            - content: Configure the amount of collateral to be produced by borrower
              key: B
-           - content: Set whic assets are acceptable as collateral for the deposited collateral
+           - content: Set which assets are acceptable as collateral for the deposited collateral
              key: C
            - content: None of these
              key: D
