@@ -296,7 +296,8 @@ the actions are performed instantaneously. The majority of services provided by 
 
 * **Open** - No lengthy processes, assessments, and paperwork go into applying for a loan. All you need is a crypto wallet.
 
-* **Immutability** - Blockchain's decentralized architecture ensures that the data it contains cannot be tampered with. 
+* **Immutability** - Blockchain's decentralized architecture ensures that the data it contains cannot be tampered with making 
+it far more trustable. 
 
 
 ### Disadvantages      
