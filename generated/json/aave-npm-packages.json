@@ -95,8 +95,7 @@
           "content": "The functions that must mandatorily be successfully called on a proposal before it can be executed are?",
           "answerKeys": [
             "A",
-            "B",
-            "C"
+            "B"
           ],
           "type": "SingleChoice",
           "choices": [
@@ -109,7 +108,7 @@
               "key": "B"
             },
             {
-              "content": "submitVote",
+              "content": "repayWithCollateral",
               "key": "C"
             },
             {
@@ -135,7 +134,7 @@
               "key": "B"
             },
             {
-              "content": "Determine what assets are acceptable as collateral for the deposited collateral",
+              "content": "Set which assets are acceptable as collateral for the deposited collateral",
               "key": "C"
             },
             {
@@ -172,7 +171,7 @@
         },
         {
           "uuid": "4aa31aea-1718-433c-9ebf-44cf22b442c7",
-          "content": "Methods that concern with collaterals, allow the user to do which of the following?",
+          "content": "What operations related to collaterals can the user perform using `@aave/protocol-js`?",
           "answerKeys": [
             "A",
             "B",
@@ -189,11 +188,11 @@
               "key": "B"
             },
             {
-              "content": "Withdraw all of the collateral on command",
+              "content": "Withdraw a part of collateral to user address",
               "key": "C"
             },
             {
-              "content": "Determine which assets can qualify for collateral",
+              "content": "Set assets which qualify for collateral",
               "key": "D"
             }
           ]

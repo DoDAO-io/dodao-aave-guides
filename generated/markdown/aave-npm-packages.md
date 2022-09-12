@@ -178,7 +178,7 @@ Aave staking is covered in the coming steps.
 
 - [x]  create
 - [x]  queue
-- [x]  submitVote
+- [ ]  repayWithCollateral
 - [ ]  delegate
 
 
@@ -189,7 +189,7 @@ Aave staking is covered in the coming steps.
 
 - [ ]  Use the collateral produced by borrower
 - [ ]  Configure the amount of collateral to be produced by borrower
-- [x]  Determine what assets are acceptable as collateral for the deposited collateral
+- [x]  Set which assets are acceptable as collateral for the deposited collateral
 - [ ]  None of these
 
 
@@ -207,12 +207,12 @@ Aave staking is covered in the coming steps.
 
 
 
-##### Methods that concern with collaterals, allow the user to do which of the following?  
+##### What operations related to collaterals can the user perform using `@aave/protocol-js`?  
 
 - [x]  Swap the collateral asset for another asset
 - [x]  Use the collateral to repay loan
-- [ ]  Withdraw all of the collateral on command
-- [x]  Determine which assets can qualify for collateral
+- [ ]  Withdraw a part of collateral to user address
+- [x]  Set assets which qualify for collateral
 
     
 
