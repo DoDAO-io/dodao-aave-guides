@@ -1,7 +1,7 @@
 categories:
   - onboarding
 content: Explains tokenomics of AAVE
-created: '2022-09-30T18:14:34.836Z'
+created: '2022-09-30T18:15:31.641Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -360,7 +360,7 @@ steps:
   - content: ''
     name: Your Info
     stepItems:
-      - label: Nick Name
+      - label: Nickname
         required: true
         type: PublicShortInput
         uuid: 5a0cb998-8266-4161-bc58-1a17f7beedf7
