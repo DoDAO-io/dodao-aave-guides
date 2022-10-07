@@ -8,5 +8,6 @@
   "aave-portals.json",
   "aave-risk-management.json",
   "aave-npm-packages.json",
-  "aave-sandbox.json"
+  "aave-sandbox.json",
+  "aave-grants-dao.json"
 ]

@@ -17,6 +17,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  | 8      | AAVE Risk Management | Various Risks in DeFi and how manages them |  [Link](generated/markdown/aave-risk-management.md) |
  | 9      | AAVE NPM Packages | Explains the important NPM packages |  [Link](generated/markdown/aave-npm-packages.md) |
  | 10      | AAVE Sandbox | Explains how you can use AAVE Sandbox |  [Link](generated/markdown/aave-sandbox.md) |
+ | 11      | Aave Grants DAO Guide | Guide for Aave contributors who need funding for ideas |  [Link](generated/markdown/aave-grants-dao.md) |
 
 ---
 ## Footer

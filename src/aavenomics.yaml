@@ -8,7 +8,6 @@ categories:
   - onboarding
 thumbnail: https://d31h13bdjwgzxs.cloudfront.net/guides/eth/aave/AAVENomics_Thumbnail.png
 publishStatus: Live
-socialShareImage:
 showIncorrectOnCompletion: true
 steps:
   - uuid: fab0e9b5-619b-4dac-90a9-56d81bc4288c

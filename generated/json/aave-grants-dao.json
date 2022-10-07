@@ -1,0 +1,372 @@
+{
+  "categories": [
+    "community"
+  ],
+  "content": "Guide for Aave contributors who need funding for ideas",
+  "created": "2022-10-07T14:07:25.837Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
+  "guideType": "onboarding",
+  "key": "aave-grants-dao",
+  "name": "Aave Grants DAO Guide",
+  "publishStatus": "Live",
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "content": "# **Overview**\n\n![Aave](https://2799188404-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MDtoSpz9ekPafgSK8Bl%2F-MDvO-yzDivYrBvizXRW%2F-MDvO2lOYLIPFLa6WEUO%2Faave%20overview.png?alt=media&token=5a4c8be8-d473-4041-b58c-a37234bd15fd \"Aave\")\n\nAave is a decentralized non-custodial liquidity protocol built on the Ethereum blockchain where users can provide liquidity to earn interest or borrow by providing collateral of tokens owned. It is completely open-source so people can build third-party solutions on the Aave Protocol via API or by directly interacting with the smart contracts on the Ethereum Network.\n\nCurrently, Aave has integrated with a number of L1 (Polygon, Avalanche) and L2 (Arbitrum) networks. It is also a decentralized organization and is governed by the community via the AAVE token which is used to vote for the growth of the DAO based on Aave Improvement Proposals (AIP). \n\nBeyond voting, AAVE can also be staked in within the Protocol Safety Module to provide Insurance to depositors on the Protocol.\n\nTo learn more about Aave, click [here](https://docs.aave.com/faq/governance) or [here](https://aave.com/).",
+      "name": "Overview",
+      "stepItems": [],
+      "uuid": "3083bdd7-85cf-439c-b70a-17828c9e3399"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "dog_or_cat"
+          ],
+          "choices": [
+            {
+              "content": "Bitcoin",
+              "key": "dog_and_cat"
+            },
+            {
+              "content": "Ethereum",
+              "key": "dog_or_cat"
+            },
+            {
+              "content": "Avalanche",
+              "key": "only_dog"
+            },
+            {
+              "content": "Solana",
+              "key": "only_cat"
+            }
+          ],
+          "content": "Which network is Aave built on?",
+          "type": "MultipleChoice",
+          "uuid": "f129fe29-d82a-40cc-be45-bc421f12e275"
+        },
+        {
+          "answerKeys": [
+            "0aa2c450"
+          ],
+          "choices": [
+            {
+              "content": "Arbitrum",
+              "key": "0aa2c450"
+            },
+            {
+              "content": "Polygon",
+              "key": "fa4db425"
+            },
+            {
+              "content": "Ethereum",
+              "key": "c0802a61"
+            },
+            {
+              "content": "Avalanche",
+              "key": "d0fa3629"
+            }
+          ],
+          "content": "Which of these is an L2 network that has been integrated with Aave?",
+          "type": "MultipleChoice",
+          "uuid": "78b3ef76-4016-42c1-a72e-67113884734a"
+        },
+        {
+          "answerKeys": [
+            "eb27d938"
+          ],
+          "choices": [
+            {
+              "content": "MKR",
+              "key": "693bc5d4"
+            },
+            {
+              "content": "AAVE",
+              "key": "eb27d938"
+            },
+            {
+              "content": "COMP",
+              "key": "b7dd7837"
+            },
+            {
+              "content": "UNI",
+              "key": "4db139f0"
+            }
+          ],
+          "content": "Which of these tokens is used to vote on the Aave Protocol?",
+          "type": "MultipleChoice",
+          "uuid": "0ac23b39-361a-40af-854e-d49d039b7540"
+        }
+      ],
+      "uuid": "a88dcea6-24c1-444f-8173-ebf988893352"
+    },
+    {
+      "content": "# **Aave Grants DAO**\n\nThe Aave Grants DAO is basically a program that funds the ideas of contributors who want to build products on the Aave Protocol. This program is community-led in that the ideas and eventually products built are all from the community.\n\nThe mission of Aave Grants DAO is to build a network (ecosystem) of contributors at Aave and be at the forefront of the development of products built on the Aave Protocol. Lastly, Aave encourages great talent to leverage the open-source Protocol to build awesome products, organize events, spread the word of Aave to the world, etc.\n\nTo date, about 81 grants have been given out to contributors at a budget of $1,957,250 and 30 events have been sponsored at a budget of $848139 totaling $2,805,389 since May 2021.\n\nSome of the interesting grants awarded to developers building awesome products on Aave are highlighted below:\n\n* Protecting users - Cono Finance by Gelato Network, Aave Liquidation Notifier by Steven Li\n* Onboarding and attracting new users - Aave quests on Rabbithole, 2001 DeFi developing a mobile app for Aave, Blockchain Education Network enabling any student to participate in Aave governance\n* Increasing liquidity - Symphony Finance’s yield generating limit orders, and Sacred Finance’s privacy-preserving DeFi protocol\n* Analyzing the protocol - a growth dashboard by Omni Analytics, community enabled analytics program by Flipside Crypto\n* Improving oversight and transparency - Safeguard by Tally\n\nThe priority areas that Aave Grants DAO focuses on are as follows:\n\n1. Protocol development\n2. Applications and integrations\n3. Developer tooling\n4. Code audits\n5. Committees, sub-committees, and DAOs that serve the Aave ecosystem\n6. Community (marketing and educational)\n7. Events & hackathons",
+      "name": "Aave Grants DAO",
+      "stepItems": [],
+      "uuid": "38e34eb3-fc0c-42f3-bc30-945988cf3f5e"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "f402ed40"
+          ],
+          "choices": [
+            {
+              "content": "A program to transition developers from web2 to web3",
+              "key": "f252a5d3"
+            },
+            {
+              "content": "A program that funds the ideas of contributors",
+              "key": "f402ed40"
+            },
+            {
+              "content": "A program to create social change in the world",
+              "key": "dd0ffbcb"
+            },
+            {
+              "content": "A program that seeks to change the narrative around bitcoin",
+              "key": "13e79686"
+            }
+          ],
+          "content": "What is the Aave Grants DAO about?",
+          "type": "MultipleChoice",
+          "uuid": "c6dd01e6-6daf-44ca-a87b-caafabb14db5"
+        },
+        {
+          "answerKeys": [
+            "3b58b89c"
+          ],
+          "choices": [
+            {
+              "content": "13+",
+              "key": "5da7aab6"
+            },
+            {
+              "content": "23+",
+              "key": "57a05fa4"
+            },
+            {
+              "content": "44+",
+              "key": "30bc57e3"
+            },
+            {
+              "content": "81+",
+              "key": "3b58b89c"
+            }
+          ],
+          "content": "How many grants have been given out to contributors so far?",
+          "type": "MultipleChoice",
+          "uuid": "5a64b398-4c80-4b06-9e3b-c1df1f7145ee"
+        },
+        {
+          "answerKeys": [
+            "2362faf7",
+            "109b2b12",
+            "1cffd51e"
+          ],
+          "choices": [
+            {
+              "content": "Protocol Development",
+              "key": "1cffd51e"
+            },
+            {
+              "content": "Code audits",
+              "key": "109b2b12"
+            },
+            {
+              "content": "Cybersecurity",
+              "key": "cef0ea1f"
+            },
+            {
+              "content": "Developer tooling",
+              "key": "2362faf7"
+            },
+            {
+              "content": "Entertainment",
+              "key": "012830c9"
+            },
+            {
+              "content": "Content",
+              "key": "97534d98"
+            }
+          ],
+          "content": "What are the priority areas that Aave Grants DAO focuses on? (Select three)",
+          "type": "MultipleChoice",
+          "uuid": "8bbace6d-8481-4c61-bc88-a8d31dac70d7"
+        }
+      ],
+      "uuid": "3c0c1812-49f1-4fba-8afe-2b6682913b18"
+    },
+    {
+      "content": "# **Budget**\n\nThe budget for the Aave Grants DAO was $1 Million per quarter for grants and an operational budget of $250,000 to pay members of the team running the Grants DAO. However, an update was made requesting the budget for the Grants DAO to be increased to $2 Million per quarter so as to cater to more interesting and larger projects.",
+      "name": "Budget",
+      "stepItems": [],
+      "uuid": "cefad9b3-7d45-4eeb-bdac-4f5a70ac8f17"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "fea87561"
+          ],
+          "choices": [
+            {
+              "content": "$200,000",
+              "key": "8b34eea7"
+            },
+            {
+              "content": "$400,000",
+              "key": "538dd8e9"
+            },
+            {
+              "content": "$250,000",
+              "key": "fea87561"
+            },
+            {
+              "content": "$350,000",
+              "key": "0e60d08f"
+            }
+          ],
+          "content": "What is the operational budget for Aave Grants DAO?",
+          "type": "MultipleChoice",
+          "uuid": "149fe996-1540-4cf3-a878-05e2b6d7bbfd"
+        },
+        {
+          "answerKeys": [
+            "51af0be4"
+          ],
+          "choices": [
+            {
+              "content": "$1 Million",
+              "key": "51af0be4"
+            },
+            {
+              "content": "$100 Million",
+              "key": "e54d388a"
+            },
+            {
+              "content": "$250,000",
+              "key": "d97b06bb"
+            },
+            {
+              "content": "$8 Million",
+              "key": "3995484d"
+            }
+          ],
+          "content": "What is the budget per quarter for grants?",
+          "type": "MultipleChoice",
+          "uuid": "e56fcb78-3a16-44b1-95c4-13e89d565031"
+        }
+      ],
+      "uuid": "3efdc735-f669-4748-838c-c76fb9d65dd6"
+    },
+    {
+      "content": "# **Rewards**\n\nFor contributors who want to build via the Aave Grants DAO, there are two levels of funding available depending on the size of the idea, product or project. They are broken down below:\n\n* Rapid grants: &lt;$100k\n    * Simple process to apply for a grant to AGD\n    * Grant decision expected within 10 days\n* Community grants: $100k-$500k\n    * Applicants post a proposal on Aave’s governance forum\n    * Based on feedback and discussion, the committee can decide to approve these grants\n\nContributors who apply for grants above $500k will have to go through an on-chain vote after posting on the Aave’s Governance Forum.\n\nMore information about the rewards can be found [here](https://governance.aave.com/t/arc-aave-community-grants-program/3642) and [here](https://aavegrants.org/how-do-i-apply).",
+      "name": "Rewards",
+      "stepItems": [],
+      "uuid": "ac31d312-5f45-479b-b19b-7dc634938b59"
+    },
+    {
+      "content": "# **Apply to Aave Grants DAO**\n\n1. To apply to the Aave Grants DAO for grants up to $500k, fill [this](https://airtable.com/shrnAYUx16J8uCo59) application. If the amount is between $100k-$500k, the committee will reach out for a call if it makes sense and a post will be made on the Governance Forum afterward.\n2. For grants above $500k, apply by submitting a proposal on the Governance Forum via [this link](https://governance.aave.com/c/developers/25).",
+      "name": "Apply to Aave Grants DAO",
+      "stepItems": [],
+      "uuid": "d8ef44f4-9131-4cb7-bc4e-e2694a41178d"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "a15a6e67"
+          ],
+          "choices": [
+            {
+              "content": "$100k and above",
+              "key": "d8b74225"
+            },
+            {
+              "content": "less than $100k",
+              "key": "a15a6e67"
+            },
+            {
+              "content": "$100k - $500k",
+              "key": "c4a54aab"
+            },
+            {
+              "content": "Above $500k",
+              "key": "71f54b55"
+            }
+          ],
+          "content": "Which of these categories does Rapid grants fall under?",
+          "type": "MultipleChoice",
+          "uuid": "600388b5-6cac-487a-bd56-c554dbaa576b"
+        },
+        {
+          "answerKeys": [
+            "d038dd9e"
+          ],
+          "choices": [
+            {
+              "content": "Above $500k",
+              "key": "d038dd9e"
+            },
+            {
+              "content": "$100k - $500k",
+              "key": "0df682dc"
+            },
+            {
+              "content": "Below $100k",
+              "key": "39c82366"
+            },
+            {
+              "content": "$500k",
+              "key": "6b86235f"
+            }
+          ],
+          "content": "The community will decide on the funding if the budget is within what range?",
+          "type": "MultipleChoice",
+          "uuid": "9c0471fe-5aaa-4abd-a1da-ffb212ff120a"
+        }
+      ],
+      "uuid": "d9b08e35-b869-4217-960a-b0638f40d16d"
+    },
+    {
+      "content": "# **Join Aave**\n\nTo join Aave, you can connect via the following social media channels:\n\n1. Discord [https://discord.gg/CvKUrqM](https://discord.gg/CvKUrqM)\n2. Twitter [https://twitter.com/aaveaave](https://twitter.com/aaveaave)\n3. Telegram [https://t.me/Aavesome](https://t.me/Aavesome)\n4. GitHub [https://github.com/aave](https://github.com/aave)",
+      "name": "Join Aave",
+      "stepItems": [],
+      "uuid": "c0e98a59-c5f1-44dc-9b3f-65d991b26b01"
+    },
+    {
+      "content": "",
+      "name": "Your Contact Info",
+      "stepItems": [
+        {
+          "label": "Full Name",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "6f050454-0cca-46e8-af7b-c1bb091f99ab"
+        },
+        {
+          "label": "Discord Username",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "d10a68dc-8309-4bcf-8ab2-50298c94a81d"
+        }
+      ],
+      "uuid": "daeaf500-feb1-4ac9-beed-82f8d1304934"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/guides/eth/aave/AAVE_Grants.png",
+  "uuid": "b9d0a207-75cc-4e47-a7f6-1aa80526a390"
+}

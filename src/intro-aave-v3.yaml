@@ -28,7 +28,6 @@ postSubmissionStepContent: |
   [https://aave.mirror.xyz/JcA9DzQHK6o8YYMmxtH43Vqq5HoHvjrTrFnd_UprKWQ](https://aave.mirror.xyz/JcA9DzQHK6o8YYMmxtH43Vqq5HoHvjrTrFnd_UprKWQ) 
 
 publishStatus: Live
-socialShareImage:
 showIncorrectOnCompletion: true
 steps:
   - uuid: 3697c94b-0b65-4811-8862-b451470bc6fd
