@@ -175,7 +175,7 @@ favorable to the lenders. LTV = (Mortgage amount / Appraised property value)
 
 
 ---
-## Lending and Borrowing in Traditional Finance
+## Lending & Borrowing in TradFi
 
 ### Principle
 Lenders deposit their money in banks. The bank then uses this money and provides loans to borrowers for some rate of interest. The lenders are compensated with interest for their contribution.
@@ -227,7 +227,7 @@ without too many changes in the last 10 or so years.
 
 ##### Which of these is (are) advantage(s) of Traditional finance?  
 
-- [ ]  Heaviy monitoring and regulations
+- [ ]  Heavily monitored and regulated
 - [ ]  Accessibility
 - [x]  Both A and B
 - [ ]  None of these
@@ -363,7 +363,7 @@ it far more trustable.
 
 
 ---
-## Differences in Traditional and Decentralized Finance
+## TradFi vs DeFi
 
 | Traditional Finance                                                                                                                                                                                      | Decentralized Finance                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
