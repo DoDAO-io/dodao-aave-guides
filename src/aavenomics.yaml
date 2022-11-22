@@ -1,7 +1,7 @@
 categories:
   - onboarding
 content: Explains tokenomics of AAVE
-created: '2022-11-19T21:34:57.517Z'
+created: '2022-11-22T17:15:43.741Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -11,8 +11,8 @@ publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
   - content: >
-      Aave is an open source non-custodial liquidity protocol that allows users
-      to receive interest on their 
+      Aave  eeee   is an open source non-custodial liquidity protocol that
+      allows users to receive interest on their 
 
       cryptocurrency investments and borrow digital assets through
       over-collateralized loans.
@@ -51,7 +51,7 @@ steps:
       accrue in real time and are distributed 
 
       as AAVE is withdrawn or transferred from the Safety Module.
-    name: Introduction
+    name: 'Introduction '
     stepItems: []
     uuid: fab0e9b5-619b-4dac-90a9-56d81bc4288c
   - content: ''
@@ -70,7 +70,7 @@ steps:
             key: D
         content: >-
           By what percentage can the staked AAVE tokens of the token holders be
-          slashed incase of a liquidity crisis?
+          slashed incase of a liquidity crisis? eee
         type: SingleChoice
         uuid: ebc261d1-63d3-4293-8d09-8e2b676c766a
       - answerKeys:
