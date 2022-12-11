@@ -113,7 +113,7 @@ steps:
         3. Your contract, now holding the flash loaned `amount(s)`, executes any arbitrary operation in its code.&#x20;
         * If you are performing a **flashLoanSimple**, then when your code has finished, you approve Pool for flash loaned amount + fee.
         * If you are performing **flashLoan,** then for all the reserves either depending on  `interestRateMode` passed for the asset, either the Pool must be approved for flash loaned amount + fee or must or sufficient collateral or credit delegation should be available to open debt position.
-        * If the amount owing is not available (due to a lack of balance or approvaln or insufficient collateral for debt), then the transaction is reverted.
+        * If the amount owing is not available (due to a lack of balance or approval or insufficient collateral for debt), then the transaction is reverted.
         4. All of the above happens in 1 transaction (hence in a single ethereum block).
     stepItems: []
   - uuid: 5dd4bc36-1ffc-4df6-8a0a-baf9e566091c
@@ -233,8 +233,8 @@ steps:
       
       #### Self Liquidation
       
-      Markets can be very volatile and can lead liquidation of the sensative positions. Liquidation can be quite expensive
-      on certail platforms, and it might make sense to write a simple script to self-liquidate your loans using flash 
+      Markets can be very volatile and can lead to liquidation of the sensitive positions. Liquidation can be quite expensive
+      on certain platforms, and it might make sense to write a simple script to self-liquidate your loans using flash 
       loans and your own deposit to pay them back.
       
       There are many applications that make use of flash loans and liquidate the positions on user's behalf saving the 
