@@ -1,7 +1,7 @@
 categories:
   - overview
 content: Explains background and terminologies of Lending and Borrowing
-created: '2022-10-27T10:51:29.748Z'
+created: '2023-02-26T13:38:39.047Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -429,17 +429,32 @@ steps:
 
       ### Working      
 
-      * The protocol maintains a "liquidity pool" where all lenders' assets
+      * The protocol maintains a "liquidity pool(s)" where all lenders' assets
       (liquidity) get pooled.
 
-      * The borrowers ask for a loan by "over collateralizing" the assets they
-      own in return for the assets they want.
+      * There can be a single pool for the entire platform or they might be
+      split based on asset types, or some other strategy
 
-      * The lenders are compensated for their resources by providing them with
-      crypto assets, primarily the DeFi protocol's crypto coins.
+      * The borrowers ask for a loan by providing a collateral. Often the loans
+      in DeFi are over collateralized.
 
-      * Since DeFi is decentralized, The changes made in the protocol are often
-      decided by voting.
+      * The platform ensure that the borrowed positions remain healthy at all
+      times. If the value of the collateral added by the borrower, drops below a
+      certain threshold, the loans are liquidated. 
+
+      * The liquidated funds are sold to independent liquidators at a discounted
+      price. This is done to ensure immediate settlement.
+
+      * There can be a  transaction feel added by the platforms and a
+      liquidation fee incase the loans get liquidated.
+
+      * After deducting of any platform fees or interest, the interest that is
+      gained from the borrowers, goes to the lenders. Because of the
+      competition, and transparency, plat fees are often quite low.
+
+      * The platform might also choose to incentivize either, lender, or
+      borrower, or both, in order to promote a particular side or to promote
+      overall growth of the platform.
 
 
       ### Fees
